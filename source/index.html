@@ -4,25 +4,28 @@
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
   </head>
-  <body>
-    <nav class="nav">
-      <div class="nav__header-panel">
-        <div class="logo"></div>
+  <body class="wrapper">
+    <section class="nav">
+      <h2 class="visually-hidden">Навигация</h2>
+      <div class="nav__panel">
+        <img class="logo" src="#" alt="Логотип Погнали?">
         <button class="nav__button">Открыть меню</button>
       </div>
       <div class="nav__content">
-        <h2 class="nav__caption">
-          О сервисе направления попутчики
-        </h2>
+        <ul class="nav__items">
+          <li class="nav__item">О сервисе</li>
+          <li class="nav__item">Направления</li>
+          <li class="nav__item">Попутчики</li>
+        </ul>
         <a href="#" class="nav__login">
           Авторизация
         </a>
-        <span class="contact nav__contact">
+        <a href="#" class="contact nav__contact">
           8 800 555-86-28
-        </span>
-        <span class="contact nav__contact">
+        </a>
+        <a href="#" class="contact nav__contact">
           mail@htmlacademy.ru
-        </span>
+        </a>
         <div class="nav__socials">
           <span class="nav__social">
             <a href="#" class="nav__social-link">
@@ -41,7 +44,7 @@
           </span>
         </div>
       </div>
-    </nav>
+    </section>
     <header class="header">
       <h1 class="header__caption">
         В путешествие с крутыми попутчиками!
@@ -246,12 +249,12 @@
       <p class="section-description">
         Остались вопросы? <br>Мы с радостью на них ответим!
       </p>
-      <span class="contact contacts__contact">
+      <a href="#" class="contact contacts__contact">
           8 800 555-86-28
-        </span>
-        <span class="contact contacts__contact">
+        </a>
+        <a href="#" class="contact contacts__contact">
           mail@htmlacademy.ru
-        </span>
+        </a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">
@@ -276,7 +279,7 @@
       </ul>
       <div class="footer__developed">
         <p class="section-description">Разработано</p>
-        <div class="footer__academy"></div>
+        <a href="" class="footer__academy"></a>
       </div>
     </footer>
   </body>
