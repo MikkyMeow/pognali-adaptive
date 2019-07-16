@@ -46,7 +46,7 @@
       </div>
     </section>
     <header class="header">
-      <h1 class="header__caption">
+      <h1 class="header__caption header__index">
         В путешествие с крутыми попутчиками!
       </h1>
       <ul class="header__contacts">
@@ -161,13 +161,13 @@
       <ul class="col travelers__persons">
         <li class="row travelers__person">
           <img class="travelers__photo" src="#" alt="Таня Фирсова">
-          <input class="travelers__level" type="range" min="0" max="100" value="99">
+          <input class="level travelers__level" type="range" min="0" max="100" value="99">
           <ul class="travelers__flags">
             <li class="travelers__flag"></li>
             <li class="travelers__flag"></li>
             <li class="travelers__flag"></li>
           </ul>
-          <span class="travelers__online">
+          <span class="online travelers__online">
             Статус: Оффлайн
           </span>
           <p class="travelers__name">
@@ -185,13 +185,13 @@
         </li>
         <li class="row travelers__person">
           <img class="travelers__photo" src="#" alt="Петя Демин">
-          <input class="travelers__level" type="range" min="0" max="100" value="80">
+          <input class="level travelers__level" type="range" min="0" max="100" value="80">
           <ul class="travelers__flags">
             <li class="travelers__flag"></li>
             <li class="travelers__flag"></li>
             <li class="travelers__flag"></li>
           </ul>
-          <span class="travelers__online">
+          <span class="online travelers__online">
             Статус: Онлайн
           </span>
           <p class="travelers__name">
@@ -242,10 +242,12 @@
         Заинтересовались?
       </h2>
       <p class="section-description contacts__description">
-        Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="contacts__login">авторизуйтесь</a>.
+        Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="#" class="contacts__login">авторизуйтесь</a>.
       </p>
-      <input class="contacts__register" type="email" placeholder="E-mail">
-      <input class="contacts__submit" type="submit">
+      <form action="echo.htmlacademy.ru" method="get">
+        <input class="contacts__register" type="email" placeholder="E-mail">
+        <input class="contacts__submit" type="submit">
+      </form>
       <p class="section-description">
         Остались вопросы? <br>Мы с радостью на них ответим!
       </p>
