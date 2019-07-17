@@ -1,0 +1,47 @@
+.ways {
+  &__place-caption {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #161c35;
+  }
+
+  &__place {
+    min-width: 270px;
+    min-height: 190px;
+    background-image: url('../img/thailand-mobile@1x.jpg');
+    background-repeat: no-repeat;
+  }
+
+  &__place:nth-child(2) {
+    background-image: url('../img/france-mobile@1x.jpg');
+  }
+
+  &__place:nth-child(3) {
+    background-image: url('../img/czech-mobile@1x.jpg');
+  }
+
+  &__place:last-child {
+    background-image: none;
+    min-width: 62px;
+  }
+
+  & .row--other-link {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #1d2e5b;
+  }
+
+  &__place-description,
+  &__place-views {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #444444;
+  }
+
+  &__place-views {
+    line-height: 30px;
+  }
+}
