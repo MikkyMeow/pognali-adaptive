@@ -1,0 +1,25 @@
+.about {
+  background-color: #161c35;
+  color: #ffffff;
+
+  &__quote,
+  &__author {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+  }
+
+  &__author {
+    font-weight: 700;
+  }
+
+  &__plan-item {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #161c35;
+    background-color: yellow; //temporally
+  }
+
+
+}
