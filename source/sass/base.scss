@@ -3,3 +3,19 @@
   margin: 0 auto;
   font-family: 'Bloggersans', Arial sans-serif;
 }
+
+.contact {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #192144;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
