@@ -44,27 +44,4 @@
     color: #161c35;
     text-transform: uppercase;
   }
-
-  &__social {
-    display: flex;
-    text-indent: -9999px;
-  }
-
-  &__social-link {
-    width: 25px;
-    height: 25px;
-    background-image: url('../img/facebook.svg');
-    background-repeat: no-repeat;
-    background-position: 50%;
-    margin-right: 40px;
-  }
-
-  &__social-link:nth-child(2) {
-    background-image: url('../img/vk.svg');
-  }
-
-  &__social-link:nth-child(3) {
-    background-image: url('../img/instagram.svg');
-    margin-right: 0;
-  }
 }
