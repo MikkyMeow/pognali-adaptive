@@ -1,0 +1,19 @@
+.map {
+  background-color: #ffd74b;
+
+  &__address {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1d2e5b;
+  }
+
+  &__to {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #1d2e5b;
+    border: 3px solid #1d2e5b;
+  }
+}
