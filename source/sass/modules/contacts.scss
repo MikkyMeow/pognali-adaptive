@@ -1,0 +1,18 @@
+.contacts {
+  background-color: #192144;
+  color: #ffffff;
+  text-align: center;
+
+  &__login {
+    color: #ffd74b;
+    text-decoration: underline;
+  }
+
+  &__submit {
+    background-color: #ffd74b;
+  }
+
+  &__contact {
+    color: #ffd74b;
+  }
+}
