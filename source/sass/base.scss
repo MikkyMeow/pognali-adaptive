@@ -1,7 +1,7 @@
 .wrapper {
   width: 320px;
   margin: 0 auto;
-  font-family: 'Bloggersans', Arial sans-serif;
+  font-family: 'Bloggersans', 'Arial', sans-serif;
 }
 
 .contact {
@@ -36,7 +36,7 @@
   }
 }
 
-.row--other-link {
+.other__link {
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
@@ -48,7 +48,7 @@
   display: flex;
   text-indent: -9999px;
 
-  &-link {
+  &__link {
     width: 25px;
     height: 25px;
     background-image: url('../img/facebook.svg');
