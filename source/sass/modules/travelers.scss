@@ -2,8 +2,24 @@
   background-color: #192144;
   color: #ffffff;
 
+  &__caption {
+    @include section-header;
+  }
+
+  &__description {
+    @include section-description;
+
+    &--bold {
+      @include section-description--bold;
+    }
+  }
+
   &__person {
     background: #ffffff;
+  }
+
+  &__link {
+    @include other-link;
   }
 
   &__name {

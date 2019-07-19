@@ -19,4 +19,8 @@
     margin: 0 auto;
     text-align: center;
   }
+
+  &__visually-hidden {
+    @include visually-hidden;
+  }
 }

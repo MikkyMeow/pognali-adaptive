@@ -1,6 +1,11 @@
 .adding {
   background-color: #edeff6;
 
+  &__caption,
+  & .popup-caption {
+    @include section-header;
+  }
+
   &__advantage {
     font-size: 16px;
     line-height: 22px;

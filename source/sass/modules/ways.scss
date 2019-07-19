@@ -1,4 +1,13 @@
 .ways {
+
+  &__caption {
+    @include section-header;
+  }
+
+  &__description {
+    @include section-description;
+  }
+
   &__place-caption {
     font-size: 21px;
     line-height: 21px;
@@ -22,6 +31,7 @@
   }
 
   &__place:last-child {
+    @include other-link;
     background-image: none;
     min-width: 62px;
   }

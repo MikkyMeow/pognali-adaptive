@@ -20,4 +20,16 @@
     color: #161c35;
     background-color: yellow; //temporally
   }
+
+  &__caption {
+    @include section-header;
+  }
+
+  &__description {
+    @include section-description;
+
+    &--bold {
+      @include section-description--bold;
+    }
+  }
 }

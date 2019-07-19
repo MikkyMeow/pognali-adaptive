@@ -17,4 +17,8 @@
     font-weight: bold;
     background-color: #ffd74b;
   }
+
+  &__caption {
+    @include header-caption;
+  }
 }

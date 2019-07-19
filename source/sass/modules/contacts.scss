@@ -3,6 +3,14 @@
   color: #ffffff;
   text-align: center;
 
+  &__caption {
+    @include section-header;
+  }
+
+  &__description {
+    @include section-description;
+  }
+
   &__login {
     color: #ffd74b;
     text-decoration: underline;
@@ -13,6 +21,7 @@
   }
 
   &__contact {
+    @include contact;
     color: #ffd74b;
   }
 }

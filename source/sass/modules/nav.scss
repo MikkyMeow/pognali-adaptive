@@ -44,4 +44,12 @@
     color: #161c35;
     text-transform: uppercase;
   }
+
+  &__contact {
+    @include contact;
+  }
+
+  &__visually-hidden {
+    @include visually-hidden;
+  }
 }
