@@ -1,0 +1,37 @@
+.travelers {
+  background-color: #192144;
+  color: #ffffff;
+
+  &__caption {
+    @include section-header;
+  }
+
+  &__description {
+    @include section-description;
+
+    &--bold {
+      @include section-description--bold;
+    }
+  }
+
+  &__person {
+    background: #ffffff;
+  }
+
+  &__link {
+    @include other-link;
+  }
+
+  &__name {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #1d2e5b;
+  }
+
+  &__hashtag {
+    font-size: 16px;
+    line-height: 21px;
+    color: #444444;
+  }
+}

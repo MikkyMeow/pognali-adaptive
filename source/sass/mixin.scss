@@ -1,0 +1,48 @@
+@mixin contact {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #192144;
+}
+
+@mixin header-caption {
+  font-size: 36px;
+  line-height: 40px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+@mixin section-header {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ff8d30;
+}
+
+@mixin section-description {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+@mixin section-description--bold {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+@mixin other-link {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #1d2e5b;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

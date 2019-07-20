@@ -1,0 +1,22 @@
+.adding {
+  background-color: #edeff6;
+
+  &__caption,
+  & .popup-caption {
+    @include section-header;
+  }
+
+  &__advantage {
+    font-size: 16px;
+    line-height: 22px;
+    color: #444444;
+  }
+
+  &__button {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #192144;
+    border: none;
+  }
+}
