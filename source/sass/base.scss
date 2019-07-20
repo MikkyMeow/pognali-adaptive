@@ -3,26 +3,3 @@
   margin: 0 auto;
   font-family: 'Bloggersans', 'Arial', sans-serif;
 }
-
-.social {
-  display: flex;
-  text-indent: -9999px;
-
-  &__link {
-    width: 25px;
-    height: 25px;
-    background-image: url('../img/facebook.svg');
-    background-repeat: no-repeat;
-    background-position: 50%;
-    margin-right: 40px;
-  }
-
-  &-link:nth-child(2) {
-    background-image: url('../img/vk.svg');
-  }
-
-  &-link:nth-child(3) {
-    background-image: url('../img/instagram.svg');
-    margin-right: 0;
-  }
-}
