@@ -2,26 +2,26 @@
   background-color: #192144;
   color: #ffffff;
   text-align: center;
+}
 
-  &__caption {
-    @include section-header;
-  }
+.contacts__caption {
+  @include section-header;
+}
 
-  &__description {
-    @include section-description;
-  }
+.contacts__description {
+  @include section-description;
+}
 
-  &__login {
-    color: #ffd74b;
-    text-decoration: underline;
-  }
+.contacts__login {
+  color: #ffd74b;
+  text-decoration: underline;
+}
 
-  &__submit {
-    background-color: #ffd74b;
-  }
+.contacts__submit {
+  background-color: #ffd74b;
+}
 
-  &__contact {
-    @include contact;
-    color: #ffd74b;
-  }
+.contacts__contact {
+  @include contact;
+  color: #ffd74b;
 }

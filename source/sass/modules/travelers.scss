@@ -1,37 +1,37 @@
 .travelers {
   background-color: #192144;
   color: #ffffff;
+}
 
-  &__caption {
-    @include section-header;
+.travelers__caption {
+  @include section-header;
+}
+
+.travelers__description {
+  @include section-description;
+
+  .travelers--bold {
+    @include section-description--bold;
   }
+}
 
-  &__description {
-    @include section-description;
+.travelers__person {
+  background: #ffffff;
+}
 
-    &--bold {
-      @include section-description--bold;
-    }
-  }
+.travelers__link {
+  @include other-link;
+}
 
-  &__person {
-    background: #ffffff;
-  }
+.travelers__name {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #1d2e5b;
+}
 
-  &__link {
-    @include other-link;
-  }
-
-  &__name {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
-    color: #1d2e5b;
-  }
-
-  &__hashtag {
-    font-size: 16px;
-    line-height: 21px;
-    color: #444444;
-  }
+.travelers__hashtag {
+  font-size: 16px;
+  line-height: 21px;
+  color: #444444;
 }
