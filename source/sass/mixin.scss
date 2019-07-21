@@ -1,3 +1,14 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin logo {
+  width: 100px;
+  height: 19px;
+}
+
 @mixin contact {
   font-size: 16px;
   line-height: 22px;
@@ -37,6 +48,32 @@
   line-height: 18px;
   font-weight: bold;
   color: #1d2e5b;
+}
+
+@mixin social {
+  display: flex;
+  text-indent: -9999px;
+}
+
+@mixin social__link {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-right: 40px;
+}
+
+@mixin social__link--facebook {
+  background-image: url('../img/facebook.svg');
+}
+
+@mixin social__link--vk {
+  background-image: url('../img/vk.svg');
+}
+
+@mixin social__link--instagram {
+  background-image: url('../img/instagram.svg');
+  margin-right: 0;
 }
 
 @mixin visually-hidden {
