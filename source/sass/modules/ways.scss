@@ -1,50 +1,47 @@
-.ways {
+.ways__caption {
+  @include section-header;
+}
 
-  &__caption {
-    @include section-header;
-  }
+.ways__description {
+  @include section-description;
+}
 
-  &__description {
-    @include section-description;
-  }
+.ways__place-caption {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #161c35;
+}
 
-  &__place-caption {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
-    color: #161c35;
-  }
+.ways__place {
+  min-width: 270px;
+  min-height: 190px;
+  background-image: url("../img/thailand-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
 
-  &__place {
-    min-width: 270px;
-    min-height: 190px;
-    background-image: url('../img/thailand-mobile@1x.jpg');
-    background-repeat: no-repeat;
-  }
+.ways__place:nth-child(2) {
+  background-image: url("../img/france-mobile@1x.jpg");
+}
 
-  &__place:nth-child(2) {
-    background-image: url('../img/france-mobile@1x.jpg');
-  }
+.ways__place:nth-child(3) {
+  background-image: url("../img/czech-mobile@1x.jpg");
+}
 
-  &__place:nth-child(3) {
-    background-image: url('../img/czech-mobile@1x.jpg');
-  }
+.ways__place:last-child {
+  @include other-link;
+  background-image: none;
+  min-width: 62px;
+}
 
-  &__place:last-child {
-    @include other-link;
-    background-image: none;
-    min-width: 62px;
-  }
+.ways__place-description,
+.ways__place-views {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #444444;
+}
 
-  &__place-description,
-  &__place-views {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    color: #444444;
-  }
-
-  &__place-views {
-    line-height: 30px;
-  }
+.ways__place-views {
+  line-height: 30px;
 }

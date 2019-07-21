@@ -64,15 +64,15 @@
 }
 
 @mixin social__link--facebook {
-  background-image: url('../img/facebook.svg');
+  background-image: url("../img/facebook.svg");
 }
 
 @mixin social__link--vk {
-  background-image: url('../img/vk.svg');
+  background-image: url("../img/vk.svg");
 }
 
 @mixin social__link--instagram {
-  background-image: url('../img/instagram.svg');
+  background-image: url("../img/instagram.svg");
   margin-right: 0;
 }
 

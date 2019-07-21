@@ -23,7 +23,7 @@
   text-indent: -9999px;
   width: 20px;
   height: 20px;
-  background-image: url('../img/menu-close.svg');
+  background-image: url("../img/menu-close.svg");
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -71,12 +71,12 @@
 }
 
 .nav__contact {
+  @include contact;
   display: flex;
   align-items: center;
-  @include contact;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     display: block;
     width: 45px;
     height: 45px;
@@ -89,12 +89,12 @@
 }
 
 .nav__contact--phone::before {
-  background-image: url('../img/contacts-phone.svg');
+  background-image: url("../img/contacts-phone.svg");
   background-position: 53% 48%;
 }
 
 .nav__contact--mail::before {
-  background-image: url('../img/contacts-mail.svg');
+  background-image: url("../img/contacts-mail.svg");
   background-position: 53% 50%;
 }
 
