@@ -76,6 +76,14 @@
   margin-right: 0;
 }
 
+@mixin visible {
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
 @mixin visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);

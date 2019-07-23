@@ -3,8 +3,16 @@
   margin: 0 auto;
   background-color: #161c36;
   font-family: "Bloggersans", "Arial", sans-serif;
+}
 
-  @media (min-width: 768px) {
-    width: 768px;
+@media (min-width: 768px) {
+  .wrapper {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper {
+    min-width: 1440px;
   }
 }

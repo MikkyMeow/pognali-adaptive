@@ -246,3 +246,85 @@
     height: 24px;
   }
 }
+
+@media (min-width: 1440px) {
+  .nav__logo {
+    background-image: url('../img/logo-desktop-white@1x.png');
+    width: 199px;
+    height: 52px;
+    margin-left: 35px;
+    margin-top: 20px;
+  }
+
+  .nav__button {
+    display: none;
+  }
+
+  .nav__panel--closed .nav__logo {
+    background-image: url('../img/logo-desktop-white@1x.png');
+  }
+
+  .nav__panel {
+    background-color: #161c34;
+  }
+
+  .nav__content {
+    flex-direction: row;
+  }
+
+  .nav__content--closed {
+    background-color: #161c34;
+    clip: auto;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    margin-left: 260px;
+  }
+
+  .nav__items {
+    flex-direction: row;
+    margin-top: 62px;
+    margin-left: 120px;
+
+    &::before {
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
+      display: block;
+      position: absolute;
+      left: 40px;
+      top: 74px;
+    }
+  }
+
+  .nav__item {
+    margin-right: 38px;
+  }
+
+  .nav__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+
+  .nav__social {
+    display: none;
+  }
+
+  .nav__contacts {
+    display: flex;
+  }
+
+  .nav__contact {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-indent: -9999px;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
