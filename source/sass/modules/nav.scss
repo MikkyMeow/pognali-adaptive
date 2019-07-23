@@ -194,4 +194,55 @@
     top: 40px;
     right: 40px;
   }
+
+  .nav__content {
+    padding: 0 25px 91px;
+  }
+
+  .nav__items {
+    align-items: flex-start;
+    align-self: flex-start;
+    margin-top: 49px;
+    margin-left: 72px;
+  }
+
+  .nav__link {
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  .nav__contacts {
+    margin-top: 133px;
+  }
+
+  .nav__contact {
+    font-size: 28px;
+    line-height: 28px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+      margin-left: 72px;
+      margin-right: 23px;
+      position: relative;
+      bottom: 5px;
+    }
+  }
+
+  .nav__social {
+    align-self: flex-start;
+    margin-top: 126px;
+    margin-left: 92px;
+  }
+
+  .nav__social-link {
+    width: 28px;
+    height: 28px;
+    margin-right: 32px;
+  }
+
+  .nav__social-link--instagram {
+    width: 24px;
+    height: 24px;
+  }
 }
