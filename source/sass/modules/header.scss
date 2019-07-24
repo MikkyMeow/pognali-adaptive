@@ -21,4 +21,6 @@
 
 .header__caption {
   @include header-caption;
+  position: relative;
+  z-index: 1;
 }
