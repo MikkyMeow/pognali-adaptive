@@ -4,10 +4,6 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
-  min-height: 400px; //temporally
-  background-position: bottom;
-  background-repeat: no-repeat;
 }
 
 .header__contact-item {
@@ -23,4 +19,130 @@
   @include header-caption;
   position: relative;
   z-index: 1;
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height: 384px; //temporally
+  padding-top: 21px;
+  background-size: 190px, 100%;
+}
+
+.header__contacts {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.header__contact-item {
+  @include flex-center;
+  border-radius: 20px;
+  width: 189px;
+}
+
+.header__contact-item--phone,
+.header__contact-item--mail {
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 50%;
+
+}
+
+.header__contact-item--phone {
+  background-color: #ff8d30;
+  background-image: url("../img/topmenu-phone.svg");
+}
+
+.header__contact-item--mail {
+  background-color: #ffbd30;
+  background-image: url("../img/topmenu-mail.svg");
+}
+
+.header__blockquote {
+  width: 50%;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.header__quote {
+  margin-top: 7px;
+  margin-bottom: 18px;
+  line-height: 22px;
+}
+
+.header__author {
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.header__plan-list {
+  margin: 30px auto 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.header__plan-item {
+  @include flex-center;
+  justify-content: flex-start;
+  width: 180px;
+  max-width: 84%;
+  min-height: 80px;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 65px;
+  padding-bottom: 20px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 21px;
+    top: 27%;
+    color: #ffffff;
+  }
+}
+
+.header__plan-item-1 {
+  background-color: #ff8d30;
+
+  &::after {
+    content: "1";
+  }
+}
+
+.header__plan-item-2 {
+  background-color: #ffa530;
+  top: -20px;
+
+  &::after {
+    content: "2";
+  }
+}
+
+.header__plan-item-3 {
+  background-color: #ffbd30;
+  top: -40px;
+
+  &::after {
+    content: "3";
+  }
+}
+
+.header__plan-item-4 {
+  background-color: #ffd74b;
+  top: -60px;
+  min-height: 80px;
+  padding-bottom: 0;
+
+  &::after {
+    content: "4";
+  }
 }
