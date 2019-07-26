@@ -2,6 +2,9 @@
   background-color: #161c35;
   color: #ffffff;
   padding-bottom: 81px;
+  background-image: url("../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 98% 0;
 }
 
 .about__quote,
@@ -26,7 +29,7 @@
 .about__caption {
   @include section-header;
   margin-left: 49px;
-  margin-top: 12px;
+  padding-top: 12px;
 }
 
 .about__description,
@@ -49,10 +52,17 @@
 }
 
 @media (min-width: 768px) {
+
+  .about {
+    background-image: url("../img/about-tablet@1x.png");
+    background-position: 98% 143px;
+    padding-bottom: 88px;
+  }
+
   .about__caption {
     @include section-header--tablet;
     margin-left: 74px;
-    margin-top: 137px;
+    padding-top: 137px;
   }
 
   .about__description {
@@ -92,5 +102,35 @@
       border-width: 7px 0 7px 10px;
       border-color: transparent transparent transparent #1d2e5b;
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: 93% 84px;
+    padding-bottom: 163px;
+  }
+
+  .about__caption {
+    margin-left: 130px;
+    padding-top: 133px;
+  }
+
+  .about__description {
+    margin-left: 131px;
+    margin-top: 58px;
+    width: 44%;
+  }
+
+  .about__description--bold {
+    margin-left: 131px;
+    margin-top: 38px;
+    width: 32%;
+  }
+
+  .about__link {
+    margin-left: 131px;
+    margin-top: 84px;
   }
 }
