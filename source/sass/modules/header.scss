@@ -29,7 +29,7 @@
 
 .header__contacts {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
   position: relative;
   bottom: 20px;
   z-index: 2;
@@ -188,7 +188,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 236px;
+    margin-top: 190px;
   }
 
   .header__plan-item {
@@ -214,7 +214,7 @@
   }
 
   .header__plan-item-2 {
-    border-radius: 15px 15px 0 0;
+    border-radius: 0 15px 0 0;
     top: 0;
   }
 
@@ -224,7 +224,55 @@
   }
 
   .header__plan-item-4 {
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 15px 0;
+    top: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header__caption {
+    text-align: left;
+    margin-left: 127px;
+    margin-top: 62px;
+    width: 30%;
+  }
+
+  .header__block {
+    display: flex;
+  }
+
+  .header__blockquote {
+    width: 20%;
+    margin-right: 58px;
+    margin-top: 8px;
+  }
+
+  .header__quote {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .header__author {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .header__plan-item-1 {
+    border-radius: 0 0 0 0;
+  }
+
+  .header__plan-item-2 {
+    border-radius: 0 0 0 0;
+    top: 0;
+  }
+
+  .header__plan-item-3 {
+    border-radius: 0 0 0 0;
+    top: 0;
+  }
+
+  .header__plan-item-4 {
+    border-radius: 0 0 0 0;
     top: 0;
   }
 }
