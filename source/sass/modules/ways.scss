@@ -1,34 +1,45 @@
 .ways {
-  background-color: #fff;
+  background-color: #edeff6;
+  padding-top: 72px;
+  padding-bottom: 30px;
+  border-radius: 0 0 30px 30px;
 }
 
 .ways__caption {
   @include section-header;
+  margin-left: 50px;
 }
 
 .ways__description {
   @include section-description;
+  margin-left: 50px;
+  margin-top: 19px;
+  width: 62%;
 }
 
-.ways__place-caption {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #161c35;
+.ways__places {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ways__place {
   min-width: 270px;
-  min-height: 190px;
-  background-image: url("../img/thailand-mobile@1x.jpg");
+  border-radius: 10px 10px 0 0;
   background-repeat: no-repeat;
+  padding-top:110px;
 }
 
-.ways__place:nth-child(2) {
+.ways__place--1 {
+  background-image: url("../img/thailand-mobile@1x.jpg");
+}
+
+.ways__place--2 {
   background-image: url("../img/france-mobile@1x.jpg");
 }
 
-.ways__place:nth-child(3) {
+.ways__place--3 {
   background-image: url("../img/czech-mobile@1x.jpg");
 }
 
@@ -36,6 +47,25 @@
   @include other-link;
   background-image: none;
   min-width: 62px;
+}
+
+.ways__info {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 90px;
+  background-color: #ffffff;
+  position: relative;
+  bottom: 10px;
+}
+
+.ways__place-caption {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #161c35;
+  margin-left: 24px;
+  margin-top: 26px;
 }
 
 .ways__place-description,
@@ -46,6 +76,36 @@
   color: #444444;
 }
 
+.ways__place-description {
+  margin-left: 25px;
+  margin-top: 2px;
+}
+
 .ways__place-views {
   line-height: 30px;
+  margin-right: 24px;
+  margin-top: 23px;
+}
+
+.ways__place--4 {
+  padding-top: 13px;
+}
+
+.ways__link {
+  @include flex-center;
+  justify-content: space-between;
+  background-color: #ffd74b;
+  min-width: 224px;
+  min-height: 62px;
+  border-radius: 10px;
+  padding: 0 23px;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 10px;
+    border-color: transparent transparent transparent #1d2e5b;
+  }
 }
