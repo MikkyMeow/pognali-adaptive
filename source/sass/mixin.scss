@@ -31,16 +31,31 @@
   color: #ff8d30;
 }
 
+@mixin section-header--tablet {
+  font-size: 45px;
+  line-height: 45px;
+}
+
 @mixin section-description {
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
 }
 
+@mixin section-description--tablet {
+  font-size: 28px;
+  line-height: 33px;
+}
+
 @mixin section-description--bold {
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
+}
+
+@mixin section-description--bold--desktop {
+  font-size: 21px;
+  line-height: 25px;
 }
 
 @mixin other-link {
