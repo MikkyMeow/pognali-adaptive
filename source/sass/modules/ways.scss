@@ -202,3 +202,53 @@
     padding: 0 35px;
   }
 }
+
+@media (min-width: 1440px) {
+  .ways {
+    display: flex;
+    background-position: 95% 88px;
+    position: relative;
+    padding-bottom: 139px;
+  }
+
+  .ways__block {
+    order: 1;
+    margin-top: 94px;
+  }
+
+  .ways__caption {
+    margin-left: 172px;
+  }
+
+  .ways__description {
+    margin-left: 172px;
+    width: 48%;
+  }
+
+  .ways__places {
+    margin-top: 29px;
+    margin-left: 131px;
+  }
+
+  .ways__place {
+    min-width: 373px;
+  }
+
+  .ways__place-caption {
+    margin-top: 24px;
+  }
+
+  .ways__place-views {
+    margin-top: 22px;
+  }
+
+  .ways__place--4 {
+    position: absolute;
+    right: 302px;
+    bottom: 107px;
+  }
+
+  .ways__link {
+    min-width: 204px;
+  }
+}
