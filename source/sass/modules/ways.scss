@@ -109,3 +109,96 @@
     border-color: transparent transparent transparent #1d2e5b;
   }
 }
+
+@media (min-width: 768px) {
+
+  .ways {
+    padding-bottom: 48px;
+    border-radius: 0 0 60px 60px;
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: 92% 80px;
+  }
+
+  .ways__caption {
+    @include section-header--tablet;
+    margin-left: 73px;
+    margin-top: 1px;
+  }
+
+  .ways__description {
+    @include section-description--tablet;
+    margin-left: 75px;
+    margin-top: 58px;
+    width: 45%;
+  }
+
+  .ways__places {
+    margin-top: 44px;
+  }
+
+  .ways__place {
+    min-width: 432px;
+    min-height: 140px;
+    padding-top: 0;
+    padding-right: 186px;
+    background-position: right;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+  .ways__info {
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 140px;
+    bottom: 0;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .ways__place-caption {
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 30px;
+    margin-top: 31px;
+  }
+
+  .ways__place-description {
+    font-size: 20px;
+    line-height: 17.68px;
+    margin-left: 30px;
+    margin-top: 6px;
+  }
+
+  .ways__place-views {
+    font-size: 20px;
+    margin-right: 0;
+    margin-left: 60px;
+    margin-top: 16px;
+  }
+
+  .ways__place--1 {
+    background-image: url("../img/thailand-desktop@1x.jpg");
+  }
+
+  .ways__place--2 {
+    background-image: url("../img/france-desktop@1x.jpg");
+  }
+
+  .ways__place--3 {
+    background-image: url("../img/czech-desktop@1x.jpg");
+  }
+
+  .ways__place--4 {
+    padding: 0;
+  }
+
+  .ways__link {
+    font-size: 24px;
+    line-height: 24px;
+    min-width: 548px;
+    min-height: 81px;
+    margin-top: 37px;
+    border-radius: 20px;
+    padding: 0 35px;
+  }
+}
