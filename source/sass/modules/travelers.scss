@@ -1,26 +1,48 @@
 .travelers {
   background-color: #192144;
   color: #ffffff;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  border-radius: 0 0 60px 60px;
 }
 
 .travelers__caption {
   @include section-header;
+  margin-left: 49px;
 }
 
 .travelers__description {
   @include section-description;
+  margin-left: 49px;
+  margin-top: 19px;
+  width: 69%;
+}
 
-  .travelers--bold {
-    @include section-description--bold;
-  }
+.travelers__description--bold {
+  @include section-description--bold;
+  margin-left: 49px;
+  margin-top: 21px;
+}
+
+.travelers__persons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 56px;
 }
 
 .travelers__person {
   background: #ffffff;
+  width: 270px;
+  border-radius: 10px;
+  position: relative;
+  padding-bottom: 18px;
+  margin-bottom: 10px;
 }
 
-.travelers__link {
-  @include other-link;
+.travelers__photo {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .travelers__name {
@@ -28,10 +50,53 @@
   line-height: 21px;
   font-weight: 700;
   color: #1d2e5b;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .travelers__hashtag {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 18px;
   color: #444444;
+  text-align: center;
+  width: 90%;
+  margin: 15px auto 0;
+}
+
+.travelers__transport {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.transport__item {
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+.transport__item--plane {
+  background-image: url("../img/plane.svg");
+}
+
+.transport__item--bus {
+  background-image: url("../img/bus.svg");
+}
+
+.transport__item--bike {
+  background-image: url("../img/bike.svg");
+}
+
+.transport__item--foot {
+  background-image: url("../img/run.svg");
+  margin-right: 0;
+}
+
+.travelers__link {
+  @include other-link;
+  @include show-link-button;
+  width: 223px;
+  margin: 10px auto 0;
 }

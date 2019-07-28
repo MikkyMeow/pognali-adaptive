@@ -92,22 +92,7 @@
 }
 
 .ways__link {
-  @include flex-center;
-  justify-content: space-between;
-  background-color: #ffd74b;
-  min-width: 224px;
-  min-height: 62px;
-  border-radius: 10px;
-  padding: 0 23px;
-
-  &::after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 7px 0 7px 10px;
-    border-color: transparent transparent transparent #1d2e5b;
-  }
+  @include show-link-button;
 }
 
 @media (min-width: 768px) {
