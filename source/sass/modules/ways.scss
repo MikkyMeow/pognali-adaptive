@@ -178,13 +178,7 @@
   }
 
   .ways__link {
-    font-size: 24px;
-    line-height: 24px;
-    min-width: 548px;
-    min-height: 81px;
-    margin-top: 37px;
-    border-radius: 20px;
-    padding: 0 35px;
+    @include show-link-button--tablet;
   }
 }
 

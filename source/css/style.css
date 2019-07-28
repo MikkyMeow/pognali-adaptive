@@ -1452,6 +1452,63 @@ a {
     border-width: 7px 0 7px 10px;
     border-color: transparent transparent transparent #1d2e5b; }
 
+@media (min-width: 768px) {
+  .travelers {
+    padding-top: 141px;
+    padding-bottom: 88px; }
+  .travelers__caption {
+    font-size: 45px;
+    line-height: 45px;
+    margin-left: 73px; }
+  .travelers__description {
+    font-size: 28px;
+    line-height: 33px;
+    margin-left: 75px;
+    margin-top: 57px;
+    width: 63%; }
+  .travelers__description--bold {
+    font-size: 21px;
+    line-height: 25px;
+    margin-left: 75px;
+    margin-top: 39px;
+    width: 59%; }
+  .travelers__persons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 58px; }
+  .travelers__person {
+    width: 285px;
+    border-radius: 20px;
+    padding-bottom: 24px; }
+  .travelers__person--firsova {
+    margin-right: 48px; }
+  .travelers__photo {
+    border-radius: 20px 20px 0 0; }
+  .travelers__name {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 17px; }
+  .travelers__hashtag {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 21px; }
+  .travelers__transport {
+    margin-top: 23px; }
+  .travelers__link {
+    font-size: 24px;
+    line-height: 24px;
+    min-width: 548px;
+    min-height: 81px;
+    margin-top: 37px;
+    border-radius: 20px;
+    padding: 0 35px;
+    margin-top: 70px; } }
+
 .adding {
   background-color: #edeff6; }
 
