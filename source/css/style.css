@@ -1515,7 +1515,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    padding-top: 129px; }
+    padding-top: 129px;
+    padding-bottom: 124px; }
   .travelers__caption {
     margin-left: 129px; }
   .travelers__description {
@@ -1527,9 +1528,20 @@ a {
   .travelers__persons {
     margin-top: 4px;
     margin-right: 60px; }
+  .travelers__person--firsova {
+    margin-right: 60px; }
   .travelers__link {
     position: absolute;
-    bottom: 0; } }
+    bottom: 134px;
+    left: 131px;
+    min-width: auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 33px;
+    padding-right: 24px; }
+    .travelers__link::after {
+      margin-left: 49px; } }
 
 .adding {
   background-color: #edeff6; }

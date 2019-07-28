@@ -173,6 +173,7 @@
     display: flex;
     position: relative;
     padding-top: 129px;
+    padding-bottom: 124px;
   }
 
   .travelers__caption {
@@ -194,8 +195,21 @@
     margin-right: 60px;
   }
 
+  .travelers__person--firsova {
+    margin-right: 60px;
+  }
+
   .travelers__link {
     position: absolute;
-    bottom: 0;
+    bottom: 134px;
+    left: 131px;
+    min-width: auto;
+    justify-content: flex-start;
+    padding-left: 33px;
+    padding-right: 24px;
+
+    &::after {
+      margin-left: 49px;
+    }
   }
 }
