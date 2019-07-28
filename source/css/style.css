@@ -1509,6 +1509,28 @@ a {
     padding: 0 35px;
     margin-top: 70px; } }
 
+@media (min-width: 1440px) {
+  .travelers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding-top: 129px; }
+  .travelers__caption {
+    margin-left: 129px; }
+  .travelers__description {
+    margin-left: 131px;
+    width: 59%; }
+  .travelers__description--bold {
+    margin-left: 131px;
+    width: 55%; }
+  .travelers__persons {
+    margin-top: 4px;
+    margin-right: 60px; }
+  .travelers__link {
+    position: absolute;
+    bottom: 0; } }
+
 .adding {
   background-color: #edeff6; }
 
