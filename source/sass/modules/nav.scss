@@ -9,7 +9,7 @@
 
 .nav__logo {
   @include logo;
-  background-image: url('../img/logo-mobile-blue@1x.png');
+  background-image: url("../img/logo-mobile-blue@1x.png");
 }
 
 .nav__panel {
@@ -35,7 +35,7 @@
 }
 
 .nav__panel--closed .nav__logo {
-  background-image: url('../img/logo-mobile-white@1x.png');
+  background-image: url("../img/logo-mobile-white@1x.png");
 }
 
 .nav__panel--closed .nav__button {
@@ -163,7 +163,7 @@
   }
 
   .nav__logo {
-    background-image: url('../img/logo-tablet-blue@1x.png');
+    background-image: url("../img/logo-tablet-blue@1x.png");
     width: 165px;
     height: 42px;
     margin-top: 18px;
@@ -171,7 +171,7 @@
   }
 
   .nav__panel--closed .nav__logo {
-    background-image: url('../img/logo-tablet-white@1x.png');
+    background-image: url("../img/logo-tablet-white@1x.png");
   }
 
   .nav__panel {
@@ -249,7 +249,7 @@
 
 @media (min-width: 1440px) {
   .nav__logo {
-    background-image: url('../img/logo-desktop-white@1x.png');
+    background-image: url("../img/logo-desktop-white@1x.png");
     width: 199px;
     height: 52px;
     margin-left: 35px;
@@ -261,7 +261,7 @@
   }
 
   .nav__panel--closed .nav__logo {
-    background-image: url('../img/logo-desktop-white@1x.png');
+    background-image: url("../img/logo-desktop-white@1x.png");
   }
 
   .nav__panel {
