@@ -1,5 +1,6 @@
 .adding {
   background-color: #edeff6;
+  padding-top: 52px;
 }
 
 .adding__caption,
@@ -7,16 +8,44 @@
   @include section-header;
 }
 
+.adding__caption {
+  margin-left: 49px;
+  width: 70%;
+  display: flex;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 99px;
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-size: 99px;
+    position: relative;
+    bottom: 15px;
+    left: 26px;
+  }
+}
+
+.adding__advantages {
+  margin-top: 28px;
+}
+
 .adding__advantage {
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+  margin-left: 49px;
+  margin-top: 22px;
 }
 
 .adding__button {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   font-weight: bold;
   color: #192144;
+  background-color: #edeff6;
   border: none;
+  display: block;
+  margin: 40px auto 0;
 }
