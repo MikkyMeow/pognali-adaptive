@@ -419,13 +419,13 @@ a {
 
 .nav__button {
   border: none;
-  text-indent: -9999px;
+  font-size: 0;
   width: 20px;
   height: 20px;
   background-color: transparent;
   background-image: url("../img/menu-close.svg");
   background-repeat: no-repeat;
-  background-position: 50%; }
+  background-position: center; }
 
 .nav__panel--closed {
   background-color: #161c36; }
@@ -549,14 +549,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-indent: -9999px;
+  font-size: 0;
   margin-top: 41px; }
 
 .nav__social-link {
   width: 25px;
   height: 25px;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
   margin-right: 40px;
   margin-right: 24px;
   width: 20px;
@@ -732,7 +732,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center; }
+  text-align: center;
+  padding-top: 21px; }
 
 .header__contact-item {
   display: -webkit-box;
@@ -764,7 +765,6 @@ a {
   background-position: bottom;
   background-repeat: no-repeat;
   min-height: 384px;
-  padding-top: 21px;
   background-size: 190px, 100%; }
 
 .header__contacts {
@@ -785,7 +785,7 @@ a {
   height: 40px;
   border-radius: 50%;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
   background-size: 50%; }
 
 .header__contact-item--phone {
@@ -797,10 +797,10 @@ a {
   background-image: url("../img/topmenu-mail.svg"); }
 
 .header__blockquote {
-  width: 50%;
   color: #ffffff;
   text-align: left;
-  margin-left: 50px; }
+  margin-left: 50px;
+  margin-right: 104px; }
 
 .header__quote {
   margin-top: 7px;
@@ -842,6 +842,9 @@ a {
   position: relative; }
   .header__plan-item::after {
     position: absolute;
+    font-family: "Bloggersans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
     right: 21px;
     top: 27%;
     color: #ffffff; }
@@ -876,18 +879,20 @@ a {
     background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
     background-size: 380px, 227%;
     background-repeat: no-repeat;
-    background-position: 278px, -210px; }
+    background-position: 278px, -210px;
+    padding-top: 7px; }
   .header__caption {
     width: 57%;
     font-size: 60px;
     line-height: 70px;
-    margin: 7px auto 0;
+    margin: 0 auto;
     min-height: 100px;
     background-image: none; }
   .header__contacts {
     display: none; }
   .header__blockquote {
-    margin-left: 74px; }
+    margin-left: 74px;
+    margin-right: 395px; }
   .header__quote {
     font-size: 28px;
     line-height: 33px;
@@ -933,10 +938,11 @@ a {
     top: 0; } }
 
 @media (min-width: 1440px) {
+  .header {
+    padding-top: 62px; }
   .header__caption {
     text-align: left;
     margin-left: 127px;
-    margin-top: 62px;
     width: 30%; }
   .header__block {
     display: -webkit-box;
@@ -972,7 +978,8 @@ a {
   padding-bottom: 81px;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 98% 0; }
+  background-position: 98% 0;
+  padding-top: 12px; }
 
 .about__quote,
 .about__author {
@@ -995,14 +1002,13 @@ a {
   line-height: 24px;
   font-weight: 700;
   color: #ff8d30;
-  margin-left: 49px;
-  padding-top: 12px; }
+  margin-left: 49px; }
 
 .about__description,
 .about__description--bold {
-  margin-left: 49px;
   margin-top: 19px;
-  width: 70%; }
+  margin-left: 49px;
+  margin-right: 18px; }
 
 .about__description {
   font-size: 16px;
@@ -1021,24 +1027,24 @@ a {
   .about {
     background-image: url("../img/about-tablet@1x.png");
     background-position: 98% 143px;
+    padding-top: 137px;
     padding-bottom: 88px; }
   .about__caption {
     font-size: 45px;
     line-height: 45px;
-    margin-left: 74px;
-    padding-top: 137px; }
+    margin-left: 74px; }
   .about__description {
     font-size: 28px;
     line-height: 33px;
     margin-left: 76px;
     margin-top: 40px;
-    width: 39%; }
+    margin-right: 369px; }
   .about__description--bold {
     font-size: 21px;
     line-height: 25px;
     margin-left: 75px;
     margin-top: 31px;
-    width: 39%; }
+    margin-right: 380px; }
   .about__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1075,23 +1081,24 @@ a {
   .about {
     background-image: url("../img/about-desktop@1x.png");
     background-position: 93% 84px;
+    padding-top: 133px;
     padding-bottom: 163px; }
   .about__caption {
-    margin-left: 130px;
-    padding-top: 133px; }
+    margin-left: 130px; }
   .about__description {
     margin-left: 131px;
     margin-top: 58px;
-    width: 44%; }
+    margin-right: 663px; }
   .about__description--bold {
     margin-left: 131px;
     margin-top: 38px;
-    width: 32%; }
+    margin-right: 834px; }
   .about__link {
     margin-left: 131px;
     margin-top: 84px; } }
 
 .ways {
+  position: relative;
   background-color: #edeff6;
   padding-top: 72px;
   padding-bottom: 30px;
@@ -1110,7 +1117,7 @@ a {
   font-weight: 300;
   margin-left: 50px;
   margin-top: 19px;
-  width: 62%; }
+  margin-right: 74px; }
 
 .ways__places {
   padding-top: 60px;
@@ -1123,7 +1130,8 @@ a {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding-bottom: 75px; }
 
 .ways__place {
   min-width: 270px;
@@ -1139,14 +1147,6 @@ a {
 
 .ways__place--3 {
   background-image: url("../img/czech-mobile@1x.jpg"); }
-
-.ways__place:last-child {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-  color: #1d2e5b;
-  background-image: none;
-  min-width: 62px; }
 
 .ways__info {
   border-radius: 10px;
@@ -1185,9 +1185,6 @@ a {
   margin-right: 24px;
   margin-top: 23px; }
 
-.ways__place--4 {
-  padding-top: 13px; }
-
 .ways__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1201,11 +1198,21 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #ffd74b;
+  background-color: #yellow;
   min-width: 224px;
   min-height: 62px;
   border-radius: 10px;
-  padding: 0 23px; }
+  padding: 0 23px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #1d2e5b;
+  background-image: none;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 30px; }
   .ways__link::after {
     content: "";
     width: 0;
@@ -1231,7 +1238,7 @@ a {
     line-height: 33px;
     margin-left: 75px;
     margin-top: 58px;
-    width: 45%; }
+    margin-right: 340px; }
   .ways__places {
     margin-top: 44px; }
   .ways__place {
@@ -1279,7 +1286,7 @@ a {
   .ways__link {
     font-size: 24px;
     line-height: 24px;
-    min-width: 548px;
+    min-width: 618px;
     min-height: 81px;
     margin-top: 37px;
     border-radius: 20px;
@@ -1292,17 +1299,15 @@ a {
     display: flex;
     background-position: 95% 88px;
     position: relative;
-    padding-bottom: 139px; }
+    padding-bottom: 64px; }
   .ways__block {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-top: 94px; }
-  .ways__caption {
-    margin-left: 172px; }
+    margin-top: 94px;
+    margin-left: 98px; }
   .ways__description {
-    margin-left: 172px;
-    width: 48%; }
+    margin-right: 225px; }
   .ways__places {
     margin-top: 29px;
     margin-left: 131px; }
@@ -1317,14 +1322,21 @@ a {
     right: 302px;
     bottom: 107px; }
   .ways__link {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    margin-top: 95px;
+    margin-left: 76px;
+    width: 0;
     min-width: 204px; } }
 
 .travelers {
   background-color: #192144;
   color: #ffffff;
   padding-top: 72px;
-  padding-bottom: 30px;
-  border-radius: 0 0 60px 60px; }
+  padding-bottom: 102px;
+  border-radius: 0 0 60px 60px;
+  position: relative; }
 
 .travelers__caption {
   font-size: 24px;
@@ -1339,7 +1351,7 @@ a {
   font-weight: 300;
   margin-left: 49px;
   margin-top: 19px;
-  width: 69%; }
+  margin-right: 38px; }
 
 .travelers__description--bold {
   font-size: 16px;
@@ -1366,7 +1378,7 @@ a {
   width: 270px;
   border-radius: 10px;
   position: relative;
-  padding-bottom: 18px;
+  padding-bottom: 34px;
   margin-bottom: 10px; }
 
 .travelers__photo {
@@ -1398,23 +1410,23 @@ a {
           justify-content: center;
   margin-top: 16px; }
 
-.transport__item {
+.travelers__item {
   width: 25px;
   height: 25px;
   font-size: 0;
   background-repeat: no-repeat;
   margin-right: 8px; }
 
-.transport__item--plane {
+.travelers__item--plane {
   background-image: url("../img/plane.svg"); }
 
-.transport__item--bus {
+.travelers__item--bus {
   background-image: url("../img/bus.svg"); }
 
-.transport__item--bike {
+.travelers__item--bike {
   background-image: url("../img/bike.svg"); }
 
-.transport__item--foot {
+.travelers__item--foot {
   background-image: url("../img/run.svg");
   margin-right: 0; }
 
@@ -1435,13 +1447,18 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #ffd74b;
+  background-color: #yellow;
   min-width: 224px;
   min-height: 62px;
   border-radius: 10px;
   padding: 0 23px;
   width: 223px;
-  margin: 10px auto 0; }
+  margin: 10px auto 0;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
   .travelers__link::after {
     content: "";
     width: 0;
@@ -1453,7 +1470,7 @@ a {
 @media (min-width: 768px) {
   .travelers {
     padding-top: 141px;
-    padding-bottom: 88px; }
+    padding-bottom: 256px; }
   .travelers__caption {
     font-size: 45px;
     line-height: 45px;
@@ -1463,13 +1480,13 @@ a {
     line-height: 33px;
     margin-left: 75px;
     margin-top: 57px;
-    width: 63%; }
+    margin-right: 208px; }
   .travelers__description--bold {
     font-size: 21px;
     line-height: 25px;
     margin-left: 75px;
     margin-top: 39px;
-    width: 59%; }
+    margin-right: 238px; }
   .travelers__persons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1478,7 +1495,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 58px; }
+    margin-top: 128px; }
   .travelers__person {
     width: 285px;
     border-radius: 20px;
@@ -1500,12 +1517,12 @@ a {
   .travelers__link {
     font-size: 24px;
     line-height: 24px;
-    min-width: 548px;
+    min-width: 618px;
     min-height: 81px;
     margin-top: 37px;
     border-radius: 20px;
     padding: 0 35px;
-    margin-top: 70px; } }
+    bottom: 88px; } }
 
 @media (min-width: 1440px) {
   .travelers {
@@ -1519,19 +1536,17 @@ a {
     margin-left: 129px; }
   .travelers__description {
     margin-left: 131px;
-    width: 59%; }
+    margin-right: 194px; }
   .travelers__description--bold {
     margin-left: 131px;
-    width: 55%; }
+    margin-right: 164px; }
   .travelers__persons {
     margin-top: 4px;
     margin-right: 60px; }
   .travelers__person--firsova {
     margin-right: 60px; }
   .travelers__link {
-    position: absolute;
-    bottom: 134px;
-    left: 131px;
+    position: static;
     min-width: auto;
     -webkit-box-pack: start;
         -ms-flex-pack: start;

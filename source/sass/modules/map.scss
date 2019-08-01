@@ -1,5 +1,5 @@
 .map {
-  background-color: #ffd74b;
+  background-color: $yellow;
 }
 
 .map__address {
@@ -7,15 +7,15 @@
   line-height: 22px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #1d2e5b;
+  color: $purple;
 }
 
 .map__to {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  color: #1d2e5b;
-  border: 3px solid #1d2e5b;
+  color: $purple;
+  border: 3px solid $purple;
   display: block;
   margin: 0 auto;
   text-align: center;

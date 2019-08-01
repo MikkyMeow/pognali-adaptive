@@ -1,9 +1,10 @@
 .travelers {
   background-color: #192144;
-  color: #ffffff;
+  color: $white;
   padding-top: 72px;
-  padding-bottom: 30px;
+  padding-bottom: 102px;
   border-radius: 0 0 60px 60px;
+  position: relative;
 }
 
 .travelers__caption {
@@ -15,7 +16,7 @@
   @include section-description;
   margin-left: 49px;
   margin-top: 19px;
-  width: 69%;
+  margin-right: 38px;
 }
 
 .travelers__description--bold {
@@ -32,11 +33,11 @@
 }
 
 .travelers__person {
-  background: #ffffff;
+  background: $white;
   width: 270px;
   border-radius: 10px;
   position: relative;
-  padding-bottom: 18px;
+  padding-bottom: 34px;
   margin-bottom: 10px;
 }
 
@@ -49,7 +50,7 @@
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  color: #1d2e5b;
+  color: $purple;
   text-align: center;
   margin-top: 10px;
 }
@@ -69,7 +70,7 @@
   margin-top: 16px;
 }
 
-.transport__item {
+.travelers__item {
   width: 25px;
   height: 25px;
   font-size: 0;
@@ -77,19 +78,19 @@
   margin-right: 8px;
 }
 
-.transport__item--plane {
+.travelers__item--plane {
   background-image: url("../img/plane.svg");
 }
 
-.transport__item--bus {
+.travelers__item--bus {
   background-image: url("../img/bus.svg");
 }
 
-.transport__item--bike {
+.travelers__item--bike {
   background-image: url("../img/bike.svg");
 }
 
-.transport__item--foot {
+.travelers__item--foot {
   background-image: url("../img/run.svg");
   margin-right: 0;
 }
@@ -99,12 +100,16 @@
   @include show-link-button;
   width: 223px;
   margin: 10px auto 0;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: 768px) {
   .travelers {
     padding-top: 141px;
-    padding-bottom: 88px;
+    padding-bottom: 256px;
   }
 
   .travelers__caption {
@@ -116,20 +121,20 @@
     @include section-description--tablet;
     margin-left: 75px;
     margin-top: 57px;
-    width: 63%;
+    margin-right: 208px;
   }
 
   .travelers__description--bold {
     @include section-description--bold--desktop;
     margin-left: 75px;
     margin-top: 39px;
-    width: 59%;
+    margin-right: 238px;
   }
 
   .travelers__persons {
     flex-direction: row;
     justify-content: center;
-    margin-top: 58px;
+    margin-top: 128px;
   }
 
   .travelers__person {
@@ -164,7 +169,7 @@
 
   .travelers__link {
     @include show-link-button--tablet;
-    margin-top: 70px;
+    bottom: 88px;
   }
 }
 
@@ -182,12 +187,12 @@
 
   .travelers__description {
     margin-left: 131px;
-    width: 59%;
+    margin-right: 194px;
   }
 
   .travelers__description--bold {
     margin-left: 131px;
-    width: 55%;
+    margin-right: 164px;
   }
 
   .travelers__persons {
@@ -200,9 +205,7 @@
   }
 
   .travelers__link {
-    position: absolute;
-    bottom: 134px;
-    left: 131px;
+    position: static;
     min-width: auto;
     justify-content: flex-start;
     padding-left: 33px;

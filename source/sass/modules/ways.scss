@@ -1,4 +1,5 @@
 .ways {
+  position: relative;
   background-color: #edeff6;
   padding-top: 72px;
   padding-bottom: 30px;
@@ -14,7 +15,7 @@
   @include section-description;
   margin-left: 50px;
   margin-top: 19px;
-  width: 62%;
+  margin-right: 74px;
 }
 
 .ways__places {
@@ -22,6 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 75px;
 }
 
 .ways__place {
@@ -44,9 +46,6 @@
 }
 
 .ways__place:last-child {
-  @include other-link;
-  background-image: none;
-  min-width: 62px;
 }
 
 .ways__info {
@@ -54,7 +53,7 @@
   display: flex;
   justify-content: space-between;
   min-height: 90px;
-  background-color: #ffffff;
+  background-color: $white;
   position: relative;
   bottom: 10px;
 }
@@ -87,12 +86,14 @@
   margin-top: 23px;
 }
 
-.ways__place--4 {
-  padding-top: 13px;
-}
-
 .ways__link {
   @include show-link-button;
+  @include other-link;
+  background-image: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -114,7 +115,7 @@
     @include section-description--tablet;
     margin-left: 75px;
     margin-top: 58px;
-    width: 45%;
+    margin-right: 340px;
   }
 
   .ways__places {
@@ -186,21 +187,17 @@
     display: flex;
     background-position: 95% 88px;
     position: relative;
-    padding-bottom: 139px;
+    padding-bottom: 64px;
   }
 
   .ways__block {
     order: 1;
     margin-top: 94px;
-  }
-
-  .ways__caption {
-    margin-left: 172px;
+    margin-left: 98px;
   }
 
   .ways__description {
-    margin-left: 172px;
-    width: 48%;
+    margin-right: 225px;
   }
 
   .ways__places {
@@ -227,6 +224,11 @@
   }
 
   .ways__link {
+    position: static;
+    transform: none;
+    margin-top: 95px;
+    margin-left: 76px;
+    width: 0;
     min-width: 204px;
   }
 }

@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  padding-top: 21px;
 }
 
 .header__contact-item {
@@ -13,7 +14,7 @@
   color: #161c35;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #ffd74b;
+  background-color: $yellow;
   border-radius: 20px;
   width: 189px;
 }
@@ -26,7 +27,6 @@
   background-position: bottom;
   background-repeat: no-repeat;
   min-height: 384px;
-  padding-top: 21px;
   background-size: 190px, 100%;
 }
 
@@ -45,7 +45,7 @@
   height: 40px;
   border-radius: 50%;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
   background-size: 50%;
 }
 
@@ -60,10 +60,10 @@
 }
 
 .header__blockquote {
-  width: 50%;
-  color: #ffffff;
+  color: $white;
   text-align: left;
   margin-left: 50px;
+  margin-right: 104px;
 }
 
 .header__quote {
@@ -100,9 +100,12 @@
 
   &::after {
     position: absolute;
+    font-family: "Bloggersans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
     right: 21px;
     top: 27%;
-    color: #ffffff;
+    color: $white;
   }
 }
 
@@ -133,7 +136,7 @@
 }
 
 .header__plan-item-4 {
-  background-color: #ffd74b;
+  background-color: $yellow;
   top: -60px;
   min-height: 80px;
   padding-bottom: 0;
@@ -149,13 +152,14 @@
     background-size: 380px, 227%;
     background-repeat: no-repeat;
     background-position: 278px, -210px;
+    padding-top: 7px;
   }
 
   .header__caption {
     width: 57%;
     font-size: 60px;
     line-height: 70px;
-    margin: 7px auto 0;
+    margin: 0 auto;
     min-height: 100px;
     background-image: none;
   }
@@ -166,6 +170,7 @@
 
   .header__blockquote {
     margin-left: 74px;
+    margin-right: 395px;
   }
 
   .header__quote {
@@ -226,10 +231,13 @@
 }
 
 @media (min-width: 1440px) {
+  .header {
+    padding-top: 62px;
+  }
+
   .header__caption {
     text-align: left;
     margin-left: 127px;
-    margin-top: 62px;
     width: 30%;
   }
 

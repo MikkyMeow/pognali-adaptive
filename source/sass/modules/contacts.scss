@@ -1,6 +1,6 @@
 .contacts {
   background-color: #192144;
-  color: #ffffff;
+  color: $white;
   text-align: center;
 }
 
@@ -13,15 +13,15 @@
 }
 
 .contacts__login {
-  color: #ffd74b;
+  color: $yellow;
   text-decoration: underline;
 }
 
 .contacts__submit {
-  background-color: #ffd74b;
+  background-color: $yellow;
 }
 
 .contacts__contact {
   @include contact;
-  color: #ffd74b;
+  color: $yellow;
 }

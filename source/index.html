@@ -90,7 +90,7 @@
       <p class="about__description">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
       </p>
-      <p class="about__description--bold">
+      <p class="about__description about__description--bold">
         А если найдете кого-то близкого по духу – скорее зовите его в совместный трип!
       </p>
       <a class="about__link" href="#">
@@ -105,6 +105,9 @@
         <p class="ways__description">
           Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
+        <a class="ways__link" href="#">
+          Показать все
+        </a>
       </div>
       <ul class="ways__places">
         <li class="ways__place ways__place--1">
@@ -152,11 +155,6 @@
             </span>
           </div>
         </li>
-        <li class="ways__place ways__place--4">
-          <a class="ways__link" href="#">
-            Показать все
-          </a>
-        </li>
       </ul>
     </section>
     <section class="travelers">
@@ -167,9 +165,12 @@
         <p class="travelers__description">
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
         </p>
-        <p class="travelers__description--bold">
+        <p class="travelers__description travelers__description--bold">
           Теперь можно легко найти единомышленников!
         </p>
+        <a class="travelers__link" href="#">
+          Показать всех
+        </a>
       </div>
       <ul class="travelers__persons">
         <li class="travelers__person travelers__person--firsova">
@@ -180,20 +181,17 @@
             <li class="travelers__flag-item"></li>
             <li class="travelers__flag-item"></li>
           </ul>
-          <span class="travelers__online">
-            Статус: Оффлайн
-          </span>
-          <p class="travelers__name">
+          <p class="travelers__name travelers__name--offline">
             Таня Фирсова
           </p>
           <p class="travelers__hashtag">
             #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
           </p>
           <ul class="travelers__transport">
-            <li class="transport__item transport__item--plane">Самолет</li>
-            <li class="transport__item transport__item--bus">Автобус</li>
-            <li class="transport__item transport__item--bike">Велосипед</li>
-            <li class="transport__item transport__item--foot">Ноги</li>
+            <li class="travelers__item travelers__item--plane">Самолет</li>
+            <li class="travelers__item travelers__item--bus">Автобус</li>
+            <li class="travelers__item travelers__item--bike">Велосипед</li>
+            <li class="travelers__item travelers__item--foot">Ноги</li>
           </ul>
         </li>
         <li class="travelers__person travelers__person--demin">
@@ -204,26 +202,20 @@
             <li class="travelers__flag-item"></li>
             <li class="travelers__flag-item"></li>
           </ul>
-          <span class="travelers__online">
-            Статус: Онлайн
-          </span>
-          <p class="travelers__name">
+          <p class="travelers__name travelers__name--online">
             Петя Демин
           </p>
           <p class="travelers__hashtag">
             #бургер #бар #футбол #концерт #крафт
           </p>
           <ul class="travelers__transport">
-            <li class="transport__item transport__item--plane">Самолет</li>
-            <li class="transport__item transport__item--bus">Автобус</li>
-            <li class="transport__item transport__item--bike">Велосипед</li>
-            <li class="transport__item transport__item--foot">Ноги</li>
+            <li class="travelers__item travelers__item--plane">Самолет</li>
+            <li class="travelers__item travelers__item--bus">Автобус</li>
+            <li class="travelers__item travelers__item--bike">Велосипед</li>
+            <li class="travelers__item travelers__item--foot">Ноги</li>
           </ul>
         </li>
       </ul>
-      <a class="travelers__link" href="#">
-        Показать всех
-      </a>
     </section>
     <section class="adding">
       <h2 class="adding__caption">
@@ -257,11 +249,11 @@
       </ol>
       <button class="adding__button">Показать тарифы для бизнеса</button>
       <div class="adding__popup">
-        <h2 class="popup-caption">
+        <h2 class="adding__popup-caption">
           Бизнес-тарифы
         </h2>
-        <ul class="popup__items">
-          <li class="adding__advantage popup__item">
+        <ul class="adding__popup__items">
+          <li class="adding__advantage">
             <p>
               Реклама у блоггера
             </p>
@@ -269,7 +261,7 @@
               300 000 руб./пост
             </p>
           </li>
-          <li class="adding__advantage popup__item">
+          <li class="adding__advantage">
             <p>
               Накрутка подписчиков
             </p>
@@ -277,7 +269,7 @@
               от 1 руб./шт.
             </p>
           </li>
-          <li class="adding__advantage popup__item">
+          <li class="adding__advantage">
             <p>
               Лайки от ботов
             </p>
@@ -285,7 +277,7 @@
               от 20 коп./лайк
             </p>
           </li>
-          <li class="adding__advantage popup__item">
+          <li class="adding__advantage">
             <p>
               Ваш продакт-плейсмент
             </p>
@@ -294,7 +286,7 @@
             </p>
           </li>
         </ul>
-        <button class="adding__button adding-button--popup">Закрыть окно</button>
+        <button class="adding__button adding__button--popup">Закрыть окно</button>
       </div>
     </section>
     <section class="contacts">

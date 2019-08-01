@@ -1,10 +1,11 @@
 .about {
   background-color: #161c35;
-  color: #ffffff;
+  color: $white;
   padding-bottom: 81px;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 98% 0;
+  padding-top: 12px;
 }
 
 .about__quote,
@@ -29,14 +30,14 @@
 .about__caption {
   @include section-header;
   margin-left: 49px;
-  padding-top: 12px;
 }
 
 .about__description,
 .about__description--bold {
-  margin-left: 49px;
   margin-top: 19px;
-  width: 70%;
+  margin-left: 49px;
+  margin-right: 18px;
+
 }
 
 .about__description {
@@ -55,27 +56,27 @@
   .about {
     background-image: url("../img/about-tablet@1x.png");
     background-position: 98% 143px;
+    padding-top: 137px;
     padding-bottom: 88px;
   }
 
   .about__caption {
     @include section-header--tablet;
     margin-left: 74px;
-    padding-top: 137px;
   }
 
   .about__description {
     @include section-description--tablet;
     margin-left: 76px;
     margin-top: 40px;
-    width: 39%;
+    margin-right: 369px;
   }
 
   .about__description--bold {
     @include section-description--bold--desktop;
     margin-left: 75px;
     margin-top: 31px;
-    width: 39%;
+    margin-right: 380px;
   }
 
   .about__link {
@@ -84,11 +85,11 @@
     font-size: 24px;
     line-height: 24px;
     font-weight: 700;
-    color: #1d2e5b;
+    color: $purple;
     width: 204px;
     min-height: 81px;
     padding: 0 35px;
-    background-color: #ffd74b;
+    background-color: $yellow;
     border-radius: 18px;
     margin-top: 51px;
     margin-left: 75px;
@@ -99,7 +100,7 @@
       height: 0;
       border-style: solid;
       border-width: 7px 0 7px 10px;
-      border-color: transparent transparent transparent #1d2e5b;
+      border-color: transparent transparent transparent $purple;
     }
   }
 }
@@ -108,24 +109,24 @@
   .about {
     background-image: url("../img/about-desktop@1x.png");
     background-position: 93% 84px;
+    padding-top: 133px;
     padding-bottom: 163px;
   }
 
   .about__caption {
     margin-left: 130px;
-    padding-top: 133px;
   }
 
   .about__description {
     margin-left: 131px;
     margin-top: 58px;
-    width: 44%;
+    margin-right: 663px;
   }
 
   .about__description--bold {
     margin-left: 131px;
     margin-top: 38px;
-    width: 32%;
+    margin-right: 834px;
   }
 
   .about__link {
