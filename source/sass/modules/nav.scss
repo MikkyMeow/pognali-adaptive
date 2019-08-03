@@ -31,7 +31,7 @@
 }
 
 .nav__panel--closed {
-  background-color: #161c36;
+  background-color: $main-purple;
 }
 
 .nav__panel--closed .nav__logo {
@@ -181,7 +181,7 @@
   .nav__button {
     position: relative;
     left: 48.3%;
-    bottom: 30px;
+    bottom: 32px;
   }
 
   .nav__login--closed,
