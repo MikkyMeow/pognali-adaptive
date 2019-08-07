@@ -1,6 +1,9 @@
 .adding {
   background-color: #edeff6;
   padding-top: 52px;
+  padding-bottom: 37px;
+  border-radius: 0 0 30px 30px;
+  position: relative;
 }
 
 .adding__caption,
@@ -10,6 +13,7 @@
 
 .adding__caption {
   margin-left: 49px;
+  margin-bottom: 16px;
   width: 70%;
   display: flex;
 
@@ -28,7 +32,7 @@
 }
 
 .adding__advantages {
-  margin-top: 28px;
+  margin-bottom: 29px;
 }
 
 .adding__advantage {
@@ -36,7 +40,48 @@
   line-height: 22px;
   color: #444444;
   margin-left: 49px;
-  margin-top: 22px;
+  padding-top: 11px;
+  margin-right: 72px;
+  margin-bottom: 10px;
+  border-top: 1px solid #e1e3e9;
+  position: relative;
+
+  &::after {
+    content: "";
+    font-size: 16px;
+    line-height: 14px;
+    width: 34px;
+    height: 34px;
+    display: block;
+    position: absolute;
+    right: -46px;
+    top: 3px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+  }
+}
+
+.adding__advantage--1::after {
+  content: "1";
+  background-color: #ffa530;
+}
+
+.adding__advantage--2::after {
+  content: "2";
+  background-color: #ffbd30;
+}
+
+.adding__advantage--3 {
+  border-bottom: 1px solid #e1e3e9;
+  padding-bottom: 10px;
+
+  &::after {
+    content: "3";
+    background-color: #ffd74b;
+  }
 }
 
 .adding__button {
@@ -47,5 +92,56 @@
   background-color: #edeff6;
   border: none;
   display: block;
-  margin: 40px auto 0;
+  margin: 0 auto;
+}
+
+.adding__popup {
+  display: none;
+}
+
+.adding__popup--show {
+  display: block;
+  width: 270px;
+  background-color: $white;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding-top: 33px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.adding__popup-caption {
+  @include section-header;
+  text-align: center;
+  margin: 0 auto 29px;
+}
+
+.adding__popup-list {
+  margin-bottom: 26px;
+}
+
+.adding__advantage--popup {
+  margin-left: 25px;
+  margin-right: 27px;
+
+  &:last-child {
+    border-bottom: 1px solid #e1e3e9;
+    padding-bottom: 10px;
+  }
+}
+
+.adding__popup-block {
+  background-color: #f3f4f8;
+  padding: 24px;
+  border-radius: 0 0 15px 15px;
+}
+
+.adding__button--popup {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #f3f4f8;
 }

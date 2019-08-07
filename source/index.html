@@ -7,78 +7,78 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="wrapper">
-    <nav class="nav">
-      <h2 class="nav__visually-hidden">Навигация</h2>
-      <div class="nav__panel">
-        <div class="nav__logo"></div>
-        <button class="nav__button">Открыть меню</button>
+    <section class="header">
+      <h2 class="header__visually-hidden">Навигация</h2>
+      <div class="header__panel">
+        <div class="header__logo"></div>
+        <button class="header__button">Открыть меню</button>
       </div>
-      <a href="#" class="nav__login">
+      <a href="#" class="header__login">
         Авторизация
       </a>
-      <div class="nav__content">
-        <ul class="nav__items">
-          <li class="nav__item"><a class="nav__link" href="#">О сервисе</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Направления</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Попутчики</a></li>
-        </ul>
-        <div class="nav__contacts">
-          <a href="#" class="nav__contact nav__contact--phone">
+      <div class="header__content">
+        <nav class="header__items">
+          <a class="header__item header__link" href="#">О сервисе</a>
+          <a class="header__item header__link" href="#">Направления</a>
+          <a class="header__item header__link" href="#">Попутчики</a>
+        </nav>
+        <div class="header__contacts">
+          <a href="#" class="header__contact header__contact--phone">
             8 800 555-86-28
           </a>
-          <a href="#" class="nav__contact nav__contact--mail">
+          <a href="#" class="header__contact header__contact--mail">
             mail@htmlacademy.ru
           </a>
         </div>
-        <div class="nav__social">
-          <a href="#" class="nav__social-link nav__social-link--facebook">
+        <div class="header__social">
+          <a href="#" class="header__social-link header__social-link--facebook">
             Facebook
           </a>
-          <a href="#" class="nav__social-link nav__social-link--vk">
+          <a href="#" class="header__social-link header__social-link--vk">
             VK
           </a>
-          <a href="#" class="nav__social-link nav__social-link--instagram">
+          <a href="#" class="header__social-link header__social-link--instagram">
             Instagram
           </a>
         </div>
       </div>
-    </nav>
-    <header class="header">
-      <div class="header__block">
-        <h1 class="header__caption">
+    </section>
+    <header class="promo">
+      <div class="promo__block">
+        <h1 class="promo__caption">
           В путешествие с крутыми попутчиками!
         </h1>
-        <ul class="header__contacts">
-          <li class="header__contact-item header__contact-item--phone">
+        <ul class="promo__contacts">
+          <li class="promo__contact-item promo__contact-item--phone">
             8 800 555-86-28
           </li>
-          <li class="header__contact-item header__contact-item--mail">
+          <li class="promo__contact-item promo__contact-item--mail">
             mail@htmlacademy.ru
           </li>
-          <li class="header__contact-item">
+          <li class="promo__contact-item">
             Авторизация
           </li>
         </ul>
-        <blockquote class="header__blockquote">
-          <p class="header__quote">
+        <blockquote class="promo__blockquote">
+          <p class="promo__quote">
           «Лучшее приложение,  что я видел в жизни!»
           </p>
-          <cite class="header__author">
+          <cite class="promo__author">
             Мурат Эльтазин <br>главный редактор газеты «гаджетлайф»
           </cite>
         </blockquote>
       </div>
-      <ol class="header__plan-list">
-        <li class="header__plan-item header__plan-item-1">
+      <ol class="promo__plan-list">
+        <li class="promo__plan-item promo__plan-item-1">
           Выберите направление
         </li>
-        <li class="header__plan-item header__plan-item-2">
+        <li class="promo__plan-item promo__plan-item-2">
           Изучите идеи путешественников
         </li>
-        <li class="header__plan-item header__plan-item-3">
+        <li class="promo__plan-item promo__plan-item-3">
           Находите тех, кто похож на вас
         </li>
-        <li class="header__plan-item header__plan-item-4">
+        <li class="promo__plan-item promo__plan-item-4">
           Путешествуйте вместе!
         </li>
       </ol>
@@ -222,7 +222,7 @@
         Добавьте свой профиль
       </h2>
       <ol class="adding__advantages">
-        <li class="adding__advantage">
+        <li class="adding__advantage adding__advantage--1">
           <p>
             Базовое размещение
           </p>
@@ -230,7 +230,7 @@
             Бесплатно
           </p>
         </li>
-        <li class="adding__advantage">
+        <li class="adding__advantage adding__advantage--2">
           <p>
             Вывод на первых позициях
           </p>
@@ -238,7 +238,7 @@
             99 руб./мес
           </p>
         </li>
-        <li class="adding__advantage">
+        <li class="adding__advantage adding__advantage--3">
           <p>
             Кастомный цвет карточки
           </p>
@@ -252,8 +252,8 @@
         <h2 class="adding__popup-caption">
           Бизнес-тарифы
         </h2>
-        <ul class="adding__popup__items">
-          <li class="adding__advantage">
+        <ul class="adding__popup-list">
+          <li class="adding__advantage adding__advantage--popup">
             <p>
               Реклама у блоггера
             </p>
@@ -261,7 +261,7 @@
               300 000 руб./пост
             </p>
           </li>
-          <li class="adding__advantage">
+          <li class="adding__advantage adding__advantage--popup">
             <p>
               Накрутка подписчиков
             </p>
@@ -269,7 +269,7 @@
               от 1 руб./шт.
             </p>
           </li>
-          <li class="adding__advantage">
+          <li class="adding__advantage adding__advantage--popup">
             <p>
               Лайки от ботов
             </p>
@@ -277,7 +277,7 @@
               от 20 коп./лайк
             </p>
           </li>
-          <li class="adding__advantage">
+          <li class="adding__advantage adding__advantage--popup">
             <p>
               Ваш продакт-плейсмент
             </p>
@@ -286,7 +286,11 @@
             </p>
           </li>
         </ul>
-        <button class="adding__button adding__button--popup">Закрыть окно</button>
+        <div class="adding__popup-block">
+          <button class="adding__button adding__button--popup">
+            Закрыть окно
+          </button>
+        </div>
       </div>
     </section>
     <section class="contacts">

@@ -5,48 +5,25 @@
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 98% 0;
-  padding-top: 12px;
+  padding-top: 33px;
   border-radius: 0 0 30px 30px;
-}
-
-.about__quote,
-.about__author {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 300;
-}
-
-.about__author {
-  font-weight: 700;
-}
-
-.about__plan-item {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #161c35;
-  background-color: yellow; //temporally
+  padding-left: 49px;
 }
 
 .about__caption {
   @include section-header;
-  margin-left: 49px;
-}
-
-.about__description,
-.about__description--bold {
-  margin-top: 19px;
-  margin-left: 49px;
-  margin-right: 18px;
-
+  margin-bottom: 19px;
 }
 
 .about__description {
   @include section-description;
+  margin-right: 14px;
+  margin-bottom: 19px;
 }
 
 .about__description--bold {
   @include section-description--bold;
+  margin-bottom: 0;
 }
 
 .about__link {

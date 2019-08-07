@@ -102,7 +102,7 @@
 @mixin show-link-button {
   @include flex-center;
   justify-content: space-between;
-  background-color: #yellow;
+  background-color: $yellow;
   min-width: 224px;
   min-height: 62px;
   border-radius: 10px;

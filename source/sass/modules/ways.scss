@@ -9,17 +9,17 @@
 .ways__caption {
   @include section-header;
   margin-left: 50px;
+  margin-bottom: 19px;
 }
 
 .ways__description {
   @include section-description;
   margin-left: 50px;
-  margin-top: 19px;
   margin-right: 74px;
+  margin-bottom: 60px;
 }
 
 .ways__places {
-  padding-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
