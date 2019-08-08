@@ -300,19 +300,21 @@
       <p class="contacts__description">
         Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="#" class="contacts__login">авторизуйтесь</a>.
       </p>
-      <form action="echo.htmlacademy.ru" method="get">
+      <form class="contacts__form" action="echo.htmlacademy.ru" method="get">
         <input class="contacts__register" type="email" placeholder="E-mail">
         <input class="contacts__submit" type="submit">
       </form>
-      <p class="section-description">
+      <p class="contacts__description contacts__description--mod">
         Остались вопросы? <br>Мы с радостью на них ответим!
       </p>
-      <a href="tel:+78005558628" class="contact contacts__contact">
-        8 800 555-86-28
-      </a>
-      <a href="mailto:mail@htmlacademy.ru" class="contact contacts__contact">
-        mail@htmlacademy.ru
-      </a>
+      <div class="contacts__contact-block">
+        <a href="tel:+78005558628" class="contacts__contact contacts__contact--phone">
+          8 800 555-86-28
+        </a>
+        <a href="mailto:mail@htmlacademy.ru" class="contacts__contact contacts__contact--mail">
+          mail@htmlacademy.ru
+        </a>
+      </div>
     </section>
     <section class="map">
       <h2 class="map__visually-hidden">

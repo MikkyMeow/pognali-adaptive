@@ -2,14 +2,23 @@
   background-color: #192144;
   color: $white;
   text-align: center;
+  padding-top: 73px;
+  padding-bottom: 28px;
+  border-radius: 0 0 30px 30px;
 }
 
 .contacts__caption {
   @include section-header;
+  margin-bottom: 18px;
 }
 
 .contacts__description {
   @include section-description;
+  margin: 0 59px 29px;
+}
+
+.contacts__description--mod {
+  margin: 0 54px 18px;
 }
 
 .contacts__login {
@@ -17,11 +26,70 @@
   text-decoration: underline;
 }
 
+.contacts__form {
+  position: relative;
+  margin-bottom: 29px;
+}
+
+.contacts__register {
+  width: 270px;
+  height: 62px;
+  border-radius: 10px;
+  border: 0;
+  box-sizing: border-box;
+  padding-left: 25px;
+}
+
 .contacts__submit {
   background-color: $yellow;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  width: 62px;
+  height: 62px;
+  font-size: 0;
+  border-radius: 10px;
+
+  &::after {
+    content: "";
+    border-style: solid;
+    border-width: 7px 0 7px 10px;
+    border-color: transparent transparent transparent #1d2e5b;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
+
+.contacts__contact-block {
+  margin-left: 25px;
 }
 
 .contacts__contact {
   @include contact;
   color: $yellow;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #121936;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    border-radius: 50%;
+    margin-right: 17px;
+  }
+}
+
+.contacts__contact--phone::before {
+  background-image: url("../img/contacts-phone.svg");
+  background-position: 53% 48%;
+}
+
+.contacts__contact--mail::before {
+  background-image: url("../img/contacts-mail.svg");
+  background-position: 53% 50%;
 }
