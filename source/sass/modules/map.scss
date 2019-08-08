@@ -1,24 +1,40 @@
-.map {
+.map__info {
+  padding: 34px 25px 35px;
+  border-radius: 0 0 30px 30px;
   background-color: $yellow;
 }
 
 .map__address {
+  display: flex;
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
   text-transform: uppercase;
   color: $purple;
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #121936;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    border-radius: 50%;
+    margin-right: 17px;
+    background-image: url("../img/contacts-location.svg");
+    background-position: 53% 50%;
+  }
 }
 
 .map__to {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  color: $purple;
+  @include other-link;
+  @include show-link-button;
   border: 3px solid $purple;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+  width: 218px;
+  min-width: 218px;
+  min-height: 56px;
 }
 
 .map__visually-hidden {
