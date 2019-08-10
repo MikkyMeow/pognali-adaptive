@@ -48,3 +48,34 @@
 .footer__academy {
   width: 27px;
 }
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 40px;
+    align-items: normal;
+  }
+
+  .footer__logo {
+    margin-right: 88px;
+    margin-top: 12px;
+  }
+
+  .footer__social {
+    margin-top: 4px;
+  }
+
+  .footer__social-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer__developed {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 100px;
+    margin-top: 21px;
+    min-width: 154px;
+  }
+}
