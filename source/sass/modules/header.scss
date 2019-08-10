@@ -10,6 +10,7 @@
 .header__logo {
   @include logo;
   background-image: url("../img/logo-mobile-blue@1x.png");
+  display: block;
 }
 
 .header__panel {
@@ -277,10 +278,6 @@
     min-height: auto;
     margin: 0;
     margin-left: 260px;
-  }
-
-  .header__content {
-    position: absolute;
   }
 
   .header__items {

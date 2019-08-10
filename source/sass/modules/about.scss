@@ -33,28 +33,30 @@
 @media (min-width: 768px) {
   .about {
     background-image: url("../img/about-tablet@1x.png");
-    background-position: 98% 143px;
-    padding-top: 137px;
+    background-position: 98% 106px;
+    padding-top: 100px;
+    padding-left: 0;
     padding-bottom: 88px;
   }
 
   .about__caption {
     @include section-header--tablet;
     margin-left: 74px;
+    margin-bottom: 40px;
   }
 
   .about__description {
     @include section-description--tablet;
     margin-left: 76px;
-    margin-top: 40px;
     margin-right: 369px;
+    margin-bottom: 31px;
   }
 
   .about__description--bold {
     @include section-description--bold--desktop;
     margin-left: 75px;
-    margin-top: 31px;
     margin-right: 380px;
+    margin-bottom: 51px;
   }
 
   .about__link {
@@ -69,7 +71,6 @@
     padding: 0 35px;
     background-color: $yellow;
     border-radius: 18px;
-    margin-top: 51px;
     margin-left: 75px;
 
     &::after {

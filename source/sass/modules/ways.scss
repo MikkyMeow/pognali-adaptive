@@ -98,7 +98,7 @@
 
 @media (min-width: 768px) {
   .ways {
-    padding-bottom: 48px;
+    padding-bottom: 98px;
     border-radius: 0 0 60px 60px;
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
@@ -109,17 +109,18 @@
     @include section-header--tablet;
     margin-left: 73px;
     margin-top: 1px;
+    margin-bottom: 58px;
   }
 
   .ways__description {
     @include section-description--tablet;
     margin-left: 75px;
-    margin-top: 58px;
     margin-right: 340px;
+    margin-bottom: 104px;
   }
 
   .ways__places {
-    margin-top: 44px;
+    margin-bottom: 25px;
   }
 
   .ways__place {
@@ -179,6 +180,7 @@
 
   .ways__link {
     @include show-link-button--tablet;
+    bottom: 80px;
   }
 }
 
