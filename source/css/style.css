@@ -776,6 +776,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   bottom: 20px;
   z-index: 2; }
 
@@ -800,8 +802,7 @@ a {
 .promo__blockquote {
   color: #ffffff;
   text-align: left;
-  margin-left: 50px;
-  margin-right: 104px; }
+  margin: 0 50px; }
 
 .promo__quote {
   margin-top: 7px;
@@ -996,13 +997,11 @@ a {
 .about {
   background-color: #161c35;
   color: #ffffff;
-  padding-bottom: 81px;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 98% 0;
-  padding-top: 33px;
   border-radius: 0 0 30px 30px;
-  padding-left: 49px; }
+  padding: 33px 49px 81px; }
 
 .about__caption {
   font-size: 24px;
@@ -1015,7 +1014,6 @@ a {
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
-  margin-right: 14px;
   margin-bottom: 19px; }
 
 .about__description--bold {
@@ -2104,7 +2102,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 40px 40px;
+    padding: 40px 40px 0;
     -webkit-box-align: normal;
         -ms-flex-align: normal;
             align-items: normal; }

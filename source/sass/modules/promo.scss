@@ -37,6 +37,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  flex-wrap: wrap;
   bottom: 20px;
   z-index: 2;
 }
@@ -65,8 +66,7 @@
 .promo__blockquote {
   color: $white;
   text-align: left;
-  margin-left: 50px;
-  margin-right: 104px;
+  margin: 0 50px;
 }
 
 .promo__quote {
