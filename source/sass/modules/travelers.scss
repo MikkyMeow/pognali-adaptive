@@ -1,37 +1,217 @@
 .travelers {
   background-color: #192144;
-  color: #ffffff;
+  color: $white;
+  padding-top: 72px;
+  padding-bottom: 102px;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+}
 
-  &__caption {
-    @include section-header;
+.travelers__caption {
+  @include section-header;
+  margin-left: 49px;
+  margin-bottom: 19px;
+}
+
+.travelers__description {
+  @include section-description;
+  margin-left: 49px;
+  margin-right: 38px;
+  margin-bottom: 21px;
+}
+
+.travelers__description--bold {
+  @include section-description--bold;
+  margin-left: 49px;
+  margin-bottom: 56px;
+}
+
+.travelers__persons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.travelers__person {
+  background: $white;
+  width: 270px;
+  border-radius: 10px;
+  position: relative;
+  padding-bottom: 18px;
+  margin-bottom: 10px;
+}
+
+.travelers__photo {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.travelers__name {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $purple;
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 15px;
+}
+
+.travelers__hashtag {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto 16px;
+}
+
+.travelers__transport {
+  display: flex;
+  justify-content: center;
+}
+
+.travelers__item {
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+.travelers__item--plane {
+  background-image: url("../img/plane.svg");
+}
+
+.travelers__item--bus {
+  background-image: url("../img/bus.svg");
+}
+
+.travelers__item--bike {
+  background-image: url("../img/bike.svg");
+}
+
+.travelers__item--foot {
+  background-image: url("../img/run.svg");
+  margin-right: 0;
+}
+
+.travelers__link {
+  @include other-link;
+  @include show-link-button;
+  width: 223px;
+  margin: 10px auto 0;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .travelers {
+    padding-top: 141px;
+    padding-bottom: 239px;
   }
 
-  &__description {
-    @include section-description;
+  .travelers__caption {
+    @include section-header--tablet;
+    margin-left: 73px;
+    margin-bottom: 57px;
+  }
 
-    &--bold {
-      @include section-description--bold;
+  .travelers__description {
+    @include section-description--tablet;
+    margin-left: 75px;
+    margin-right: 208px;
+    margin-bottom: 39px;
+  }
+
+  .travelers__description--bold {
+    @include section-description--bold--desktop;
+    margin-left: 75px;
+    margin-right: 238px;
+    margin-bottom: 58px;
+  }
+
+  .travelers__persons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .travelers__person {
+    width: 285px;
+    border-radius: 20px;
+    padding-bottom: 26px;
+  }
+
+  .travelers__person--firsova {
+    margin-right: 48px;
+  }
+
+  .travelers__photo {
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 5px;
+  }
+
+  .travelers__name {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 21px;
+  }
+
+  .travelers__hashtag {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 23px;
+  }
+
+  .travelers__link {
+    @include show-link-button--tablet;
+    bottom: 88px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .travelers {
+    display: flex;
+    position: relative;
+    padding-top: 129px;
+    padding-bottom: 124px;
+  }
+
+  .travelers__infoblock {
+    padding-left: 56px;
+  }
+
+  .travelers__description {
+    // margin-left: 131px;
+    margin-right: 194px;
+  }
+
+  .travelers__description--bold {
+    // margin-left: 131px;
+    margin-right: 164px;
+    margin-bottom: 83px;
+  }
+
+  .travelers__persons {
+    margin-top: 4px;
+    margin-right: 60px;
+  }
+
+  .travelers__person--firsova {
+    margin-right: 60px;
+  }
+
+  .travelers__link {
+    position: static;
+    min-width: auto;
+    justify-content: flex-start;
+    padding-left: 33px;
+    padding-right: 24px;
+    margin-left: 215px;
+
+    &::after {
+      margin-left: 49px;
     }
-  }
-
-  &__person {
-    background: #ffffff;
-  }
-
-  &__link {
-    @include other-link;
-  }
-
-  &__name {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
-    color: #1d2e5b;
-  }
-
-  &__hashtag {
-    font-size: 16px;
-    line-height: 21px;
-    color: #444444;
   }
 }

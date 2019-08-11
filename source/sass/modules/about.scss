@@ -1,35 +1,113 @@
 .about {
-  background-color: #161c35;
-  color: #ffffff;
+  background-color: #192144;
 
-  &__quote,
-  &__author {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 300;
+  color: $white;
+  background-image: url("../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 98% 0;
+  border-radius: 0 0 30px 30px;
+  padding: 33px 49px 81px;
+}
+
+.about__caption {
+  @include section-header;
+  margin-bottom: 19px;
+}
+
+.about__description {
+  @include section-description;
+  margin-bottom: 19px;
+}
+
+.about__description--bold {
+  @include section-description--bold;
+  margin-bottom: 0;
+}
+
+.about__link {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about {
+    background-image: url("../img/about-tablet@1x.png");
+    background-position: 98% 106px;
+    padding-top: 100px;
+    padding-left: 0;
+    padding-bottom: 88px;
   }
 
-  &__author {
+  .about__caption {
+    @include section-header--tablet;
+    margin-left: 74px;
+    margin-bottom: 40px;
+  }
+
+  .about__description {
+    @include section-description--tablet;
+    margin-left: 76px;
+    margin-right: 369px;
+    margin-bottom: 31px;
+  }
+
+  .about__description--bold {
+    @include section-description--bold--desktop;
+    margin-left: 75px;
+    margin-right: 380px;
+    margin-bottom: 51px;
+  }
+
+  .about__link {
+    @include flex-center;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 24px;
     font-weight: 700;
-  }
+    color: $purple;
+    width: 204px;
+    min-height: 81px;
+    padding: 0 35px;
+    background-color: $yellow;
+    border-radius: 18px;
+    margin-left: 75px;
 
-  &__plan-item {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-    color: #161c35;
-    background-color: yellow; //temporally
-  }
-
-  &__caption {
-    @include section-header;
-  }
-
-  &__description {
-    @include section-description;
-
-    &--bold {
-      @include section-description--bold;
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 0 7px 10px;
+      border-color: transparent transparent transparent $purple;
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: 93% 84px;
+    padding-top: 133px;
+    padding-bottom: 163px;
+  }
+
+  .about__caption {
+    margin-left: 130px;
+    margin-bottom: 58px;
+  }
+
+  .about__description {
+    margin-left: 131px;
+    margin-right: 614px;
+    margin-bottom: 38px;
+  }
+
+  .about__description--bold {
+    margin-left: 131px;
+    margin-right: 834px;
+    margin-bottom: 84px;
+  }
+
+  .about__link {
+    margin-left: 131px;
   }
 }

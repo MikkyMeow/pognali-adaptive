@@ -31,10 +31,20 @@
   color: #ff8d30;
 }
 
+@mixin section-header--tablet {
+  font-size: 45px;
+  line-height: 45px;
+}
+
 @mixin section-description {
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
+}
+
+@mixin section-description--tablet {
+  font-size: 28px;
+  line-height: 33px;
 }
 
 @mixin section-description--bold {
@@ -43,37 +53,78 @@
   font-weight: 700;
 }
 
+@mixin section-description--bold--desktop {
+  font-size: 21px;
+  line-height: 25px;
+}
+
 @mixin other-link {
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
-  color: #1d2e5b;
+  color: $purple;
 }
 
 @mixin social {
   display: flex;
-  text-indent: -9999px;
+  font-size: 0;
 }
 
 @mixin social__link {
   width: 25px;
   height: 25px;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
   margin-right: 40px;
 }
 
 @mixin social__link--facebook {
-  background-image: url('../img/facebook.svg');
+  background-image: url("../img/facebook.svg");
 }
 
 @mixin social__link--vk {
-  background-image: url('../img/vk.svg');
+  background-image: url("../img/vk.svg");
 }
 
 @mixin social__link--instagram {
-  background-image: url('../img/instagram.svg');
+  background-image: url("../img/instagram.svg");
   margin-right: 0;
+}
+
+@mixin visible {
+  position: static;
+  clip: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+@mixin show-link-button {
+  @include flex-center;
+  justify-content: space-between;
+  background-color: $yellow;
+  min-width: 224px;
+  min-height: 62px;
+  border-radius: 10px;
+  padding: 0 23px;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 10px;
+    border-color: transparent transparent transparent $purple;
+  }
+}
+
+@mixin show-link-button--tablet {
+  font-size: 24px;
+  line-height: 24px;
+  min-width: 548px;
+  min-height: 81px;
+  border-radius: 20px;
+  padding: 0 35px;
 }
 
 @mixin visually-hidden {

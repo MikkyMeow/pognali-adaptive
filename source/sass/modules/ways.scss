@@ -1,50 +1,243 @@
 .ways {
+  position: relative;
+  background-color: #edeff6;
+  padding-top: 72px;
+  padding-bottom: 30px;
+  border-radius: 0 0 30px 30px;
+}
 
-  &__caption {
-    @include section-header;
-  }
+.ways__caption {
+  @include section-header;
+  margin-left: 50px;
+  margin-bottom: 19px;
+}
 
-  &__description {
-    @include section-description;
-  }
+.ways__description {
+  @include section-description;
+  margin-left: 50px;
+  margin-right: 74px;
+  margin-bottom: 60px;
+}
 
-  &__place-caption {
-    font-size: 21px;
-    line-height: 21px;
-    font-weight: 700;
-    color: #161c35;
-  }
+.ways__places {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 75px;
+}
 
-  &__place {
-    min-width: 270px;
-    min-height: 190px;
-    background-image: url('../img/thailand-mobile@1x.jpg');
+.ways__place {
+  min-width: 270px;
+  border-radius: 10px 10px 0 0;
+  background-repeat: no-repeat;
+  padding-top: 110px;
+}
+
+.ways__place--1 {
+  background-image: url("../img/thailand-mobile@1x.jpg");
+}
+
+.ways__place--2 {
+  background-image: url("../img/france-mobile@1x.jpg");
+}
+
+.ways__place--3 {
+  background-image: url("../img/czech-mobile@1x.jpg");
+}
+
+.ways__place:last-child {
+}
+
+.ways__info {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 90px;
+  background-color: $white;
+  position: relative;
+  bottom: 10px;
+}
+
+.ways__place-caption {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #161c35;
+  margin-left: 24px;
+  margin-top: 26px;
+}
+
+.ways__place-description,
+.ways__place-views {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.ways__place-description {
+  margin-left: 25px;
+  margin-top: 2px;
+}
+
+.ways__place-views {
+  line-height: 30px;
+  margin-right: 24px;
+  margin-top: 23px;
+}
+
+.ways__link {
+  @include show-link-button;
+  @include other-link;
+  background-image: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .ways {
+    padding-bottom: 98px;
+    border-radius: 0 0 60px 60px;
+    background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
+    background-position: 92% 80px;
   }
 
-  &__place:nth-child(2) {
-    background-image: url('../img/france-mobile@1x.jpg');
+  .ways__caption {
+    @include section-header--tablet;
+    margin-left: 73px;
+    margin-top: 1px;
+    margin-bottom: 58px;
   }
 
-  &__place:nth-child(3) {
-    background-image: url('../img/czech-mobile@1x.jpg');
+  .ways__description {
+    @include section-description--tablet;
+    margin-left: 75px;
+    margin-right: 340px;
+    margin-bottom: 104px;
   }
 
-  &__place:last-child {
-    @include other-link;
-    background-image: none;
-    min-width: 62px;
+  .ways__places {
+    margin-bottom: 25px;
   }
 
-  &__place-description,
-  &__place-views {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-    color: #444444;
+  .ways__place {
+    min-width: 432px;
+    min-height: 140px;
+    padding-top: 0;
+    padding-right: 186px;
+    background-position: right;
+    border-radius: 20px;
+    margin-bottom: 10px;
   }
 
-  &__place-views {
-    line-height: 30px;
+  .ways__info {
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 140px;
+    bottom: 0;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .ways__place-caption {
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 30px;
+    margin-top: 31px;
+  }
+
+  .ways__place-description {
+    font-size: 20px;
+    line-height: 17.68px;
+    margin-left: 30px;
+    margin-top: 6px;
+  }
+
+  .ways__place-views {
+    font-size: 20px;
+    margin-right: 0;
+    margin-left: 60px;
+    margin-top: 16px;
+  }
+
+  .ways__place--1 {
+    background-image: url("../img/thailand-desktop@1x.jpg");
+  }
+
+  .ways__place--2 {
+    background-image: url("../img/france-desktop@1x.jpg");
+  }
+
+  .ways__place--3 {
+    background-image: url("../img/czech-desktop@1x.jpg");
+  }
+
+  .ways__place--4 {
+    padding: 0;
+  }
+
+  .ways__link {
+    @include show-link-button--tablet;
+    bottom: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ways {
+    padding-top: 131px;
+    display: flex;
+    background-position: 95% 88px;
+    position: relative;
+    padding-bottom: 139px;
+  }
+
+  .ways__block {
+    padding-top: 33px;
+    order: 1;
+    padding-left: 98px;
+  }
+
+  .ways__description {
+    margin-right: 225px;
+    margin-bottom: 95px;
+  }
+
+  .ways__places {
+    margin-top: 29px;
+    margin-left: 131px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .ways__place {
+    min-width: 373px;
+
+    &:last-child {
+
+    }
+  }
+
+  .ways__place-caption {
+    margin-top: 24px;
+  }
+
+  .ways__place-views {
+    margin-top: 22px;
+  }
+
+  .ways__place--4 {
+    position: absolute;
+    right: 302px;
+    bottom: 107px;
+  }
+
+  .ways__link {
+    position: static;
+    transform: none;
+    margin-left: 76px;
+    width: 0;
+    min-width: 204px;
   }
 }
