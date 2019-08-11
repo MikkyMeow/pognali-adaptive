@@ -1,5 +1,6 @@
 .about {
-  background-color: #161c35;
+  background-color: #192144;
+
   color: $white;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
@@ -91,22 +92,22 @@
 
   .about__caption {
     margin-left: 130px;
+    margin-bottom: 58px;
   }
 
   .about__description {
     margin-left: 131px;
-    margin-top: 58px;
-    margin-right: 663px;
+    margin-right: 614px;
+    margin-bottom: 38px;
   }
 
   .about__description--bold {
     margin-left: 131px;
-    margin-top: 38px;
     margin-right: 834px;
+    margin-bottom: 84px;
   }
 
   .about__link {
     margin-left: 131px;
-    margin-top: 84px;
   }
 }

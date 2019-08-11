@@ -90,3 +90,31 @@
     height: 461px;
   }
 }
+
+@media (min-width: 1440px) {
+  .map__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 59px 134px 3px 283px;
+  }
+
+  .map__address {
+    margin-top: 27px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+      margin-right: 31px;
+      bottom: 32px;
+    }
+  }
+
+  .map__to {
+    width: 324px;
+    height: 81px;
+  }
+
+  .map__iframe {
+    height: 396px;
+  }
+}

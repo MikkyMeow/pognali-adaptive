@@ -178,18 +178,19 @@
     padding-bottom: 124px;
   }
 
-  .travelers__caption {
-    margin-left: 129px;
+  .travelers__infoblock {
+    padding-left: 56px;
   }
 
   .travelers__description {
-    margin-left: 131px;
+    // margin-left: 131px;
     margin-right: 194px;
   }
 
   .travelers__description--bold {
-    margin-left: 131px;
+    // margin-left: 131px;
     margin-right: 164px;
+    margin-bottom: 83px;
   }
 
   .travelers__persons {
@@ -207,6 +208,7 @@
     justify-content: flex-start;
     padding-left: 33px;
     padding-right: 24px;
+    margin-left: 215px;
 
     &::after {
       margin-left: 49px;

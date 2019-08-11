@@ -79,3 +79,18 @@
     min-width: 154px;
   }
 }
+
+@media (min-width: 1440px) {
+  .footer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .footer__logo {
+    margin-top: 7px;
+  }
+
+  .footer__social {
+    margin-right: 36px;
+  }
+}

@@ -264,3 +264,26 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .adding {
+    padding: 107px 132px 186px;
+
+    &::after {
+      width: 198px;
+      height: 198px;
+      background-size: 198px;
+      bottom: 84px;
+      right: 134px;
+    }
+  }
+
+  .adding__caption {
+    margin-bottom: 133px;
+  }
+
+  .adding__advantages {
+    box-sizing: border-box;
+    padding-right: 240px;
+  }
+}

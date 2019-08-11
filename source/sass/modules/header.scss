@@ -267,6 +267,7 @@
 
   .header__panel {
     background-color: #161c34;
+    padding-bottom: 0;
   }
 
   .header__content--closed,
@@ -311,8 +312,9 @@
   .header__contacts {
     display: flex;
     position: relative;
-    left: 284px;
+    left: 263px;
     bottom: 88px;
+    margin-top: 142px;
   }
 
   .header__contact {
@@ -326,14 +328,18 @@
   }
 
   .header__contact--phone::before {
+    background-image: url("../img/topmenu-phone.svg");
     background-color: #ff8d30;
   }
 
   .header__contact--mail::before {
+    background-image: url("../img/topmenu-mail.svg");
     background-color: #ffbd30;
   }
 
   .header__login {
     z-index: 2;
+    top: 49px;
+    right: 61px;
   }
 }

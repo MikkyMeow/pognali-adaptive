@@ -186,29 +186,37 @@
 
 @media (min-width: 1440px) {
   .ways {
+    padding-top: 131px;
     display: flex;
     background-position: 95% 88px;
     position: relative;
-    padding-bottom: 64px;
+    padding-bottom: 139px;
   }
 
   .ways__block {
+    padding-top: 33px;
     order: 1;
-    margin-top: 94px;
-    margin-left: 98px;
+    padding-left: 98px;
   }
 
   .ways__description {
     margin-right: 225px;
+    margin-bottom: 95px;
   }
 
   .ways__places {
     margin-top: 29px;
     margin-left: 131px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .ways__place {
     min-width: 373px;
+
+    &:last-child {
+
+    }
   }
 
   .ways__place-caption {
@@ -228,7 +236,6 @@
   .ways__link {
     position: static;
     transform: none;
-    margin-top: 95px;
     margin-left: 76px;
     width: 0;
     min-width: 204px;
