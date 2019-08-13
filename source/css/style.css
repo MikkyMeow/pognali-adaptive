@@ -419,7 +419,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 24px; }
+  padding: 24px 0; }
+
+.header--open .header__container {
+  padding-bottom: 38px; }
 
 .header__logo {
   width: 100px;
@@ -431,7 +434,7 @@ html {
 
 .header--open .header__logo {
   background-image: url("../img/logo-mobile-blue@1x.png");
-  margin-bottom: 75px; }
+  margin-bottom: 68px; }
 
 .header__button {
   position: relative;
@@ -439,7 +442,8 @@ html {
   border: none;
   width: 25px;
   height: 25px;
-  margin-left: auto; }
+  margin-left: auto;
+  background-color: inherit; }
 
 .header__button--hidden {
   display: none; }
@@ -453,23 +457,33 @@ html {
   background-color: #cacaca; }
 
 .header__button::before {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
   top: 7px;
   left: 0; }
 
+.header__button::after {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  top: 15px;
+  left: 0; }
+
 .header--open .header__button {
-  margin-bottom: 75px; }
+  margin-bottom: 68px; }
 
 .header--open .header__button::before {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  top: 11px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg); }
 
 .header--open .header__button::after {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  top: 11px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg); }
-
-.header__button::after {
-  top: 15px;
-  left: 0; }
 
 .header__nav {
   display: none; }
@@ -477,7 +491,7 @@ html {
 .header--open .header__nav {
   display: block;
   width: 100%;
-  margin-bottom: 58px; }
+  margin-bottom: 49px; }
 
 .header__nav-item {
   display: block;
@@ -532,7 +546,7 @@ html {
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 50%;
-    margin-right: 18px; }
+    margin-right: 16px; }
 
 .header__contact--phone::before {
   background: #121936 url("../img/contacts-phone.svg") center center no-repeat;
@@ -554,8 +568,7 @@ html {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 42px; }
+          align-items: center; }
 
 .header--open .header__socials {
   display: -webkit-box;

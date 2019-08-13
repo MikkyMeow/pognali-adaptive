@@ -12,7 +12,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 24px;
+  padding: 24px 0;
+}
+
+.header--open .header__container {
+  padding-bottom: 38px;
 }
 
 .header__logo {
@@ -26,7 +30,7 @@
 
 .header--open .header__logo {
   background-image: url("../img/logo-mobile-blue@1x.png");
-  margin-bottom: 75px;
+  margin-bottom: 68px;
 }
 
 .header__button {
@@ -36,6 +40,7 @@
   width: 25px;
   height: 25px;
   margin-left: auto;
+  background-color: inherit;
 }
 
 .header__button--hidden {
@@ -52,34 +57,32 @@
 }
 
 .header__button::before {
+  transition: .5s ease;
   top: 7px;
   left: 0;
 }
 
-.header--open .header__button {
-  margin-bottom: 75px;
-}
-
-.header--open .header__button::before {
-  transform: rotate(45deg);
-}
-
-.header--open .header__button::after {
-  transform: rotate(-45deg);
-}
-
 .header__button::after {
+  transition: .5s ease;
   top: 15px;
   left: 0;
 }
 
-// .header__content {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   padding: 0 25px 38px;
-//   background-color: $white;
-// }
+.header--open .header__button {
+  margin-bottom: 68px;
+}
+
+.header--open .header__button::before {
+  transition: .5s ease;
+  top: 11px;
+  transform: rotate(45deg);
+}
+
+.header--open .header__button::after {
+  transition: .5s ease;
+  top: 11px;
+  transform: rotate(-45deg);
+}
 
 .header__nav {
   display: none;
@@ -88,7 +91,7 @@
 .header--open .header__nav {
   display: block;
   width: 100%;
-  margin-bottom: 58px;
+  margin-bottom: 49px;
 }
 
 .header__nav-item {
@@ -145,10 +148,8 @@
     height: 45px;
     background-repeat: no-repeat;
     background-position: center center;
-    // background-size: 40%;
     border-radius: 50%;
-    // margin-right: 17px;
-    margin-right: 18px;
+    margin-right: 16px;
   }
 }
 
@@ -168,7 +169,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 42px;
 }
 
 .header--open .header__socials {
