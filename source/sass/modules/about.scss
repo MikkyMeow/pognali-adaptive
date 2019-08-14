@@ -1,12 +1,14 @@
 .about {
   background-color: #192144;
-
-  color: $white;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 98% 0;
-  border-radius: 0 0 30px 30px;
-  padding: 33px 49px 81px;
+  background-position: bottom center;
+  margin: 0 49px;
+}
+
+.about__container {
+  padding: 33px 0 58px;
+  color: $white;
 }
 
 .about__caption {
@@ -28,66 +30,67 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .about {
     background-image: url("../img/about-tablet@1x.png");
-    background-position: 98% 106px;
-    padding-top: 100px;
-    padding-left: 0;
-    padding-bottom: 88px;
+    background-position: 98% 112px;
+  }
+
+  .about__containre {
+    padding: 106px 74px 88px;
   }
 
   .about__caption {
     @include section-header--tablet;
-    margin-left: 74px;
     margin-bottom: 40px;
   }
 
   .about__description {
     @include section-description--tablet;
-    margin-left: 76px;
-    margin-right: 369px;
+    margin-right: 318px;
     margin-bottom: 31px;
   }
 
   .about__description--bold {
     @include section-description--bold--desktop;
-    margin-left: 75px;
-    margin-right: 380px;
     margin-bottom: 51px;
   }
 
   .about__link {
-    @include flex-center;
-    justify-content: space-between;
+    display: block;
     font-size: 24px;
     line-height: 24px;
     font-weight: 700;
     color: $purple;
-    width: 204px;
-    min-height: 81px;
-    padding: 0 35px;
+    width: 275px;
     background-color: $yellow;
     border-radius: 18px;
-    margin-left: 75px;
+    padding: 30px 34px 27px;
 
     &::after {
       content: "";
+      display: inline-block;
       width: 0;
       height: 0;
       border-style: solid;
       border-width: 7px 0 7px 10px;
       border-color: transparent transparent transparent $purple;
+      margin-left: 73px;
     }
   }
 }
 
 @media (min-width: 1440px) {
   .about {
+    width: 1440px;
+    margin: 0 auto;
     background-image: url("../img/about-desktop@1x.png");
     background-position: 93% 84px;
-    padding-top: 133px;
-    padding-bottom: 163px;
+    background-repeat: no-repeat;
+  }
+
+  .about__container {
+    padding: 133px 0 163px;
   }
 
   .about__caption {
