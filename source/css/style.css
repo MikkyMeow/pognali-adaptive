@@ -677,6 +677,8 @@ html {
     height: 24px; } }
 
 @media (min-width: 1440px) {
+  .header {
+    background-color: #161c34; }
   .header__container {
     width: 1320px;
     margin: 0 auto;
@@ -756,53 +758,23 @@ html {
 
 .promo {
   background-color: #182044;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-  padding-top: 21px;
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 190px, 100%;
-  background-position: 62% 151px, 0 -164px;
-  min-height: 384px;
-  padding-bottom: 39px; }
+  background-position: 62% 151px, 0 -164px; }
 
-.promo__contact-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 17px;
-  line-height: 30px;
-  color: #161c35;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: #ffd74b;
-  border-radius: 20px;
-  width: 189px; }
+.promo__container {
+  margin: 0 25px;
+  padding: 21px 0 39px; }
 
 .promo__caption {
   font-size: 36px;
   line-height: 40px;
   color: #ffffff;
   font-weight: 700;
-  position: relative;
-  z-index: 1;
-  margin: 0 40px 264px; }
+  text-align: center;
+  margin-bottom: 244px; }
 
 .promo__contacts {
   display: -webkit-box;
@@ -811,11 +783,21 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  bottom: 20px;
-  z-index: 2; }
+  margin-bottom: 27px; }
+
+.promo__contact-item {
+  font-size: 17px;
+  line-height: 20px;
+  color: #161c35;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #ffd74b;
+  border-radius: 20px;
+  width: 189px;
+  padding: 10px 0;
+  text-align: center; }
 
 .promo__contact-item--phone,
 .promo__contact-item--mail {
@@ -838,7 +820,9 @@ html {
 .promo__blockquote {
   color: #ffffff;
   text-align: left;
-  margin: 0 50px; }
+  padding-left: 25px;
+  padding-right: 80px;
+  margin-bottom: 40px; }
 
 .promo__quote {
   margin-top: 7px;
@@ -850,32 +834,13 @@ html {
   line-height: 22px; }
 
 .promo__plan-list {
-  margin: 40px auto 0;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  text-align: left;
   position: relative; }
 
 .promo__plan-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 180px;
-  max-width: 84%;
-  min-height: 60px;
-  padding-left: 24px;
-  padding-right: 65px;
-  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 12px 60px 32px 24px;
   position: relative; }
   .promo__plan-item::before {
     content: "";
@@ -919,10 +884,8 @@ html {
 
 .promo__plan-item-4 {
   background-color: #ffd74b;
-  min-height: 50px;
-  padding-top: 5px;
-  padding-bottom: 15px;
-  border-radius: 0 0 10px 10px; }
+  border-radius: 0 0 10px 10px;
+  padding-bottom: 23px; }
   .promo__plan-item-4::before {
     background-color: #ffd74b; }
   .promo__plan-item-4::after {
@@ -933,18 +896,19 @@ html {
     background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
     background-size: 380px, 160%;
     background-repeat: no-repeat;
-    background-position: 278px, -200px 350px;
-    padding-top: 26px; }
+    background-position: 278px, -200px 350px; }
+  .promo__container {
+    padding: 32px 0;
+    margin: 0 40px; }
   .promo__caption {
-    width: 57%;
     font-size: 60px;
     line-height: 70px;
-    margin: 0 auto 87px;
-    min-height: 100px; }
+    margin: 0 125px 87px; }
   .promo__contacts {
     display: none; }
   .promo__blockquote {
-    margin: 0 395px 181px 74px; }
+    padding: 0 355px 0 34px;
+    margin-bottom: 211px; }
   .promo__quote {
     font-size: 28px;
     line-height: 33px;
@@ -960,19 +924,17 @@ html {
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    margin-right: 15px; }
+            justify-content: center; }
   .promo__plan-item {
-    margin: 0;
-    border-radius: 0;
-    width: 246px;
-    min-height: 91px;
     font-size: 24px;
     line-height: 24px;
-    padding-left: 33px;
-    padding-bottom: 41px;
-    border-radius: 0;
-    position: relative; }
+    position: relative;
+    padding: 31px 75px 61px 33px; }
+    .promo__plan-item::before {
+      width: 15px;
+      height: 100%;
+      top: 0;
+      left: -15px; }
     .promo__plan-item::after {
       font-size: 30px;
       right: 0;
@@ -980,91 +942,36 @@ html {
       top: auto;
       bottom: 28px; }
   .promo__plan-item-1 {
-    left: 15px;
-    width: 261px; }
-    .promo__plan-item-1::before {
-      border-radius: 15px 0 0 0; }
-  .promo__plan-item-3 {
-    border-radius: 0 0 0 15px;
-    left: 15px;
-    width: 261px; }
-    .promo__plan-item-3::before {
-      height: 0; }
-  .promo__plan-item-4 {
-    border-radius: 0 0 15px 15px; }
-    .promo__plan-item-4::before {
-      height: 0; } }
-
-@media (min-width: 1440px) {
-  .promo {
-    padding-top: 109px;
-    padding-bottom: 123px;
-    background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
-    background-size: 430px, 100%;
-    background-position: 605px 11px, 0 -90px; }
-  .promo__caption {
-    text-align: left;
-    margin-left: 127px;
-    width: 30%; }
-  .promo__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 15px; }
-  .promo__blockquote {
-    width: 20%;
-    margin-right: 58px;
-    margin-top: 8px;
-    margin-bottom: 0; }
-  .promo__quote {
-    font-size: 28px;
-    line-height: 33px; }
-  .promo__author {
-    font-size: 21px;
-    line-height: 25px; }
-  .promo__plan-list {
-    margin: 0; }
-  .promo__plan-item {
-    padding: 0;
-    width: 330px;
-    min-height: 107px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding-right: 48px;
-    border-radius: 0; }
-    .promo__plan-item::before {
-      display: block;
-      width: 15px;
-      height: 100%;
-      border-radius: 20px 0 0 20px;
-      top: 0;
-      left: -15px; }
-    .promo__plan-item::after {
-      font-size: 24px;
-      right: 49px;
-      left: auto;
-      top: 32px;
-      bottom: auto; }
-  .promo__plan-item-1 {
-    padding-left: 34px;
-    left: 0;
-    border-radius: 20px 0 0 20px; }
+    width: calc(50% + 15px);
+    border-radius: 15px 0 0 0; }
     .promo__plan-item-1::before {
       display: none; }
   .promo__plan-item-2 {
-    padding-left: 15px;
-    width: 345px; }
+    width: calc(50% - 15px);
+    border-radius: 0 15px 0 0;
+    padding-left: 18px; }
+    .promo__plan-item-2::before {
+      border-radius: 15px 0 0 0; }
+    .promo__plan-item-2::after {
+      left: 18px; }
   .promo__plan-item-3 {
-    left: 0;
-    width: 345px;
-    padding-left: 16px;
-    padding-right: 138px; }
+    width: calc(50% + 15px);
+    border-radius: 0 0 0 15px;
+    padding-top: 31px;
+    padding-bottom: 61px;
+    padding-right: 135px; }
+    .promo__plan-item-3::before {
+      display: none; }
   .promo__plan-item-4 {
-    width: 300px;
-    border-radius: 0 20px 20px 0;
-    padding-left: 15px; }
+    width: calc(50% - 15px);
+    border-radius: 0 0 15px 0;
+    padding-top: 31px;
+    padding-bottom: 61px;
+    padding-left: 18px; }
+    .promo__plan-item-4::before {
+      border-radius: 0 0 0 15px; }
     .promo__plan-item-4::after {
-      right: 33px; } }
+      left: 18px; } }
 
 .about {
   background-color: #192144;

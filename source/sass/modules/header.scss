@@ -316,6 +316,10 @@
 }
 
 @media (min-width: $desktop) {
+  .header {
+    background-color: #161c34;
+  }
+
   .header__container {
     width: 1320px;
     margin: 0 auto;

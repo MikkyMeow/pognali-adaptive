@@ -1,45 +1,41 @@
 .promo {
   background-color: $main-purple;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  padding-top: 21px;
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 190px, 100%;
   background-position: 62% 151px, 0 -164px;
-  min-height: 384px;
-  padding-bottom: 39px;
+}
+
+.promo__container {
+  margin: 0 25px;
+  padding: 21px 0 39px;
+}
+
+.promo__caption {
+  @include header-caption;
+  text-align: center;
+  margin-bottom: 244px;
+}
+
+.promo__contacts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 27px;
 }
 
 .promo__contact-item {
-  @include flex-center;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 20px;
   color: #161c35;
   text-transform: uppercase;
   font-weight: bold;
   background-color: $yellow;
   border-radius: 20px;
   width: 189px;
-}
-
-.promo__caption {
-  @include header-caption;
-  position: relative;
-  z-index: 1;
-  margin: 0 40px 264px;
-}
-
-.promo__contacts {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  flex-wrap: wrap;
-  bottom: 20px;
-  z-index: 2;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .promo__contact-item--phone,
@@ -66,7 +62,9 @@
 .promo__blockquote {
   color: $white;
   text-align: left;
-  margin: 0 50px;
+  padding-left: 25px;
+  padding-right: 80px;
+  margin-bottom: 40px;
 }
 
 .promo__quote {
@@ -81,24 +79,16 @@
 }
 
 .promo__plan-list {
-  margin: 40px auto 0;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  text-align: left;
   position: relative;
 }
 
 .promo__plan-item {
-  @include flex-center;
-  justify-content: flex-start;
-  width: 180px;
-  max-width: 84%;
-  min-height: 60px;
-  padding-left: 24px;
-  padding-right: 65px;
-  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 12px 60px 32px 24px;
   position: relative;
+
 
   &::before {
     content: "";
@@ -162,10 +152,8 @@
 
 .promo__plan-item-4 {
   background-color: $yellow;
-  min-height: 50px;
-  padding-top: 5px;
-  padding-bottom: 15px;
   border-radius: 0 0 10px 10px;
+  padding-bottom: 23px;
 
   &::before {
     background-color: $yellow;
@@ -176,21 +164,23 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .promo {
     background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
     background-size: 380px, 160%;
     background-repeat: no-repeat;
     background-position: 278px, -200px 350px;
-    padding-top: 26px;
+  }
+
+  .promo__container {
+    padding: 32px 0;
+    margin: 0 40px;
   }
 
   .promo__caption {
-    width: 57%;
     font-size: 60px;
     line-height: 70px;
-    margin: 0 auto 87px;
-    min-height: 100px;
+    margin: 0 125px 87px;
   }
 
   .promo__contacts {
@@ -198,7 +188,8 @@
   }
 
   .promo__blockquote {
-    margin: 0 395px 181px 74px;
+    padding: 0 355px 0 34px;
+    margin-bottom: 211px;
   }
 
   .promo__quote {
@@ -216,20 +207,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: 15px;
   }
 
   .promo__plan-item {
-    margin: 0;
-    border-radius: 0;
-    width: 246px;
-    min-height: 91px;
     font-size: 24px;
     line-height: 24px;
-    padding-left: 33px;
-    padding-bottom: 41px;
-    border-radius: 0;
     position: relative;
+    padding: 31px 75px 61px 33px;
+
+    &::before {
+      width: 15px;
+      height: 100%;
+      top: 0;
+      left: -15px;
+    }
 
     &::after {
       font-size: 30px;
@@ -241,104 +232,8 @@
   }
 
   .promo__plan-item-1 {
-    left: 15px;
-    width: 261px;
-
-    &::before {
-      border-radius: 15px 0 0 0;
-    }
-  }
-
-  .promo__plan-item-3 {
-    border-radius: 0 0 0 15px;
-    left: 15px;
-    width: 261px;
-
-    &::before {
-      height: 0;
-    }
-  }
-
-  .promo__plan-item-4 {
-    border-radius: 0 0 15px 15px;
-
-    &::before {
-      height: 0;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .promo {
-    padding-top: 109px;
-    padding-bottom: 123px;
-    background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
-    background-size: 430px, 100%;
-    background-position: 605px 11px, 0 -90px;
-  }
-
-  .promo__caption {
-    text-align: left;
-    margin-left: 127px;
-    width: 30%;
-  }
-
-  .promo__block {
-    display: flex;
-    margin-bottom: 15px;
-  }
-
-  .promo__blockquote {
-    width: 20%;
-    margin-right: 58px;
-    margin-top: 8px;
-    margin-bottom: 0;
-  }
-
-  .promo__quote {
-    font-size: 28px;
-    line-height: 33px;
-  }
-
-  .promo__author {
-    font-size: 21px;
-    line-height: 25px;
-  }
-
-  .promo__plan-list {
-    margin: 0;
-  }
-
-  .promo__plan-item {
-    padding: 0;
-    width: 330px;
-    min-height: 107px;
-    box-sizing: border-box;
-    padding-right: 48px;
-    border-radius: 0;
-
-    &::before {
-      display: block;
-      width: 15px;
-      height: 100%;
-      border-radius: 20px 0 0 20px;
-      top: 0;
-      left: -15px;
-    }
-
-    &::after {
-      font-size: 24px;
-      right: 49px;
-      left: auto;
-      top: 32px;
-      bottom: auto;
-    }
-  }
-
-  .promo__plan-item-1 {
-    padding-left: 34px;
-    left: 0;
-    border-radius: 20px 0 0 20px;
+    width: calc(50% + 15px);
+    border-radius: 15px 0 0 0;
 
     &::before {
       display: none;
@@ -346,25 +241,145 @@
   }
 
   .promo__plan-item-2 {
-    padding-left: 15px;
-    width: 345px;
-  }
+    width: calc(50% - 15px);
+    border-radius: 0 15px 0 0;
+    padding-left: 18px;
 
-  .promo__plan-item-3 {
-    left: 0;
-    width: 345px;
-    padding-left: 16px;
-    padding-right: 138px;
-  }
-
-  .promo__plan-item-4 {
-    width: 300px;
-    border-radius: 0 20px 20px 0;
-    padding-left: 15px;
+    &::before {
+      border-radius: 15px 0 0 0;
+    }
 
     &::after {
-      right: 33px;
+      left: 18px;
     }
   }
 
+  .promo__plan-item-3 {
+    width: calc(50% + 15px);
+    border-radius: 0 0 0 15px;
+    padding-top: 31px;
+    padding-bottom: 61px;
+    padding-right: 135px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .promo__plan-item-4 {
+    width: calc(50% - 15px);
+    border-radius: 0 0 15px 0;
+    padding-top: 31px;
+    padding-bottom: 61px;
+    padding-left: 18px;
+
+    &::before {
+      border-radius: 0 0 0 15px;
+    }
+
+    &::after {
+      left: 18px;
+    }
+  }
 }
+
+// @media (min-width: 1440px) {
+//   .promo {
+//     padding-top: 109px;
+//     padding-bottom: 123px;
+//     background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
+//     background-size: 430px, 100%;
+//     background-position: 605px 11px, 0 -90px;
+//   }
+
+//   .promo__caption {
+//     text-align: left;
+//     margin-left: 127px;
+//     width: 30%;
+//   }
+
+//   .promo__block {
+//     display: flex;
+//     margin-bottom: 15px;
+//   }
+
+//   .promo__blockquote {
+//     width: 20%;
+//     margin-right: 58px;
+//     margin-top: 8px;
+//     margin-bottom: 0;
+//   }
+
+//   .promo__quote {
+//     font-size: 28px;
+//     line-height: 33px;
+//   }
+
+//   .promo__author {
+//     font-size: 21px;
+//     line-height: 25px;
+//   }
+
+//   .promo__plan-list {
+//     margin: 0;
+//   }
+
+//   .promo__plan-item {
+//     padding: 0;
+//     width: 330px;
+//     min-height: 107px;
+//     box-sizing: border-box;
+//     padding-right: 48px;
+//     border-radius: 0;
+
+//     &::before {
+//       display: block;
+//       width: 15px;
+//       height: 100%;
+//       border-radius: 20px 0 0 20px;
+//       top: 0;
+//       left: -15px;
+//     }
+
+//     &::after {
+//       font-size: 24px;
+//       right: 49px;
+//       left: auto;
+//       top: 32px;
+//       bottom: auto;
+//     }
+//   }
+
+//   .promo__plan-item-1 {
+//     padding-left: 34px;
+//     left: 0;
+//     border-radius: 20px 0 0 20px;
+
+//     &::before {
+//       display: none;
+//     }
+//   }
+
+//   .promo__plan-item-2 {
+//     padding-left: 15px;
+//     width: 345px;
+//   }
+
+//   .promo__plan-item-3 {
+//     left: 0;
+//     width: 345px;
+//     padding-left: 16px;
+//     padding-right: 138px;
+//   }
+
+//   .promo__plan-item-4 {
+//     width: 300px;
+//     border-radius: 0 20px 20px 0;
+//     padding-left: 15px;
+
+//     &::after {
+//       right: 33px;
+//     }
+//   }
+
+// }
