@@ -397,9 +397,10 @@ html {
   width: 100%;
   overflow-x: hidden;
   font-family: "Bloggersans", "Arial", sans-serif;
-  background-color: #161c34; }
+  background-color: #182044; }
 
 .header {
+  background-color: #161c36;
   width: 100%; }
 
 .header--open {
@@ -598,8 +599,20 @@ html {
   height: 18px; }
 
 @media (min-width: 768px) {
+  .header {
+    background-color: #182044; }
+  .header--open {
+    background-color: #ffffff; }
   .header__container {
-    margin: 0 40px; }
+    margin: 0 40px;
+    padding: 40px 0; }
+  .header--open .header__container {
+    background-color: #ffffff;
+    padding-bottom: 89px; }
+  .header__button {
+    position: relative;
+    left: 12px;
+    top: 1px; }
   .header__logo {
     width: 166px;
     height: 42px;
@@ -608,9 +621,8 @@ html {
         -ms-flex-order: -3;
             order: -3; }
   .header--open .header__logo {
-    background-image: url("../img/logo-tablet-blue@1x.png"); }
-  .header--open .header__logo {
-    margin-bottom: 102px; }
+    background-image: url("../img/logo-tablet-blue@1x.png");
+    margin-bottom: 93px; }
   .header__button {
     -webkit-box-ordinal-group: -1;
         -ms-flex-order: -2;
@@ -618,7 +630,10 @@ html {
     margin-right: auto;
     vertical-align: initial; }
   .header--open .header__button {
-    margin-bottom: 102px; }
+    margin-bottom: 93px; }
+  .header--open .header__nav {
+    margin-left: 58px;
+    margin-bottom: 133px; }
   .header__login {
     display: block;
     width: 190px;
@@ -627,26 +642,55 @@ html {
             order: -1;
     margin: 0; }
   .header--open .header__login {
-    margin-bottom: 102px; }
+    margin-bottom: 93px; }
   .header__nav-item {
-    text-align: left; }
+    text-align: left;
+    font-size: 60px;
+    line-height: 71.01px; }
+  .header--open .header__contacts {
+    margin-left: 57px;
+    margin-bottom: 126px; }
+  .header--open .header__contact {
+    font-size: 28px;
+    line-height: 28px; }
+    .header--open .header__contact::before {
+      width: 68px;
+      height: 68px;
+      margin-right: 23px;
+      position: relative;
+      bottom: 4px; }
   .header__socials {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start; } }
+            justify-content: flex-start;
+    margin-left: 64px; }
+  .header__social-link {
+    margin: 0 18px; }
+  .header__social-link--facebook {
+    width: 15px;
+    height: 30px; }
+  .header__social-link--vk {
+    width: 30px;
+    height: 20px; }
+  .header__social-link--instagram {
+    width: 24px;
+    height: 24px; } }
 
 @media (min-width: 1440px) {
   .header__container {
     width: 1320px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 49px 0; }
   .header--open {
     background: inherit; }
   .header--open .header__logo,
   .header__logo {
-    width: 166px;
-    height: 42px;
-    background-image: url("../img/logo-tablet-white@1x.png");
-    margin-bottom: 0; }
+    width: 200px;
+    height: 52px;
+    background-image: url("../img/logo-desktop-white@1x.png");
+    margin-bottom: 0;
+    position: relative;
+    bottom: 2px; }
   .header__button {
     display: none; }
   .header--open .header__nav,
@@ -655,9 +699,23 @@ html {
     display: -ms-flexbox;
     display: flex;
     width: auto;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 4px;
+    margin-left: 85px; }
+  .header--open .header__nav::before,
+  .header__nav::before {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #ffffff;
+    position: relative;
+    top: 12px;
+    right: 45px; }
   .header__nav-item {
-    color: #ffffff; }
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 38px; }
   .header--open .header__contacts,
   .header__contacts {
     display: -webkit-box;
@@ -667,19 +725,31 @@ html {
     margin-left: auto; }
   .header__contact {
     font-size: 0;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     -ms-flex-negative: 0;
         flex-shrink: 0; }
   .header__contact::before {
+    width: 50px;
+    height: 50px;
     background: gold;
-    margin: 0; }
+    margin: 0;
+    background-size: 38%;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .header__contact--phone::before {
+    background-image: url("../img/topmenu-phone.svg");
+    background-color: #ff8d30; }
+  .header__contact--mail::before {
+    background-image: url("../img/topmenu-mail.svg");
+    background-color: #ffbd30; }
   .header--open .header__login,
   .header__login {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 20px; }
   .header--open .header__socials,
   .header__socials {
     display: none; } }
