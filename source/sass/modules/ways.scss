@@ -1,22 +1,28 @@
 .ways {
   position: relative;
+  bottom: 30px;
+  z-index: -1;
   background-color: #edeff6;
-  padding-top: 72px;
-  padding-bottom: 30px;
+  padding: 0 25px;
   border-radius: 0 0 30px 30px;
+}
+
+.ways__container {
+  padding-top: 102px;
+  padding-bottom: 30px;
 }
 
 .ways__caption {
   @include section-header;
-  margin-left: 50px;
+  margin-left: 24px;
   margin-bottom: 19px;
 }
 
 .ways__description {
   @include section-description;
-  margin-left: 50px;
-  margin-right: 74px;
+  margin-right: 44px;
   margin-bottom: 60px;
+  margin-left: 25px;
 }
 
 .ways__places {
@@ -27,25 +33,15 @@
 }
 
 .ways__place {
-  min-width: 270px;
+  width: 100%;
   border-radius: 10px 10px 0 0;
   background-repeat: no-repeat;
-  padding-top: 110px;
+  background-size: 100%;
 }
 
-.ways__place--1 {
-  background-image: url("../img/thailand-mobile@1x.jpg");
-}
-
-.ways__place--2 {
-  background-image: url("../img/france-mobile@1x.jpg");
-}
-
-.ways__place--3 {
-  background-image: url("../img/czech-mobile@1x.jpg");
-}
-
-.ways__place:last-child {
+.ways__image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .ways__info {
@@ -87,22 +83,40 @@
 }
 
 .ways__link {
-  @include show-link-button;
-  @include other-link;
-  background-image: none;
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $purple;
+  background-color: $yellow;
+  width: calc(100% - 50px);
+  border-radius: 10px;
+  padding: 23px 23px 21px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: 30px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 10px;
+    border-color: transparent transparent transparent $purple;
+    margin-left: 103px;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .ways {
     padding-bottom: 98px;
     border-radius: 0 0 60px 60px;
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: 92% 80px;
+    bottom: 60px;
   }
 
   .ways__caption {

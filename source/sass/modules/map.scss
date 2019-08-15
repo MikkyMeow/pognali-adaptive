@@ -33,8 +33,28 @@
 }
 
 .map__to {
-  @include other-link;
-  @include show-link-button;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $purple;
+  background-color: $yellow;
+  border-radius: 10px;
+  padding: 0 23px;
+  // background-image: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 10px;
+    border-color: transparent transparent transparent $purple;
+  }
+
   border: 3px solid $purple;
   width: 218px;
   min-width: 218px;
