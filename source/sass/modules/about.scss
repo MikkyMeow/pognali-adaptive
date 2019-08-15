@@ -36,10 +36,11 @@
     background-image: url("../img/about-tablet@1x.png");
     background-position: 98% 112px;
     border-radius: 0 0 60px 60px;
+    padding: 0 74px;
   }
 
-  .about__containre {
-    padding: 106px 74px 88px;
+  .about__container {
+    padding: 106px 0 88px;
   }
 
   .about__caption {
@@ -99,23 +100,23 @@
   }
 
   .about__caption {
-    margin-left: 130px;
+    margin-left: 70px;
     margin-bottom: 58px;
   }
 
   .about__description {
-    margin-left: 131px;
+    margin-left: 71px;
     margin-right: 614px;
     margin-bottom: 38px;
   }
 
   .about__description--bold {
-    margin-left: 131px;
+    margin-left: 71px;
     margin-right: 834px;
     margin-bottom: 84px;
   }
 
   .about__link {
-    margin-left: 131px;
+    margin-left: 71px;
   }
 }
