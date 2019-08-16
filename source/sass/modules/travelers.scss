@@ -1,29 +1,31 @@
 .travelers {
   background-color: #192144;
-  color: $white;
-  padding-top: 72px;
-  padding-bottom: 102px;
   border-radius: 0 0 30px 30px;
   position: relative;
+  margin: 0 25px;
+}
+
+.travelers__container {
+  padding: 42px 0 102px;
+  color: $white;
 }
 
 .travelers__caption {
   @include section-header;
-  margin-left: 49px;
   margin-bottom: 19px;
+  padding: 0 24px;
 }
 
 .travelers__description {
   @include section-description;
-  margin-left: 49px;
-  margin-right: 38px;
   margin-bottom: 21px;
+  padding: 0 24px;
 }
 
 .travelers__description--bold {
   @include section-description--bold;
-  margin-left: 49px;
   margin-bottom: 56px;
+  padding: 0 24px;
 }
 
 .travelers__persons {
@@ -34,7 +36,7 @@
 
 .travelers__person {
   background: $white;
-  width: 270px;
+  width: 100%;
   border-radius: 10px;
   position: relative;
   padding-bottom: 18px;
@@ -96,14 +98,15 @@
 }
 
 .travelers__link {
+  display: block;
   font-size: 18px;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: $purple;
   background-color: $yellow;
+  width: 100%;
   border-radius: 10px;
-  padding: 0 23px;
-  // background-image: none;
+  padding: 23px 23px 21px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -111,19 +114,14 @@
 
   &::after {
     content: "";
+    display: inline-block;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 7px 0 7px 10px;
     border-color: transparent transparent transparent $purple;
+    margin-left: 44%;
   }
-
-  width: 223px;
-  margin: 10px auto 0;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 @media (min-width: 768px) {
@@ -185,12 +183,20 @@
   }
 
   .travelers__link {
-    @include show-link-button--tablet;
-    bottom: 88px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+    bottom: 80px;
+    padding: 31px 33px 25px;
+
+    &::after {
+      margin-left: 72%;
+    }
   }
 }
 
 @media (min-width: 1440px) {
+
   .travelers {
     display: flex;
     position: relative;
@@ -224,14 +230,12 @@
 
   .travelers__link {
     position: static;
-    min-width: auto;
-    justify-content: flex-start;
-    padding-left: 33px;
-    padding-right: 24px;
-    margin-left: 215px;
+    transform: none;
+    width: 276px;
+    padding: 30px 35px 27px;
 
     &::after {
-      margin-left: 49px;
+      margin-left: 27%;
     }
   }
 }

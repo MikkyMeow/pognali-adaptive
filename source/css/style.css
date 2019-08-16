@@ -1392,34 +1392,35 @@ html {
 
 .travelers {
   background-color: #192144;
-  color: #ffffff;
-  padding-top: 72px;
-  padding-bottom: 102px;
   border-radius: 0 0 30px 30px;
-  position: relative; }
+  position: relative;
+  margin: 0 25px; }
+
+.travelers__container {
+  padding: 42px 0 102px;
+  color: #ffffff; }
 
 .travelers__caption {
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
   color: #ff8d30;
-  margin-left: 49px;
-  margin-bottom: 19px; }
+  margin-bottom: 19px;
+  padding: 0 24px; }
 
 .travelers__description {
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
-  margin-left: 49px;
-  margin-right: 38px;
-  margin-bottom: 21px; }
+  margin-bottom: 21px;
+  padding: 0 24px; }
 
 .travelers__description--bold {
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
-  margin-left: 49px;
-  margin-bottom: 56px; }
+  margin-bottom: 56px;
+  padding: 0 24px; }
 
 .travelers__persons {
   display: -webkit-box;
@@ -1435,7 +1436,7 @@ html {
 
 .travelers__person {
   background: #ffffff;
-  width: 270px;
+  width: 100%;
   border-radius: 10px;
   position: relative;
   padding-bottom: 18px;
@@ -1491,31 +1492,29 @@ html {
   margin-right: 0; }
 
 .travelers__link {
+  display: block;
   font-size: 18px;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: #1d2e5b;
   background-color: #ffd74b;
+  width: 100%;
   border-radius: 10px;
-  padding: 0 23px;
+  padding: 23px 23px 21px;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 30px;
-  width: 223px;
-  margin: 10px auto 0;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%); }
+  bottom: 30px; }
   .travelers__link::after {
     content: "";
+    display: inline-block;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 7px 0 7px 10px;
-    border-color: transparent transparent transparent #1d2e5b; }
+    border-color: transparent transparent transparent #1d2e5b;
+    margin-left: 44%; }
 
 @media (min-width: 768px) {
   .travelers {
@@ -1566,11 +1565,11 @@ html {
   .travelers__link {
     font-size: 24px;
     line-height: 24px;
-    min-width: 548px;
-    min-height: 81px;
     border-radius: 20px;
-    padding: 0 35px;
-    bottom: 88px; } }
+    bottom: 80px;
+    padding: 31px 33px 25px; }
+    .travelers__link::after {
+      margin-left: 72%; } }
 
 @media (min-width: 1440px) {
   .travelers {
@@ -1594,15 +1593,12 @@ html {
     margin-right: 60px; }
   .travelers__link {
     position: static;
-    min-width: auto;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding-left: 33px;
-    padding-right: 24px;
-    margin-left: 215px; }
+    -webkit-transform: none;
+            transform: none;
+    width: 276px;
+    padding: 30px 35px 27px; }
     .travelers__link::after {
-      margin-left: 49px; } }
+      margin-left: 27%; } }
 
 .adding {
   background-color: #e8eaf2;
