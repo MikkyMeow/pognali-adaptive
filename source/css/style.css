@@ -1575,32 +1575,36 @@ html {
 
 @media (min-width: 1440px) {
   .travelers {
+    position: relative;
+    margin: 0 60px; }
+  .travelers__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
-    padding-top: 129px;
+    padding-top: 69px;
     padding-bottom: 124px; }
   .travelers__infoblock {
-    padding-left: 56px; }
+    width: 52.2727272727%;
+    padding-left: 69px; }
   .travelers__description {
     margin-right: 194px; }
   .travelers__description--bold {
-    margin-right: 164px;
+    margin-right: 166px;
     margin-bottom: 83px; }
   .travelers__persons {
-    margin-top: 4px;
-    margin-right: 60px; }
+    width: 47.7272727273%;
+    margin-top: 4px; }
   .travelers__person--firsova {
     margin-right: 60px; }
   .travelers__link {
     position: static;
     -webkit-transform: none;
             transform: none;
-    width: 276px;
-    padding: 30px 35px 27px; }
+    width: 280px;
+    padding: 30px 33px 27px;
+    margin-left: 2px; }
     .travelers__link::after {
-      margin-left: 27%; } }
+      margin-left: 23%; } }
 
 .adding {
   background-color: #e8eaf2;
