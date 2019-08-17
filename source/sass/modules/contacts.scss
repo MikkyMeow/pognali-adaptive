@@ -2,9 +2,24 @@
   background-color: #192144;
   color: $white;
   text-align: center;
+  padding: 0 25px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    background-color: inherit;
+    border-radius: 0 0 30px 30px;
+    bottom: -28px;
+    left: 0;
+  }
+}
+
+.contacts__container {
   padding-top: 73px;
-  padding-bottom: 28px;
-  border-radius: 0 0 30px 30px;
 }
 
 .contacts__caption {
@@ -14,11 +29,11 @@
 
 .contacts__description {
   @include section-description;
-  margin: 0 59px 29px;
+  margin: 0 34px 29px;
 }
 
 .contacts__description--mod {
-  margin: 0 54px 18px;
+  margin: 0 0 18px;
 }
 
 .contacts__login {
@@ -32,7 +47,7 @@
 }
 
 .contacts__register {
-  width: 270px;
+  width: 100%;
   height: 62px;
   border-radius: 10px;
   border: 0;
@@ -44,25 +59,11 @@
   background-color: $yellow;
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 0;
   width: 62px;
   height: 62px;
   font-size: 0;
   border-radius: 10px;
-
-  &::after {
-    content: "";
-    border-style: solid;
-    border-width: 7px 0 7px 10px;
-    border-color: transparent transparent transparent #1d2e5b;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-  }
-}
-
-.contacts__contact-block {
-  margin-left: 25px;
 }
 
 .contacts__contact {
