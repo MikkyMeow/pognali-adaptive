@@ -124,29 +124,33 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .travelers {
-    padding-top: 141px;
+    margin: 0 75px;
+  }
+
+  .travelers__container {
+    padding-top: 82px;
     padding-bottom: 239px;
   }
 
   .travelers__caption {
     @include section-header--tablet;
-    margin-left: 73px;
+    padding: 0;
     margin-bottom: 57px;
   }
 
   .travelers__description {
     @include section-description--tablet;
-    margin-left: 75px;
-    margin-right: 208px;
+    padding: 0;
+    margin-right: 133px;
     margin-bottom: 39px;
   }
 
   .travelers__description--bold {
     @include section-description--bold--desktop;
-    margin-left: 75px;
-    margin-right: 238px;
+    padding: 0;
+    margin-right: 163px;
     margin-bottom: 58px;
   }
 
@@ -156,7 +160,7 @@
   }
 
   .travelers__person {
-    width: 285px;
+    width: 46.1165048544%;
     border-radius: 20px;
     padding-bottom: 26px;
   }
@@ -186,11 +190,11 @@
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px;
-    bottom: 80px;
-    padding: 31px 33px 25px;
+    bottom: 88px;
+    padding: 32px 33px 25px;
 
     &::after {
-      margin-left: 72%;
+      margin-left: 70%;
     }
   }
 }

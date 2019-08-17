@@ -1518,24 +1518,26 @@ html {
 
 @media (min-width: 768px) {
   .travelers {
-    padding-top: 141px;
+    margin: 0 75px; }
+  .travelers__container {
+    padding-top: 82px;
     padding-bottom: 239px; }
   .travelers__caption {
     font-size: 45px;
     line-height: 45px;
-    margin-left: 73px;
+    padding: 0;
     margin-bottom: 57px; }
   .travelers__description {
     font-size: 28px;
     line-height: 33px;
-    margin-left: 75px;
-    margin-right: 208px;
+    padding: 0;
+    margin-right: 133px;
     margin-bottom: 39px; }
   .travelers__description--bold {
     font-size: 21px;
     line-height: 25px;
-    margin-left: 75px;
-    margin-right: 238px;
+    padding: 0;
+    margin-right: 163px;
     margin-bottom: 58px; }
   .travelers__persons {
     -webkit-box-orient: horizontal;
@@ -1546,7 +1548,7 @@ html {
         -ms-flex-pack: center;
             justify-content: center; }
   .travelers__person {
-    width: 285px;
+    width: 46.1165048544%;
     border-radius: 20px;
     padding-bottom: 26px; }
   .travelers__person--firsova {
@@ -1566,10 +1568,10 @@ html {
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px;
-    bottom: 80px;
-    padding: 31px 33px 25px; }
+    bottom: 88px;
+    padding: 32px 33px 25px; }
     .travelers__link::after {
-      margin-left: 72%; } }
+      margin-left: 70%; } }
 
 @media (min-width: 1440px) {
   .travelers {
