@@ -1765,32 +1765,25 @@ html {
 
 @media (min-width: 768px) {
   .adding {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 74px;
-    padding-left: 41px;
-    padding-right: 41px;
-    padding-bottom: 85px;
+    padding: 0 41px;
     border-radius: 0 0 60px 60px; }
     .adding::after {
       top: auto;
       bottom: 47px;
       right: 85px; }
+  .adding__container {
+    width: 100%;
+    padding-top: 134px;
+    padding-bottom: 85px; }
   .adding__caption {
     font-size: 45px;
     line-height: 45px;
-    margin: 0 auto 73px; }
+    margin: 0 auto 73px;
+    display: block;
+    text-align: center; }
   .adding__advantages {
     width: 100%;
-    margin-bottom: 42px; }
+    margin-bottom: 57px; }
   .adding__advantage {
     display: -webkit-box;
     display: -ms-flexbox;
