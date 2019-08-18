@@ -3,9 +3,21 @@
 }
 
 .map__info {
-  padding: 34px 25px 35px;
-  border-radius: 0 0 30px 30px;
+  padding: 63px 25px 5px;
   background-color: $yellow;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    border-radius: 0 0 30px 30px;
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    background-color: inherit;
+  }
 }
 
 .map__address {
@@ -39,26 +51,21 @@
   color: $purple;
   background-color: $yellow;
   border-radius: 10px;
-  padding: 0 23px;
-  // background-image: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 30px;
+  padding: 20px 20px 18px;
+  display: block;
+  width: 100%;
+  border: 3px solid $purple;
 
   &::after {
     content: "";
+    display: inline-block;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 7px 0 7px 10px;
     border-color: transparent transparent transparent $purple;
+    margin-left: 21%;
   }
-
-  border: 3px solid $purple;
-  width: 218px;
-  min-width: 218px;
-  min-height: 56px;
 }
 
 .map__iframe {
