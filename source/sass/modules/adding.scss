@@ -276,17 +276,29 @@
     padding: 0 132px;
 
     &::after {
-      width: 198px;
-      height: 198px;
-      background-size: 198px;
-      bottom: 166px;
-      right: 134px;
+      display: none;
     }
   }
 
   .adding__container {
+    width: 1176px;
+    margin: 0 auto;
     padding-top: 167px;
     padding-bottom: 186px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("../img/rates@1x.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 198px;
+      height: 198px;
+      background-size: 198px;
+      bottom: 264px;
+      right: 2px;
+    }
   }
 
   .adding__caption {

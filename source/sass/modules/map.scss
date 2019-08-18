@@ -122,11 +122,25 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
+  .map__container {
+    width: 100%;
+    height: 100%;
+    background-color: $yellow;
+    border-radius: 0 0 60px 60px;
+  }
+
   .map__info {
+    width: 1320px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 59px 134px 3px 283px;
+    padding: 117px 74px 0 223px;
+    margin-bottom: -60px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .map__address {
@@ -143,9 +157,13 @@
   .map__to {
     width: 324px;
     height: 81px;
+
+    &::after {
+      margin-left: 8%;
+    }
   }
 
   .map__iframe {
-    height: 396px;
+    height: 459px;
   }
 }
