@@ -2132,8 +2132,11 @@ html {
 
 @media (min-width: 768px) {
   .map__info {
-    padding: 70px 75px 85px;
-    border-radius: 0 0 60px 60px; }
+    padding: 129px 75px 25px; }
+    .map__info::after {
+      border-radius: 0 0 60px 60px;
+      height: 60px;
+      bottom: -60px; }
   .map__address {
     font-size: 28px;
     line-height: 28px;
@@ -2150,10 +2153,9 @@ html {
       margin-right: 25px; }
   .map__to {
     width: 100%;
-    min-height: 81px;
     font-size: 24px;
     line-height: 24px;
-    padding: 0 33px;
+    padding: 27px 33px 24px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 20px; }

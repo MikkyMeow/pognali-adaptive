@@ -77,10 +77,15 @@
   @include visually-hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .map__info {
-    padding: 70px 75px 85px;
-    border-radius: 0 0 60px 60px;
+    padding: 129px 75px 25px;
+
+    &::after {
+      border-radius: 0 0 60px 60px;
+      height: 60px;
+      bottom: -60px;
+    }
   }
 
   .map__address {
@@ -105,10 +110,9 @@
 
   .map__to {
     width: 100%;
-    min-height: 81px;
     font-size: 24px;
     line-height: 24px;
-    padding: 0 33px;
+    padding: 27px 33px 24px;
     box-sizing: border-box;
     border-radius: 20px;
   }
