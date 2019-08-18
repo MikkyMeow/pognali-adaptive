@@ -111,7 +111,7 @@
   padding-top: 33px;
   position: absolute;
   z-index: 1;
-  top: -10px;
+  top: 16px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -230,6 +230,7 @@
     width: 89.375%;
     border-radius: 30px;
     padding-top: 51px;
+    top: 78px;
   }
 
   .adding__popup-list {
@@ -295,5 +296,9 @@
   .adding__advantages {
     box-sizing: border-box;
     padding-right: 240px;
+  }
+
+  .adding__popup--show {
+    top: 130px;
   }
 }

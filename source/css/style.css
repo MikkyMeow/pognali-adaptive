@@ -1729,7 +1729,7 @@ html {
   padding-top: 33px;
   position: absolute;
   z-index: 1;
-  top: -10px;
+  top: 16px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
@@ -1827,7 +1827,8 @@ html {
   .adding__popup--show {
     width: 89.375%;
     border-radius: 30px;
-    padding-top: 51px; }
+    padding-top: 51px;
+    top: 78px; }
   .adding__popup-list {
     margin-bottom: 51px; }
   .adding__popup-caption {
@@ -1869,7 +1870,9 @@ html {
   .adding__advantages {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding-right: 240px; } }
+    padding-right: 240px; }
+  .adding__popup--show {
+    top: 130px; } }
 
 .contacts {
   background-color: #192144;
@@ -1906,6 +1909,9 @@ html {
 
 .contacts__description--mod {
   margin: 0 0 18px; }
+
+.contacts__desktop-content {
+  display: none; }
 
 .contacts__login {
   color: #ffd74b;
@@ -2013,11 +2019,17 @@ html {
 
 @media (min-width: 1440px) {
   .contacts {
-    padding: 107px 133px 101px; }
+    padding: 0 133px; }
+  .contacts__container {
+    padding: 107px 0 44px; }
   .contacts__description {
     margin: 0 190px 57px; }
   .contacts__description--mod {
     margin-bottom: 45px; }
+  .contacts__mobile-content {
+    display: none; }
+  .contacts__desktop-content {
+    display: inline-block; }
   .contacts__register {
     margin-bottom: 9px; }
   .contacts__submit {

@@ -36,6 +36,10 @@
   margin: 0 0 18px;
 }
 
+.contacts__desktop-content {
+  display: none;
+}
+
 .contacts__login {
   color: $yellow;
   text-decoration: underline;
@@ -164,9 +168,13 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .contacts {
-    padding: 107px 133px 101px;
+    padding: 0 133px;
+  }
+
+  .contacts__container {
+    padding: 107px 0 44px;
   }
 
   .contacts__description {
@@ -175,6 +183,14 @@
 
   .contacts__description--mod {
     margin-bottom: 45px;
+  }
+
+  .contacts__mobile-content {
+    display: none;
+  }
+
+  .contacts__desktop-content {
+    display: inline-block;
   }
 
   .contacts__register {
