@@ -47,32 +47,6 @@
   line-height: 25px;
 }
 
-@mixin social {
-  display: flex;
-  font-size: 0;
-}
-
-@mixin social__link {
-  width: 25px;
-  height: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 40px;
-}
-
-@mixin social__link--facebook {
-  background-image: url("../img/facebook.svg");
-}
-
-@mixin social__link--vk {
-  background-image: url("../img/vk.svg");
-}
-
-@mixin social__link--instagram {
-  background-image: url("../img/instagram.svg");
-  margin-right: 0;
-}
-
 @mixin visible {
   position: static;
   clip: auto;
