@@ -2332,19 +2332,37 @@ html {
   margin: 0 auto; }
 
 .profile__transport {
+  display: inline-block;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 10px; }
+  width: 33px;
+  height: 33px; }
   .profile__transport::after {
     content: "";
-    left: -39px;
+    position: absolute;
+    left: 0;
     top: 0;
-    width: 20px;
-    height: 20px;
-    background-color: #f00;
-    margin-right: 10px; }
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60%;
+    background-color: #ffffff; }
+
+.visually-hidden:checked + .profile__transport::after {
+  background-color: #0f0; }
+
+.profile__transport--plane::after {
+  background-image: url("../img/plane.svg"); }
+
+.profile__transport--bus::after {
+  background-image: url("../img/bus.svg"); }
+
+.profile__transport--bike::after {
+  background-image: url("../img/bike.svg"); }
+
+.profile__transport--foot::after {
+  background-image: url("../img/run.svg"); }
 
 .footer {
   padding: 0 25px;
