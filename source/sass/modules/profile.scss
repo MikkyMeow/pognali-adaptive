@@ -1,0 +1,129 @@
+.profile {
+  padding: 29px 25px 0;
+  background-color: #edeff6;
+}
+
+.profile__caption {
+  font-size: 36px;
+  line-height: 40px;
+  color: $white;
+  font-weight: 700;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 214px;
+    height: 5px;
+    background-color: #ff8d30;
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    border-radius: 5px;
+  }
+}
+
+.profile__container {
+  padding: 30px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile__level {
+  margin-right: auto;
+  margin-left: 20px;
+  margin-bottom: 21px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.profile__photo {
+  margin-left: auto;
+  margin-right: 17px;
+  margin-bottom: 21px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile__change-photo {
+  width: 100%;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $purple;
+  text-align: center;
+  background-color: #dfe3f0;
+  display: block;
+  padding: 7px 0 3px;
+  border-radius: 40px;
+  margin-bottom: 26px;
+}
+
+.profile__hashtag-block {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.profile__hashtag-caption,
+.profile__transport-caption {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $purple;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  background-color: #edeff6;
+  padding: 0 16px;
+}
+
+.profile__hashtag {
+  font-family: "BloggerSans", "Arial", sans-serif;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #edeff6;
+  border: 1px solid #cbced9;
+  position: relative;
+  bottom: 11px;
+  padding: 22px 25px 21px;
+  border-radius: 10px;
+  resize: none;
+}
+
+.profile__transport-block {
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.profile__transport-caption {
+  bottom: 8px;
+  width: 115px;
+  margin: 0 auto;
+}
+
+.profile__transport {
+  position: relative;
+  display: flex;
+  margin: 0 10px;
+
+  &::after {
+    content: "";
+    // position: absolute;
+    left: -39px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+    margin-right: 10px;
+  }
+}

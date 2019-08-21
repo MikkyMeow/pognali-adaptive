@@ -18,7 +18,10 @@ html {
 
 .page {
   width: 100%;
-  overflow-x: hidden;
   font-family: "Bloggersans", "Arial", sans-serif;
   background-color: #182044;
+}
+
+.page--form {
+  background-color: #161c36;
 }
