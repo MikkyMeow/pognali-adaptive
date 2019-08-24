@@ -39,6 +39,27 @@
   background-size: 100%;
 }
 
+.ways__place--3 .ways__info {
+  position: relative;
+
+  & .ways__place-description {
+    color: #000;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 50%;
+    opacity: .9;
+    background: linear-gradient(180deg, rgba(237,239,246,0) 0%, darken(rgba(239,241,247,1), 3%) 100%), $white;
+    bottom: 0;
+    border-radius: 10px;
+  }
+
+}
+
 .ways__image {
   width: 100%;
   border-radius: 10px 10px 0 0;
@@ -68,7 +89,7 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: #444444;
+  color: #c7c7c7;
 }
 
 .ways__place-description {
@@ -95,7 +116,8 @@
 }
 
 .ways__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -117,7 +139,6 @@
     border-style: solid;
     border-width: 7px 0 7px 10px;
     border-color: transparent transparent transparent $purple;
-    margin-left: 103px;
   }
 }
 
@@ -137,13 +158,11 @@
   }
 
   .ways__caption {
-    @include section-header--tablet;
     margin-bottom: 58px;
     margin-left: 0;
   }
 
   .ways__description {
-    @include section-description--tablet;
     margin-right: 267px;
     margin-bottom: 104px;
     margin-left: 0;
@@ -159,6 +178,19 @@
     border-radius: 20px;
     margin-bottom: 10px;
   }
+
+.ways__place--3 .ways__info {
+
+  & .ways__place-description {
+    color: #c7c7c7;
+  }
+
+  &::before {
+    border-radius: 0 0 0 20px;
+    height: 40%;
+    opacity: .8;
+  }
+}
 
   .ways__info {
     width: 69.9029126%;
@@ -211,10 +243,6 @@
     width: calc(100% - 150px);
     bottom: 80px;
     padding: 31px 33px 25px;
-
-    &::after {
-      margin-left: 72%;
-    }
   }
 }
 
@@ -276,9 +304,5 @@
     transform: none;
     width: 276px;
     padding: 30px 35px 27px;
-
-    &::after {
-      margin-left: 27%;
-    }
   }
 }

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   <title>Погнали!</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,77 +29,81 @@
     </div>
   </header>
   <main class="main">
-    <section class="profile">
-      <h1 class="profile__caption">Направления</h1>
-      <div class="profile__container">
-        <div class="profile__level"></div>
-        <img class="profile__photo" src="img/demin-mobile@1x.jpg">
-        <a class="profile__change-photo">Сменить фото</a>
-        <label class="profile__hashtag-block" for="tags">
-          <span class="profile__hashtag-caption">Тэги</span>
-          <textarea class="profile__hashtag" disabled id="tags">#бургер #бар #футбол #концерт #крафт</textarea>
-        </label>
-        <div class="profile__transport-block">
-          <h3 class="profile__transport-caption">Транспорт</h3>
-          <input type="checkbox" class="visually-hidden" id="plane">
-          <label class="profile__transport profile__transport--plane" for="plane"></label>
-          <input type="checkbox" class="visually-hidden" id="bus">
-          <label class="profile__transport profile__transport--bus" for="bus"></label>
-          <input type="checkbox" class="visually-hidden" id="bike">
-          <label class="profile__transport profile__transport--bike" for="bike"></label>
-          <input type="checkbox" class="visually-hidden" id="foot">
-          <label class="profile__transport profile__transport--foot" for="foot"></label>
+    <form class="add-plan__steps">
+      <section class="profile">
+        <h1 class="profile__caption">Направления</h1>
+        <div class="profile__container">
+          <div class="profile__level">
+            <div class="profile__level-info"><span class="profile__level-point">80</span><br>level</div>
+          </div>
+          <img class="profile__photo" src="img/demin-mobile@1x.jpg">
+          <a class="profile__change-photo">Сменить фото</a>
+          <label class="profile__hashtag-block">
+            <span class="profile__hashtag-caption">Тэги</span>
+            <textarea class="profile__hashtag" disabled>#бургер #бар #футбол #концерт #крафт</textarea>
+          </label>
+          <div class="profile__transport-block">
+            <h3 class="profile__transport-caption">Транспорт</h3>
+            <div class="profile__checkbox-block">
+              <input type="checkbox" class="visually-hidden" id="plane">
+              <label class="profile__transport profile__transport--plane" for="plane"></label>
+              <input type="checkbox" class="visually-hidden" id="bus">
+              <label class="profile__transport profile__transport--bus" for="bus"></label>
+              <input type="checkbox" class="visually-hidden" id="bike">
+              <label class="profile__transport profile__transport--bike" for="bike"></label>
+              <input type="checkbox" class="visually-hidden" id="foot">
+              <label class="profile__transport profile__transport--foot" for="foot"></label>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="plans">
-      <div class="plans__container">
-        <h2 class="plans__caption">Мои планы:</h2>
-        <ol class="plans__list">
-          <li class="plans__item">
-            <h3 class="plans__item-caption">Франция, Италия</h3>
-            <p class="plans__item-travelers">3 попутчика</p>
-            <p class="plans__item-date">26 мар – 29 мар</p>
-            <a class="plans__item-change" href="#">Изменить</a>
-          </li>
-          <li class="plans__item">
-            <h3 class="plans__item-caption">Тайланд, Индонезия</h3>
-            <p class="plans__item-travelers">1 попутчик</p>
-            <p class="plans__item-date">1 июл – 15 июл</p>
-            <a class="plans__item-change" href="#">Изменить</a>
-          </li>
-        </ol>
-      </div>
-    </section>
-    <section class="add-plan">
-      <h2 class="add-plan__caption">Добавить план</h2>
-      <form class="add-plan__steps">
+      </section>
+      <section class="plans">
+        <div class="plans__container">
+          <h2 class="plans__caption">Мои планы:</h2>
+          <ol class="plans__list">
+            <li class="plans__item">
+              <h3 class="plans__item-caption">Франция, Италия</h3>
+              <p class="plans__item-travelers">3 попутчика</p>
+              <p class="plans__item-date">26 мар – 29 мар</p>
+              <a class="plans__item-change" href="#">Изменить</a>
+            </li>
+            <li class="plans__item">
+              <h3 class="plans__item-caption">Тайланд, Индонезия</h3>
+              <p class="plans__item-travelers">1 попутчик</p>
+              <p class="plans__item-date">1 июл – 15 июл</p>
+              <a class="plans__item-change" href="#">Изменить</a>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="add-plan">
+        <h2 class="add-plan__caption">Добавить план</h2>
         <fieldset class="step1" id="step1">
           <h3 class="step1__caption">Шаг 1. <br>Даты пребывания</h3>
           <p class="step1__description">
             Укажите предпочтительное количество спутников, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
           </p>
           <div class="step1__data">
-            <label class="step1__number" for="search-travelers">
+            <div class="step1__number">
               <p class="step1__input-caption">Ищу попутчиков:</p>
               <div class="step1__number-input-container">
                 <button class="step1__button">-</button>
-                <input class="step1__number-input" type="text" id="search-travelers" placeholder="2">
+                <input class="step1__number-input" type="text" placeholder="2">
                 <button class="step1__button">+</button>
               </div>
               <p class="step1__input-caption step1__input-measure">Чел.</p>
-            </label>
-            <label class="step1__number" for="duration">
+            </div>
+            <div class="step1__number">
               <p class="step1__input-caption">Длительность:</p>
               <div class="step1__number-input-container">
                 <button class="step1__button">-</button>
-                <input class="step1__number-input" type="text" id="duration" placeholder="2">
+                <input class="step1__number-input" type="text" placeholder="2">
                 <button class="step1__button">+</button>
               </div>
               <p class="step1__input-caption step1__input-measure">Дн.</p>
-            </label>
-            <label class="step1__kids" for="with-kids">
-              <input class="step1__kids-checkbox" type="checkbox" name="kids" id="with-kids">
+            </div>
+            <label class="step1__kids">
+              <input class="step1__kids-checkbox" type="checkbox" name="kids">
               Можно с детьми
             </label>
           </div>
@@ -235,8 +239,8 @@
           <a class="step3__send">Отправить</a>
           <a class="step3__prev" href="step2">На шаг назад</a>
         </fieldset>
-      </form>
-    </section>
+      </section>
+    </form>
   </main>
   <footer class="footer">
     <div class="footer__container">

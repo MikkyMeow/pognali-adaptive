@@ -32,13 +32,26 @@
 }
 
 .profile__level {
-  margin-right: auto;
-  margin-left: 20px;
-  margin-bottom: 21px;
   width: 100px;
   height: 100px;
-  background-color: red;
+  border: 3px solid #ff8d30;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-right: auto;
+  margin-left: 19px;
+  margin-bottom: 21px;
+}
+
+.profile__level-point {
+  font-size: 24px;
+  line-height: 27px;
+  border-bottom: 1px solid #000000;
+  text-align: center;
+  padding-top: 2px;
+  text-align: center;
 }
 
 .profile__photo {
@@ -150,4 +163,108 @@
 
 .profile__transport--foot::after {
   background-image: url("../img/run.svg");
+}
+
+@media (min-width: 768px) {
+  .profile {
+    padding: 87px 74px 0;
+  }
+
+  .profile__caption {
+    font-size: 60px;
+    line-height: 70px;
+
+    &::after {
+      width: 355px;
+      height: 8px;
+      bottom: -67px;
+      left: 2px;
+      border-radius: 8px;
+    }
+  }
+
+  .profile__container {
+    padding-top: 127px;
+  }
+
+  .profile__level {
+    margin-left: 0;
+    margin-bottom: 51px;
+    width: 95px;
+    height: 95px;
+    order: -2;
+  }
+
+  .profile__photo {
+    width: 94px;
+    height: 94px;
+    border-radius: 6px;
+    margin-right: 1px;
+    margin-bottom: 52px;
+  }
+
+  .profile__transport-block {
+    order: -1;
+    width: 49.7%;
+    height: 94px;
+    padding-top: 24px;
+    margin-bottom: 52px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .profile__transport-caption,
+  .profile__hashtag-caption {
+    width: 152px;
+    order: 1;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 2.3px;
+    margin-top: 22px;
+  }
+
+  .profile__checkbox-block {
+    width: 100%;
+  }
+
+  .profile__transport {
+    width: 47px;
+    height: 47px;
+    margin: 0 2px;
+
+    &::after {
+      width: 44px;
+      height: 44px;
+      background-size: 45%;
+    }
+  }
+
+  .profile__change-photo {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2.3px;
+    font-weight: 500;
+    padding: 22px 0 20px;
+    border-radius: 10px;
+    margin-bottom: 62px;
+  }
+
+  .profile__hashtag-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile__hashtag {
+    font-size: 20px;
+    padding: 34px 39px 10px;
+    line-height: 24px;
+  }
+
+  .profile__hashtag-caption {
+    margin-top: 0;
+    bottom: 18px;
+  }
 }

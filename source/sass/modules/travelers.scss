@@ -111,7 +111,8 @@
 }
 
 .travelers__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -133,8 +134,30 @@
     border-style: solid;
     border-width: 7px 0 7px 10px;
     border-color: transparent transparent transparent $purple;
-    margin-left: 44%;
   }
+}
+
+.travelers__level {
+  width: 54px;
+  height: 54px;
+  border: 3px solid #ff8d30;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 23px;
+  top: 23px;
+  display: flex;
+}
+
+.travelers__level-point {
+  font-size: 24px;
+  line-height: 27px;
+  border-bottom: 1px solid $white;
+  text-align: center;
+  padding-top: 2px;
 }
 
 @media (min-width: $tablet) {
@@ -154,20 +177,17 @@
   }
 
   .travelers__caption {
-    @include section-header--tablet;
     padding: 0;
     margin-bottom: 57px;
   }
 
   .travelers__description {
-    @include section-description--tablet;
     padding: 0;
     margin-right: 133px;
     margin-bottom: 39px;
   }
 
   .travelers__description--bold {
-    @include section-description--bold--desktop;
     padding: 0;
     margin-right: 163px;
     margin-bottom: 58px;
@@ -212,10 +232,6 @@
     bottom: 28px;
     padding: 32px 33px 25px;
     width: calc(100% - 150px);
-
-    &::after {
-      margin-left: 70%;
-    }
   }
 }
 
@@ -263,9 +279,5 @@
     width: 280px;
     padding: 30px 33px 27px;
     margin-left: 2px;
-
-    &::after {
-      margin-left: 23%;
-    }
   }
 }

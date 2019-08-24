@@ -226,6 +226,11 @@
     background-color: #182044;
   }
 
+  .page--form .header::before {
+    height: 220px;
+    bottom: -220px;
+  }
+
   .header--open {
     background-color: $white;
   }

@@ -120,6 +120,10 @@
   .footer {
     padding-left: 60px;
     padding-right: 60px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .footer__container {

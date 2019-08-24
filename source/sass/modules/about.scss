@@ -44,18 +44,15 @@
   }
 
   .about__caption {
-    @include section-header--tablet;
     margin-bottom: 40px;
   }
 
   .about__description {
-    @include section-description--tablet;
     margin-right: 318px;
     margin-bottom: 31px;
   }
 
   .about__description--bold {
-    @include section-description--bold--desktop;
     margin-bottom: 51px;
   }
 

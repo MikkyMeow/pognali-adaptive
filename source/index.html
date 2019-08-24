@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -124,7 +124,10 @@
           </div>
           <ul class="travelers__persons">
             <li class="travelers__person travelers__person--firsova">
-              <img class="travelers__photo" src="img/firsova-desktop@1x.jpg" alt="Таня Фирсова" />
+              <div class="travelers__level">
+                <div class="travelers__level-info"><span class="travelers__level-point">99</span><br>level</div>
+              </div>
+              <img class="travelers__photo" src="img/firsova-desktop@1x.jpg" alt="Таня Фирсова">
               <div class="travelers__lvl"></div>
               <ul class="travelers__flag-list">
                 <li class="travelers__flag-item"></li>
@@ -141,7 +144,10 @@
               </ul>
             </li>
             <li class="travelers__person travelers__person--demin">
-              <img class="travelers__photo" src="img/demin-desktop@1x.jpg" alt="Петя Демин" />
+              <div class="travelers__level">
+                <div class="travelers__level-info"><span class="travelers__level-point">80</span><br>level</div>
+              </div>
+              <img class="travelers__photo" src="img/demin-desktop@1x.jpg" alt="Петя Демин">
               <div class="travelers__lvl"></div>
               <ul class="travelers__flag-list">
                 <li class="travelers__flag-item"></li>
@@ -177,7 +183,7 @@
               <p>59 руб./мес</p>
             </li>
           </ol>
-          <button class="adding__button">Показать тарифы для бизнеса</button>
+          <button class="adding__button" type="button">Показать тарифы для бизнеса</button>
           <div class="adding__popup">
             <h2 class="adding__popup-caption">Бизнес-тарифы</h2>
             <ul class="adding__popup-list">
@@ -199,7 +205,7 @@
               </li>
             </ul>
             <div class="adding__popup-block">
-              <button class="adding__button adding__button--popup">
+              <button class="adding__button adding__button--popup" type="button">
                 Закрыть окно
               </button>
             </div>
@@ -246,9 +252,9 @@
     <footer class="footer">
       <div class="footer__container">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png" />
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png" />
-          <img class="footer__logo" src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали?" />
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png">
+          <img class="footer__logo" src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали?">
         </picture>
         <div class="footer__social">
           <a href="#" class="footer__social-link footer__social-link--facebook">Facebook</a>
@@ -257,7 +263,7 @@
         </div>
         <div class="footer__developed">
           <p class="footer__developed-descr">Разработано</p>
-          <a class="footer__academy" href="#"><img src="img/htmlacademy.svg" alt="Логотип Акадаемии HTMl"/></a>
+          <a class="footer__academy" href="#"><img src="img/htmlacademy.svg" alt="Логотип Акадаемии HTMl"></a>
         </div>
       </div>
     </footer>
