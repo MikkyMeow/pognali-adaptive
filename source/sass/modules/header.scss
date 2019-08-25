@@ -353,6 +353,12 @@
     background: inherit;
   }
 
+  .page--form .header::before {
+    height: 250px;
+    bottom: -250px;
+    border-radius: 0 0 60px 60px;
+  }
+
   .header--open .header__logo,
   .header__logo {
     width: 200px;

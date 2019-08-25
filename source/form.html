@@ -31,28 +31,34 @@
   <main class="main">
     <form class="add-plan__steps">
       <section class="profile">
-        <h1 class="profile__caption">Направления</h1>
-        <div class="profile__container">
-          <div class="profile__level">
-            <div class="profile__level-info"><span class="profile__level-point">80</span><br>level</div>
-          </div>
-          <img class="profile__photo" src="img/demin-mobile@1x.jpg">
-          <a class="profile__change-photo">Сменить фото</a>
-          <label class="profile__hashtag-block">
-            <span class="profile__hashtag-caption">Тэги</span>
-            <textarea class="profile__hashtag" disabled>#бургер #бар #футбол #концерт #крафт</textarea>
-          </label>
-          <div class="profile__transport-block">
-            <h3 class="profile__transport-caption">Транспорт</h3>
-            <div class="profile__checkbox-block">
-              <input type="checkbox" class="visually-hidden" id="plane">
-              <label class="profile__transport profile__transport--plane" for="plane"></label>
-              <input type="checkbox" class="visually-hidden" id="bus">
-              <label class="profile__transport profile__transport--bus" for="bus"></label>
-              <input type="checkbox" class="visually-hidden" id="bike">
-              <label class="profile__transport profile__transport--bike" for="bike"></label>
-              <input type="checkbox" class="visually-hidden" id="foot">
-              <label class="profile__transport profile__transport--foot" for="foot"></label>
+        <div class="profile__block">
+          <h1 class="profile__caption">Направления</h1>
+          <div class="profile__container">
+            <div class="profile__level">
+              <div class="profile__level-info"><span class="profile__level-point">80</span><br>level</div>
+            </div>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg">
+              <img class="profile__photo" src="img/demin-mobile@1x.jpg">
+            </picture>
+            <a class="profile__change-photo"><span class="profile__change-photo-hidden">Сменить</span> фото</a>
+            <label class="profile__hashtag-block">
+              <span class="profile__hashtag-caption">Тэги</span>
+              <textarea class="profile__hashtag" disabled>#бургер #бар #футбол #концерт #крафт</textarea>
+            </label>
+            <div class="profile__transport-block">
+              <h3 class="profile__transport-caption">Транспорт</h3>
+              <div class="profile__checkbox-block">
+                <input type="checkbox" class="visually-hidden" id="plane">
+                <label class="profile__transport profile__transport--plane" for="plane"></label>
+                <input type="checkbox" class="visually-hidden" id="bus">
+                <label class="profile__transport profile__transport--bus" for="bus"></label>
+                <input type="checkbox" class="visually-hidden" id="bike">
+                <label class="profile__transport profile__transport--bike" for="bike"></label>
+                <input type="checkbox" class="visually-hidden" id="foot">
+                <label class="profile__transport profile__transport--foot" for="foot"></label>
+              </div>
             </div>
           </div>
         </div>
