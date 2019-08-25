@@ -229,6 +229,7 @@
   .page--form .header::before {
     height: 220px;
     bottom: -220px;
+    border-radius: 0 0 60px 60px;
   }
 
   .header--open {

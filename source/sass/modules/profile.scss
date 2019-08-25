@@ -205,7 +205,7 @@
 
   .profile__transport-block {
     order: -1;
-    width: calc(100% - 308px);
+    width: calc(100% - 312px);
     height: 94px;
     padding-top: 24px;
     margin: 0 auto 52px;
@@ -286,6 +286,8 @@
   .profile__container {
     position: relative;
     padding-top: 136px;
+    // padding-bottom: 71px;
+    padding-bottom: 60px;
   }
 
   .profile__photo {

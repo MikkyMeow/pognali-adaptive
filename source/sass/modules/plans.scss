@@ -48,14 +48,21 @@
   margin-bottom: 20px;
 
   &::before {
-    content: "1";
     font-family: "BloggerSans", "Arial", sans-serif;
     font-size: 16px;
     line-height: 16px;
-    font-weight: 700;
+    font-weight: 500;
     color: $purple;
     margin-right: 8px;
   }
+}
+
+.plans__item-caption-1::before {
+  content: "1.";
+}
+
+.plans__item-caption-2::before {
+  content: "2.";
 }
 
 .plans__item-travelers,
@@ -79,5 +86,124 @@
   text-transform: uppercase;
   letter-spacing: 1.8px;
   color: #000000;
-  opacity: .5;
+  opacity: .3;
+}
+
+@media (min-width: $tablet) {
+  .plans {
+    padding: 0 75px;
+
+    &::before {
+      height: 46px;
+      top: -46px;
+    }
+  }
+
+  .plans__container {
+    padding-top: 4px;
+    padding-bottom: 94px;
+  }
+
+  .plans__caption {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 41px;
+  }
+
+  .plans__item {
+    padding: 27px 36px 16px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .plans__item-caption {
+    width: 100%;
+    font-size: 24px;
+    line-height: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $purple;
+
+    &::before {
+      position: absolute;
+      right: 25px;
+      top: 44px;
+      font-size: 20px;
+      line-height: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .plans__item-travelers,
+  .plans__item-date,
+  .plans__item-change {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2.3px;
+  }
+
+  .plans__item-travelers {
+    width: 33.7591240876%;
+    margin-left: -3px;
+    margin-bottom: 0;
+  }
+
+  .plans__item-date {
+    width: 47.2152554745%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .plans {
+    padding: 0 60px 0 124px;
+
+    &::before {
+      border-radius: 60px 60px 0 0;
+      top: -49px;
+      height: 60px;
+    }
+  }
+
+  .plans__container {
+    padding: 0 0 108px;
+    width: 1256px;
+    margin: 0 auto;
+  }
+
+  .plans__caption {
+    position: relative;
+    margin-left: 7px;
+  }
+
+  .plans__item {
+    padding: 24px 43px 3px;
+    margin-bottom: 15px;
+  }
+
+  .plans__item-caption {
+    border: none;
+    width: 587px;
+    padding-bottom: 0;
+
+    &::before {
+      position: static;
+      margin-right: 38px;
+    }
+  }
+
+  .plans__item-travelers {
+    width: 178px;
+    margin-top: 17px;
+  }
+
+  .plans__item-date {
+    width: 305px;
+    margin-top: 17px;
+  }
+
+  .plans__item-change {
+    width: 103px;
+    margin-top: 17px;
+  }
 }
