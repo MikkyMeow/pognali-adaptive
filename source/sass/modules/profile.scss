@@ -26,7 +26,7 @@
 }
 
 .profile__container {
-  padding: 30px 0 20px;
+  padding: 30px 0 63px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -116,6 +116,7 @@
   border-radius: 10px;
   width: 100%;
   text-align: center;
+  min-height: 63px;
 }
 
 .profile__transport-caption {
@@ -271,6 +272,11 @@
 @media (min-width: $desktop) {
   .profile {
     padding: 117px 60px 0 124px;
+  }
+
+  .profile__block {
+    width: 1256px;
+    margin: 0 auto;
   }
 
   .profile__caption {
