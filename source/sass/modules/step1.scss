@@ -1,0 +1,111 @@
+.step1 {
+  background-color: $white;
+  border-radius: 10px;
+  padding: 24px 25px 22px;
+}
+
+.step1__caption {
+  font-size: 20px;
+  line-height: 20px;
+  color: $purple;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.step1__description {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 21px;
+}
+
+.step1__number {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+
+  &:nth-child(2) {
+    margin-bottom: 13px;
+  }
+}
+
+.step1__data {
+  margin-bottom: 25px;
+}
+
+.step1__input-caption {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $purple;
+  letter-spacing: 1.8px;
+  width: 70%;
+  margin-bottom: 8px;
+}
+
+.step1__number-input-container {
+  width: 100%;
+  order: 1;
+  border: 1px solid #cbced9;
+  border-radius: 5px;
+  display: flex;
+  min-height: 43px;
+}
+
+.step1__button {
+  width: 41px;
+  border: none;
+}
+
+.step1__number-input {
+  width: calc(100% - 82px);
+  border: none;
+  text-align: center;
+}
+
+.step1__input-measure {
+  width: 30%;
+  opacity: .3;
+  text-align: right;
+  margin-bottom: 8px;
+}
+
+.step1__kids {
+  font-size: 15px;
+  line-height: 15px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #cbced9;
+    position: relative;
+    left: 1px;
+    top: 8px;
+    border-radius: 3px;
+    margin-right: 14px;
+  }
+}
+
+.step1__kids-checkbox:checked + .step1__kids::before {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center center;
+}
+
+.step1__next {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $purple;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: $yellow;
+  padding: 20px auto;
+  border-radius: 30px;
+  padding-top: 7px;
+  padding-bottom: 3px;
+}

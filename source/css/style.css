@@ -2646,7 +2646,7 @@ html {
     background-color: inherit; }
 
 .plans__container {
-  padding-bottom: 46px; }
+  padding-bottom: 49px; }
 
 .plans__caption {
   font-size: 24px;
@@ -2791,6 +2791,205 @@ html {
   .plans__item-change {
     width: 103px;
     margin-top: 17px; } }
+
+.add-plan {
+  background-color: #d4d9eb;
+  position: relative;
+  padding: 0 25px; }
+  .add-plan::before {
+    content: "";
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    border-radius: 30px 30px 0 0;
+    background-color: inherit; }
+
+.add-plan__caption {
+  font-size: 24px;
+  line-height: 24px;
+  color: #1d2e5b;
+  font-weight: 700;
+  margin-bottom: 29px; }
+
+.step1 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 24px 25px 22px; }
+
+.step1__caption {
+  font-size: 20px;
+  line-height: 20px;
+  color: #1d2e5b;
+  font-weight: 700;
+  margin-bottom: 15px; }
+
+.step1__description {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 21px; }
+
+.step1__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 21px; }
+  .step1__number:nth-child(2) {
+    margin-bottom: 13px; }
+
+.step1__data {
+  margin-bottom: 25px; }
+
+.step1__input-caption {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  letter-spacing: 1.8px;
+  width: 70%;
+  margin-bottom: 8px; }
+
+.step1__number-input-container {
+  width: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  border: 1px solid #cbced9;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 43px; }
+
+.step1__button {
+  width: 41px;
+  border: none; }
+
+.step1__number-input {
+  width: calc(100% - 82px);
+  border: none;
+  text-align: center; }
+
+.step1__input-measure {
+  width: 30%;
+  opacity: .3;
+  text-align: right;
+  margin-bottom: 8px; }
+
+.step1__kids {
+  font-size: 15px;
+  line-height: 15px; }
+  .step1__kids::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #cbced9;
+    position: relative;
+    left: 1px;
+    top: 8px;
+    border-radius: 3px;
+    margin-right: 14px; }
+
+.step1__kids-checkbox:checked + .step1__kids::before {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center center; }
+
+.step1__next {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #ffd74b;
+  padding: 20px auto;
+  border-radius: 30px;
+  padding-top: 7px;
+  padding-bottom: 3px; }
+
+.calendar {
+  width: 100%;
+  margin-bottom: 22px; }
+
+.calendar__month {
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+  min-height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 22px; }
+
+.calendar__month-toggle {
+  border: none;
+  font-size: 0;
+  width: 9px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: 70%; }
+
+.calendar__month-prev {
+  background-image: url("../img/month-arrow-left.svg");
+  background-position: left; }
+
+.calendar__month-next {
+  background-image: url("../img/month-arrow-right.svg");
+  background-position: right; }
+
+.calendar__month-name {
+  font-size: 20px;
+  line-height: 20px;
+  color: #1d2e5b;
+  font-weight: 700; }
+
+.calendar__second-letter {
+  display: none; }
+
+.calendar__table {
+  width: 100%; }
+
+.calendar__week {
+  font-size: 14px;
+  line-height: 18px; }
+
+.calendar__week-name {
+  padding-bottom: 7px; }
+
+.calendar__weekend-letter {
+  color: #ff5c23; }
+
+.calendar__day {
+  width: 14.2857142857%;
+  height: 31px;
+  border: 1px solid #cbced9;
+  text-align: center;
+  vertical-align: middle;
+  color: #c7c7c7; }
+
+.calendar__next-month {
+  background-color: #edeff6;
+  color: #000000; }
+
+.calendar__days-of-stay {
+  background-color: #1d2e5b;
+  color: #ffffff; }
+
+.calendar__today {
+  border: 2px solid #ff5c23; }
 
 .footer {
   padding: 0 25px;

@@ -1,0 +1,84 @@
+.calendar {
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.calendar__month {
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+  min-height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.calendar__month-toggle {
+  border: none;
+  font-size: 0;
+  width: 9px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.calendar__month-prev {
+  background-image: url("../img/month-arrow-left.svg");
+  background-position: left;
+}
+
+.calendar__month-next {
+  background-image: url("../img/month-arrow-right.svg");
+  background-position: right;
+}
+
+.calendar__month-name {
+  font-size: 20px;
+  line-height: 20px;
+  color: $purple;
+  font-weight: 700;
+}
+
+.calendar__second-letter {
+  display: none;
+}
+
+.calendar__table {
+  width: 100%;
+}
+
+.calendar__week {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.calendar__week-name {
+  padding-bottom: 7px;
+}
+
+.calendar__weekend-letter {
+  color: #ff5c23;
+}
+
+.calendar__day {
+  width: 14.2857142857%;
+  height: 31px;
+  border: 1px solid #cbced9;
+  text-align: center;
+  vertical-align: middle;
+  color: #c7c7c7;
+}
+
+.calendar__next-month {
+  background-color: #edeff6;
+  color: #000000;
+}
+
+.calendar__days-of-stay {
+  background-color: $purple;
+  color: $white;
+}
+
+.calendar__today {
+  border: 2px solid #ff5c23;
+}

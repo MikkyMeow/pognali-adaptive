@@ -29,7 +29,7 @@
     </div>
   </header>
   <main class="main">
-    <form class="add-plan__steps">
+    <form>
       <section class="profile">
         <div class="profile__block">
           <h1 class="profile__caption">Направления</h1>
@@ -83,168 +83,168 @@
         </div>
       </section>
       <section class="add-plan">
-        <h2 class="add-plan__caption">Добавить план</h2>
-        <fieldset class="step1" id="step1">
-          <h3 class="step1__caption">Шаг 1. <br>Даты пребывания</h3>
-          <p class="step1__description">
-            Укажите предпочтительное количество спутников, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
-          </p>
-          <div class="step1__data">
-            <div class="step1__number">
-              <p class="step1__input-caption">Ищу попутчиков:</p>
-              <div class="step1__number-input-container">
-                <button class="step1__button">-</button>
-                <input class="step1__number-input" type="text" placeholder="2">
-                <button class="step1__button">+</button>
+        <div class="add-plan__container">
+          <h2 class="add-plan__caption">Добавить план:</h2>
+          <fieldset class="step1" id="step1">
+            <h3 class="step1__caption">Шаг 1. <br>Даты пребывания</h3>
+            <p class="step1__description">
+              Укажите предпочтительное количество спутников, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+            </p>
+            <div class="step1__data">
+              <div class="step1__number">
+                <p class="step1__input-caption">Ищу попутчиков:</p>
+                <div class="step1__number-input-container">
+                  <button class="step1__button">-</button>
+                  <input class="step1__number-input" type="text" placeholder="2">
+                  <button class="step1__button">+</button>
+                </div>
+                <p class="step1__input-caption step1__input-measure">Чел.</p>
               </div>
-              <p class="step1__input-caption step1__input-measure">Чел.</p>
-            </div>
-            <div class="step1__number">
-              <p class="step1__input-caption">Длительность:</p>
-              <div class="step1__number-input-container">
-                <button class="step1__button">-</button>
-                <input class="step1__number-input" type="text" placeholder="2">
-                <button class="step1__button">+</button>
+              <div class="step1__number">
+                <p class="step1__input-caption">Длительность:</p>
+                <div class="step1__number-input-container">
+                  <button class="step1__button">-</button>
+                  <input class="step1__number-input" type="text" placeholder="2">
+                  <button class="step1__button">+</button>
+                </div>
+                <p class="step1__input-caption step1__input-measure">Дн.</p>
               </div>
-              <p class="step1__input-caption step1__input-measure">Дн.</p>
+                <input class="step1__kids-checkbox visually-hidden" type="checkbox" name="kids" id="kids">
+              <label class="step1__kids" for="kids">Можно с детьми</label>
             </div>
-            <label class="step1__kids">
-              <input class="step1__kids-checkbox" type="checkbox" name="kids">
-              Можно с детьми
-            </label>
-          </div>
-          <div class="calendar">
-            <div class="calendar-mounth">
-              <button class="calendar-mounth-prev">Prev</button>
-              <span class="calendar__mounth-name">Март 2019</span>
-              <button class="calendar-mounth-next">Next</button>
+            <div class="calendar">
+              <div class="calendar__month">
+                <button class="calendar__month-toggle calendar__month-prev">Prev</button>
+                <span class="calendar__month-name">Март 2019</span>
+                <button class="calendar__month-toggle calendar__month-next">Next</button>
+              </div>
+              <table class="calendar__table">
+                <thead>
+                  <tr class="calendar__week">
+                    <th class="calendar__week-name">П<span class="calendar__second-letter">н</span></th>
+                    <th class="calendar__week-name">В<span class="calendar__second-letter">т</span></th>
+                    <th class="calendar__week-name">С<span class="calendar__second-letter">р</span></th>
+                    <th class="calendar__week-name">Ч<span class="calendar__second-letter">т</span></th>
+                    <th class="calendar__week-name">П<span class="calendar__second-letter">т</span></th>
+                    <th class="calendar__week-name calendar__weekend-letter">С<span class="calendar__second-letter">б</span></th>
+                    <th class="calendar__week-name calendar__weekend-letter">В<span class="calendar__second-letter">с</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="calendar__day">23</td>
+                    <td class="calendar__day">24</td>
+                    <td class="calendar__day">25</td>
+                    <td class="calendar__day">26</td>
+                    <td class="calendar__day">27</td>
+                    <td class="calendar__day">28</td>
+                    <td class="calendar__day">1</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__day">2</td>
+                    <td class="calendar__day">3</td>
+                    <td class="calendar__day">4</td>
+                    <td class="calendar__day">5</td>
+                    <td class="calendar__day">6</td>
+                    <td class="calendar__day">7</td>
+                    <td class="calendar__day">8</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__day">9</td>
+                    <td class="calendar__day">10</td>
+                    <td class="calendar__day">11</td>
+                    <td class="calendar__day">12</td>
+                    <td class="calendar__day">13</td>
+                    <td class="calendar__day">14</td>
+                    <td class="calendar__day">15</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__day">16</td>
+                    <td class="calendar__day">17</td>
+                    <td class="calendar__day">18</td>
+                    <td class="calendar__day">19</td>
+                    <td class="calendar__day">20</td>
+                    <td class="calendar__day">21</td>
+                    <td class="calendar__day">22</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__day">23</td>
+                    <td class="calendar__day">24</td>
+                    <td class="calendar__day">25</td>
+                    <td class="calendar__day calendar__days-of-stay calendar__today">26</td>
+                    <td class="calendar__day calendar__days-of-stay">27</td>
+                    <td class="calendar__day calendar__days-of-stay">28</td>
+                    <td class="calendar__day calendar__next-month">29</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__day calendar__next-month">30</td>
+                    <td class="calendar__day calendar__next-month">31</td>
+                    <td class="calendar__day calendar__next-month">1</td>
+                    <td class="calendar__day calendar__next-month">2</td>
+                    <td class="calendar__day calendar__next-month">3</td>
+                    <td class="calendar__day calendar__next-month">4</td>
+                    <td class="calendar__day calendar__next-month">5</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <table class="calendar__table">
-              <thead>
-                <tr class="calendar__week">
-                  <th class="calendar__week-name">П<span class="calendar__second-letter">н</span></th>
-                  <th class="calendar__week-name">В<span class="calendar__second-letter">т</span></th>
-                  <th class="calendar__week-name">С<span class="calendar__second-letter">р</span></th>
-                  <th class="calendar__week-name">Ч<span class="calendar__second-letter">т</span></th>
-                  <th class="calendar__week-name">П<span class="calendar__second-letter">т</span></th>
-                  <th class="calendar__week-name">С<span class="calendar__second-letter">б</span></th>
-                  <th class="calendar__week-name">В<span class="calendar__second-letter">с</span></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>23</td>
-                  <td>24</td>
-                  <td>25</td>
-                  <td>26</td>
-                  <td>27</td>
-                  <td>28</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>7</td>
-                  <td>8</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>10</td>
-                  <td>11</td>
-                  <td>12</td>
-                  <td>13</td>
-                  <td>14</td>
-                  <td>15</td>
-                </tr>
-                <tr>
-                  <td>16</td>
-                  <td>17</td>
-                  <td>18</td>
-                  <td>19</td>
-                  <td>20</td>
-                  <td>21</td>
-                  <td>22</td>
-                </tr>
-                <tr>
-                  <td>23</td>
-                  <td>24</td>
-                  <td>25</td>
-                  <td>26</td>
-                  <td>27</td>
-                  <td>28</td>
-                  <td>29</td>
-                </tr>
-                <tr>
-                  <td>30</td>
-                  <td>31</td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>5</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <a class="step1__next" href="step2">Следующий шаг</a>
-        </fieldset>
-        <fieldset class="step2" id="step2">
-          <h3 class="step2__caption">Шаг 2. <br>Маршрут</h3>
-          <p class="step2__description">
-            Укажите страны которые вы хотели бы посетить. Это может быть одна или сразу несколько.
-          </p>
-          <ul class="step2__countries">
-            <li class="step2__country">
-              <input class="step2__country-name" value="Босния и Герцеговина">
-              <button class="step2__country-select"></button>
-              <img class="step2__country-flag">
-              <button class="step2__country-delete"></button>
-            </li>
-            <li class="step2__country">
-              <input class="step2__country-name" value="Чехословакия">
-              <button class="step2__country-select"></button>
-              <img class="step2__country-flag">
-              <button class="step2__country-delete"></button>
-            </li>
-            <li class="step2__country step2__country--select">
-              <p class="step2__country-name">Выберите страну</p>
-              <button class="step2__country-select"></button>
-              <button class="step2__country-delete"></button>
-            </li>
-            <li class="step2__country step2__country--add">
-              <p class="step2__country-name">Добавить страну</p>
-              <button class="step2__country-add"></button>
-            </li>
-          </ul>
-          <a class="step2__next" href="step3">Следующий шаг</a>
-          <a class="step2__prev" href="step1">На шаг назад</a>
-        </fieldset>
-        <fieldset class="step3" id="step3">
-          <h3 class="step2__caption">Шаг 3. <br>Развлечения</h3>
-          <p class="step3__description">
-            Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
-          </p>
-          <ul class="step3__countries">
-            <li class="step3__country">
-              <p class="step3__country-name">Босния и Герцеговина</p>
-              <img class="step3__country-flag">
-              <textarea class="step3__country-description" placeholder="План действий">
-              </textarea>
-            </li>
-            <li class="step3__country">
-              <p class="step3__country-name">Чехословакия</p>
-              <img class="step3__country-flag">
-              <textarea class="step3__country-description">
-                Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
-              </textarea>
-            </li>
-          </ul>
-          <a class="step3__send">Отправить</a>
-          <a class="step3__prev" href="step2">На шаг назад</a>
-        </fieldset>
+            <a class="step1__next" href="step2">Следующий шаг</a>
+          </fieldset>
+          <fieldset class="step2" id="step2">
+            <h3 class="step2__caption">Шаг 2. <br>Маршрут</h3>
+            <p class="step2__description">
+              Укажите страны которые вы хотели бы посетить. Это может быть одна или сразу несколько.
+            </p>
+            <ul class="step2__countries">
+              <li class="step2__country">
+                <input class="step2__country-name" value="Босния и Герцеговина">
+                <button class="step2__country-select"></button>
+                <img class="step2__country-flag">
+                <button class="step2__country-delete"></button>
+              </li>
+              <li class="step2__country">
+                <input class="step2__country-name" value="Чехословакия">
+                <button class="step2__country-select"></button>
+                <img class="step2__country-flag">
+                <button class="step2__country-delete"></button>
+              </li>
+              <li class="step2__country step2__country--select">
+                <p class="step2__country-name">Выберите страну</p>
+                <button class="step2__country-select"></button>
+                <button class="step2__country-delete"></button>
+              </li>
+              <li class="step2__country step2__country--add">
+                <p class="step2__country-name">Добавить страну</p>
+                <button class="step2__country-add"></button>
+              </li>
+            </ul>
+            <a class="step2__next" href="step3">Следующий шаг</a>
+            <a class="step2__prev" href="step1">На шаг назад</a>
+          </fieldset>
+          <fieldset class="step3" id="step3">
+            <h3 class="step3__caption">Шаг 3. <br>Развлечения</h3>
+            <p class="step3__description">
+              Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+            </p>
+            <ul class="step3__countries">
+              <li class="step3__country">
+                <p class="step3__country-name">Босния и Герцеговина</p>
+                <img class="step3__country-flag">
+                <textarea class="step3__country-description" placeholder="План действий">
+                </textarea>
+              </li>
+              <li class="step3__country">
+                <p class="step3__country-name">Чехословакия</p>
+                <img class="step3__country-flag">
+                <textarea class="step3__country-description">
+                  Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                </textarea>
+              </li>
+            </ul>
+            <a class="step3__send">Отправить</a>
+            <a class="step3__prev" href="step2">На шаг назад</a>
+          </fieldset>
+        </div>
       </section>
     </form>
   </main>
