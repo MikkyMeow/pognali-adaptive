@@ -2,6 +2,7 @@
   background-color: $white;
   border-radius: 10px;
   padding: 24px 25px 22px;
+  margin-bottom: 10px;
 }
 
 .step1__caption {
@@ -136,11 +137,11 @@
   }
 
   .step1__number {
-    border-top: 1px solid #d6d9e6;
     padding-top: 26px;
 
     &:nth-child(1) {
       margin-bottom: 13px;
+      border-top: 1px solid #d6d9e6;
     }
 
     &:nth-child(2) {
