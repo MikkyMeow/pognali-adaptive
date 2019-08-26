@@ -2766,7 +2766,7 @@ html {
       top: -49px;
       height: 60px; }
   .plans__container {
-    padding: 0 0 108px;
+    padding: 0 0 98px;
     width: 1256px;
     margin: 0 auto; }
   .plans__caption {
@@ -2823,6 +2823,21 @@ html {
     line-height: 50px;
     margin-bottom: 49px; } }
 
+@media (min-width: 1440px) {
+  .add-plan {
+    padding: 0 60px; }
+    .add-plan::before {
+      height: 60px;
+      top: -49px;
+      border-radius: 60px 60px 0 0; }
+  .add-plan__container {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 0; }
+  .add-plan__caption {
+    margin-left: 70px;
+    position: relative; } }
+
 .step1 {
   background-color: #ffffff;
   border-radius: 10px;
@@ -2875,6 +2890,7 @@ html {
   min-height: 43px; }
 
 .step1__button {
+  border-radius: 5px;
   width: 41px;
   border: none; }
 
@@ -2995,6 +3011,101 @@ html {
       border-width: 7px 0 7px 10px;
       border-color: transparent transparent transparent #1d2e5b; } }
 
+@media (min-width: 1440px) {
+  .step1 {
+    width: 1320px;
+    border-radius: 60px;
+    padding: 99px 160px 105px;
+    margin: 0 auto; }
+  .step1__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .step1__block {
+    width: 57%;
+    margin-bottom: 16px; }
+  .step1__caption br {
+    display: none; }
+  .step1__data {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-top: 1px solid #d6d9e6;
+    margin-bottom: 20px; }
+  .step1__number {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 31px;
+    border-top: 0;
+    border-bottom: 0;
+    width: 66%; }
+    .step1__number:nth-child(2) {
+      padding-top: 0; }
+  .step1__input-caption {
+    width: 192px;
+    margin-bottom: 0;
+    margin-right: 28px; }
+  .step1__number-input-container {
+    width: 181px;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-right: 35px; }
+  .step1__input-measure {
+    text-align: left; }
+  .step1__kids-block {
+    width: 34%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .step1__kids {
+    margin-bottom: 0; } }
+
+.step-list {
+  display: none; }
+
+@media (min-width: 1440px) {
+  .step-list {
+    display: block;
+    margin-left: auto;
+    margin-top: 4px;
+    margin-right: 43px; }
+  .step-list__item {
+    font-size: 20px;
+    opacity: .6;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+    min-height: 44px; }
+    .step-list__item::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      display: block;
+      border-radius: 50%;
+      background-color: #000000;
+      opacity: .2;
+      position: relative;
+      top: 12px;
+      right: 42px; }
+  .step-list__item--active {
+    opacity: 1; }
+    .step-list__item--active::before {
+      opacity: 1;
+      background-color: #1d2e5b; } }
+
 .calendar {
   width: 100%;
   margin-bottom: 22px; }
@@ -3071,6 +3182,11 @@ html {
 .calendar__today {
   border: 2px solid #ff5c23; }
 
+.calendar__check-in,
+.calendar__departure,
+.calendar__new-month {
+  display: none; }
+
 @media (min-width: 768px) {
   .calendar {
     margin-bottom: 46px; }
@@ -3094,6 +3210,30 @@ html {
     height: 69px;
     font-size: 20px;
     line-height: 18px; } }
+
+@media (min-width: 1440px) {
+  .calendar {
+    margin-bottom: 55px; }
+  .calendar__month {
+    padding: 0;
+    margin-bottom: 11px; }
+  .calendar__week-name {
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 13px; }
+  .calendar__day {
+    height: 71px;
+    text-align: left;
+    vertical-align: top;
+    line-height: 26px;
+    padding: 9px 14px; }
+  .calendar__check-in,
+  .calendar__departure,
+  .calendar__new-month {
+    display: inline;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit; } }
 
 .footer {
   padding: 0 25px;

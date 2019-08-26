@@ -52,6 +52,7 @@
 }
 
 .step1__button {
+  border-radius: 5px;
   width: 41px;
   border: none;
 }
@@ -192,5 +193,77 @@
       border-width: 7px 0 7px 10px;
       border-color: transparent transparent transparent $purple;
     }
+  }
+}
+
+@media (min-width: $desktop) {
+  .step1 {
+    width: 1320px;
+    border-radius: 60px;
+    padding: 99px 160px 105px;
+    margin: 0 auto;
+  }
+
+  .step1__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .step1__block {
+    width: 57%;
+    margin-bottom: 16px;
+  }
+
+  .step1__caption {
+    & br {
+      display: none;
+    }
+  }
+
+  .step1__data {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 1px solid #d6d9e6;
+    margin-bottom: 20px;
+  }
+
+  .step1__number {
+    align-items: center;
+    padding-top: 31px;
+    border-top: 0;
+    border-bottom: 0;
+    width: 66%;
+
+    &:nth-child(2) {
+      padding-top: 0;
+    }
+  }
+
+  .step1__input-caption {
+    width: 192px;
+    margin-bottom: 0;
+    margin-right: 28px;
+  }
+
+  .step1__number-input-container {
+    width: 181px;
+    order: 0;
+    margin-right: 35px;
+  }
+
+  .step1__input-measure {
+    text-align: left;
+  }
+
+  .step1__kids-block {
+    width: 34%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .step1__kids {
+    margin-bottom: 0;
   }
 }

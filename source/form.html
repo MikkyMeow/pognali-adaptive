@@ -86,109 +86,120 @@
         <div class="add-plan__container">
           <h2 class="add-plan__caption">Добавить план:</h2>
           <fieldset class="step1" id="step1">
-            <h3 class="step1__caption">Шаг 1. <br>Даты пребывания</h3>
-            <p class="step1__description">
-              Укажите предпочтительное количество спутников, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
-            </p>
-            <div class="step1__data">
-              <div class="step1__number">
-                <p class="step1__input-caption">Ищу попутчиков:</p>
-                <div class="step1__number-input-container">
-                  <button class="step1__button">-</button>
-                  <input class="step1__number-input" type="text" placeholder="2">
-                  <button class="step1__button">+</button>
+            <div class="step1__container">
+              <div class="step1__block">
+                <h3 class="step1__caption">Шаг 1. <br>Даты пребывания</h3>
+                <p class="step1__description">
+                  Укажите предпочтительное количество спутников, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+                </p>
+              </div>
+              <ul class="step-list">
+                <li class="step-list__item step-list__item--active">Даты</li>
+                <li class="step-list__item">Маршрут</li>
+                <li class="step-list__item">Развлечения</li>
+              </ul>
+              <div class="step1__data">
+                <div class="step1__number">
+                  <p class="step1__input-caption">Ищу попутчиков:</p>
+                  <div class="step1__number-input-container">
+                    <button class="step1__button">-</button>
+                    <input class="step1__number-input" type="text" placeholder="2">
+                    <button class="step1__button">+</button>
+                  </div>
+                  <p class="step1__input-caption step1__input-measure">Чел.</p>
                 </div>
-                <p class="step1__input-caption step1__input-measure">Чел.</p>
-              </div>
-              <div class="step1__number">
-                <p class="step1__input-caption">Длительность:</p>
-                <div class="step1__number-input-container">
-                  <button class="step1__button">-</button>
-                  <input class="step1__number-input" type="text" placeholder="2">
-                  <button class="step1__button">+</button>
+                <div class="step1__number">
+                  <p class="step1__input-caption">Длительность:</p>
+                  <div class="step1__number-input-container">
+                    <button class="step1__button">-</button>
+                    <input class="step1__number-input" type="text" placeholder="2">
+                    <button class="step1__button">+</button>
+                  </div>
+                  <p class="step1__input-caption step1__input-measure">Дн.</p>
                 </div>
-                <p class="step1__input-caption step1__input-measure">Дн.</p>
+                <div class="step1__kids-block">
+                  <input class="step1__kids-checkbox visually-hidden" type="checkbox" name="kids" id="kids">
+                  <label class="step1__kids" for="kids">Можно с детьми</label>
+                </div>
               </div>
-                <input class="step1__kids-checkbox visually-hidden" type="checkbox" name="kids" id="kids">
-              <label class="step1__kids" for="kids">Можно с детьми</label>
-            </div>
-            <div class="calendar">
-              <div class="calendar__month">
-                <button class="calendar__month-toggle calendar__month-prev">Prev</button>
-                <span class="calendar__month-name">Март 2019</span>
-                <button class="calendar__month-toggle calendar__month-next">Next</button>
+              <div class="calendar">
+                <div class="calendar__month">
+                  <button class="calendar__month-toggle calendar__month-prev">Prev</button>
+                  <span class="calendar__month-name">Март 2019</span>
+                  <button class="calendar__month-toggle calendar__month-next">Next</button>
+                </div>
+                <table class="calendar__table">
+                  <thead>
+                    <tr class="calendar__week">
+                      <th class="calendar__week-name">П<span class="calendar__second-letter">н</span></th>
+                      <th class="calendar__week-name">В<span class="calendar__second-letter">т</span></th>
+                      <th class="calendar__week-name">С<span class="calendar__second-letter">р</span></th>
+                      <th class="calendar__week-name">Ч<span class="calendar__second-letter">т</span></th>
+                      <th class="calendar__week-name">П<span class="calendar__second-letter">т</span></th>
+                      <th class="calendar__week-name calendar__weekend-letter">С<span class="calendar__second-letter">б</span></th>
+                      <th class="calendar__week-name calendar__weekend-letter">В<span class="calendar__second-letter">с</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="calendar__day">23</td>
+                      <td class="calendar__day">24</td>
+                      <td class="calendar__day">25</td>
+                      <td class="calendar__day">26</td>
+                      <td class="calendar__day">27</td>
+                      <td class="calendar__day">28</td>
+                      <td class="calendar__day">1</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar__day">2</td>
+                      <td class="calendar__day">3</td>
+                      <td class="calendar__day">4</td>
+                      <td class="calendar__day">5</td>
+                      <td class="calendar__day">6</td>
+                      <td class="calendar__day">7</td>
+                      <td class="calendar__day">8</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar__day">9</td>
+                      <td class="calendar__day">10</td>
+                      <td class="calendar__day">11</td>
+                      <td class="calendar__day">12</td>
+                      <td class="calendar__day">13</td>
+                      <td class="calendar__day">14</td>
+                      <td class="calendar__day">15</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar__day">16</td>
+                      <td class="calendar__day">17</td>
+                      <td class="calendar__day">18</td>
+                      <td class="calendar__day">19</td>
+                      <td class="calendar__day">20</td>
+                      <td class="calendar__day">21</td>
+                      <td class="calendar__day">22</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar__day">23</td>
+                      <td class="calendar__day">24</td>
+                      <td class="calendar__day">25</td>
+                      <td class="calendar__day calendar__days-of-stay calendar__today">26 <span class="calendar__check-in"><br>Заезд</span></td>
+                      <td class="calendar__day calendar__days-of-stay">27</td>
+                      <td class="calendar__day calendar__days-of-stay">28 <span class="calendar__departure"><br>Выезд</span></td>
+                      <td class="calendar__day calendar__next-month">29</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar__day calendar__next-month">30</td>
+                      <td class="calendar__day calendar__next-month">31</td>
+                      <td class="calendar__day calendar__next-month">1 <span class="calendar__new-month">апр</span></td>
+                      <td class="calendar__day calendar__next-month">2</td>
+                      <td class="calendar__day calendar__next-month">3</td>
+                      <td class="calendar__day calendar__next-month">4</td>
+                      <td class="calendar__day calendar__next-month">5</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <table class="calendar__table">
-                <thead>
-                  <tr class="calendar__week">
-                    <th class="calendar__week-name">П<span class="calendar__second-letter">н</span></th>
-                    <th class="calendar__week-name">В<span class="calendar__second-letter">т</span></th>
-                    <th class="calendar__week-name">С<span class="calendar__second-letter">р</span></th>
-                    <th class="calendar__week-name">Ч<span class="calendar__second-letter">т</span></th>
-                    <th class="calendar__week-name">П<span class="calendar__second-letter">т</span></th>
-                    <th class="calendar__week-name calendar__weekend-letter">С<span class="calendar__second-letter">б</span></th>
-                    <th class="calendar__week-name calendar__weekend-letter">В<span class="calendar__second-letter">с</span></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="calendar__day">23</td>
-                    <td class="calendar__day">24</td>
-                    <td class="calendar__day">25</td>
-                    <td class="calendar__day">26</td>
-                    <td class="calendar__day">27</td>
-                    <td class="calendar__day">28</td>
-                    <td class="calendar__day">1</td>
-                  </tr>
-                  <tr>
-                    <td class="calendar__day">2</td>
-                    <td class="calendar__day">3</td>
-                    <td class="calendar__day">4</td>
-                    <td class="calendar__day">5</td>
-                    <td class="calendar__day">6</td>
-                    <td class="calendar__day">7</td>
-                    <td class="calendar__day">8</td>
-                  </tr>
-                  <tr>
-                    <td class="calendar__day">9</td>
-                    <td class="calendar__day">10</td>
-                    <td class="calendar__day">11</td>
-                    <td class="calendar__day">12</td>
-                    <td class="calendar__day">13</td>
-                    <td class="calendar__day">14</td>
-                    <td class="calendar__day">15</td>
-                  </tr>
-                  <tr>
-                    <td class="calendar__day">16</td>
-                    <td class="calendar__day">17</td>
-                    <td class="calendar__day">18</td>
-                    <td class="calendar__day">19</td>
-                    <td class="calendar__day">20</td>
-                    <td class="calendar__day">21</td>
-                    <td class="calendar__day">22</td>
-                  </tr>
-                  <tr>
-                    <td class="calendar__day">23</td>
-                    <td class="calendar__day">24</td>
-                    <td class="calendar__day">25</td>
-                    <td class="calendar__day calendar__days-of-stay calendar__today">26</td>
-                    <td class="calendar__day calendar__days-of-stay">27</td>
-                    <td class="calendar__day calendar__days-of-stay">28</td>
-                    <td class="calendar__day calendar__next-month">29</td>
-                  </tr>
-                  <tr>
-                    <td class="calendar__day calendar__next-month">30</td>
-                    <td class="calendar__day calendar__next-month">31</td>
-                    <td class="calendar__day calendar__next-month">1</td>
-                    <td class="calendar__day calendar__next-month">2</td>
-                    <td class="calendar__day calendar__next-month">3</td>
-                    <td class="calendar__day calendar__next-month">4</td>
-                    <td class="calendar__day calendar__next-month">5</td>
-                  </tr>
-                </tbody>
-              </table>
+              <a class="step1__next" href="step2">Следующий шаг</a>
             </div>
-            <a class="step1__next" href="step2">Следующий шаг</a>
           </fieldset>
           <fieldset class="step2" id="step2">
             <h3 class="step2__caption">Шаг 2. <br>Маршрут</h3>

@@ -1,0 +1,42 @@
+.step-list {
+  display: none;
+}
+
+@media (min-width: $desktop) {
+  .step-list {
+    display: block;
+    margin-left: auto;
+    margin-top: 4px;
+    margin-right: 43px;
+  }
+
+  .step-list__item {
+    font-size: 20px;
+    opacity: .6;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+    min-height: 44px;
+
+    &::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      display: block;
+      border-radius: 50%;
+      background-color: #000000;
+      opacity: .2;
+      position: relative;
+      top: 12px;
+      right: 42px;
+    }
+  }
+
+  .step-list__item--active {
+    opacity: 1;
+
+    &::before {
+      opacity: 1;
+      background-color: $purple;
+    }
+  }
+}

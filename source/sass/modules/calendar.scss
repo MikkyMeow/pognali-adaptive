@@ -83,6 +83,12 @@
   border: 2px solid #ff5c23;
 }
 
+.calendar__check-in,
+.calendar__departure,
+.calendar__new-month {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .calendar {
     margin-bottom: 46px;
@@ -118,5 +124,39 @@
     height: 69px;
     font-size: 20px;
     line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .calendar {
+    margin-bottom: 55px;
+  }
+
+  .calendar__month {
+    padding: 0;
+    margin-bottom: 11px;
+  }
+
+  .calendar__week-name {
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 13px;
+  }
+
+  .calendar__day {
+    height: 71px;
+    text-align: left;
+    vertical-align: top;
+    line-height: 26px;
+    padding: 9px 14px;
+  }
+
+  .calendar__check-in,
+  .calendar__departure,
+  .calendar__new-month {
+    display: inline;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
   }
 }

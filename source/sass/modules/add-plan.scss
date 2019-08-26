@@ -38,3 +38,27 @@
     margin-bottom: 49px;
   }
 }
+
+@media (min-width: $desktop) {
+  .add-plan {
+    padding: 0 60px;
+
+    &::before {
+      height: 60px;
+      top: -49px;
+      border-radius: 60px 60px 0 0;
+    }
+  }
+
+  .add-plan__container {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .add-plan__caption {
+    margin-left: 70px;
+    position: relative;
+  }
+
+}
