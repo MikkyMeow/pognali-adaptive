@@ -82,3 +82,41 @@
 .calendar__today {
   border: 2px solid #ff5c23;
 }
+
+@media (min-width: $tablet) {
+  .calendar {
+    margin-bottom: 46px;
+  }
+
+  .calendar__month {
+    min-height: 87px;
+    padding: 0 18px;
+    margin-bottom: 33px;
+  }
+
+  .calendar__month-toggle {
+    background-size: 100%;
+    width: 19px;
+    height: 34px;
+  }
+
+  .calendar__month-name {
+    font-size: 36px;
+  }
+
+  .calendar__week-name {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 2px;
+  }
+
+  .calendar__second-letter {
+    display: inline;
+  }
+
+  .calendar__day {
+    height: 69px;
+    font-size: 20px;
+    line-height: 18px;
+  }
+}

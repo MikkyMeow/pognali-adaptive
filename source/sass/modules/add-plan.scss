@@ -22,3 +22,19 @@
   font-weight: 700;
   margin-bottom: 29px;
 }
+
+@media (min-width: $tablet) {
+  .add-plan {
+    padding: 0 75px;
+  }
+
+  .add-plan__container {
+    padding-top: 19px;
+  }
+
+  .add-plan__caption {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 49px;
+  }
+}
