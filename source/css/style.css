@@ -2893,7 +2893,8 @@ html {
 .step1__button {
   border-radius: 5px;
   width: 41px;
-  border: none; }
+  border: none;
+  background-color: inherit; }
 
 .step1__number-input {
   width: calc(100% - 82px);
@@ -3020,7 +3021,7 @@ html {
     width: 1320px;
     border-radius: 60px;
     padding: 99px 160px 105px;
-    margin: 0 auto; }
+    margin: 0 auto 43px; }
   .step1__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3277,6 +3278,7 @@ html {
   border-radius: 2px;
   border: 1px solid #cbced9;
   height: 42px;
+  font-family: "BloggerSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #1d2e5b;
@@ -3360,7 +3362,7 @@ html {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    border: 1px solid #1d2e5b;
+    border: 1px solid #cbced9;
     display: block;
     position: absolute;
     left: -30px;
@@ -3403,7 +3405,7 @@ html {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    border: 1px solid #1d2e5b;
+    border: 1px solid #cbced9;
     display: block;
     position: absolute;
     right: 48px;
@@ -3564,6 +3566,64 @@ html {
       border-width: 7px 10px 7px 0;
       border-color: transparent #1d2e5b transparent transparent;
       margin-right: 22px; } }
+
+@media (min-width: 1440px) {
+  .step2 {
+    width: 1320px;
+    border-radius: 60px;
+    padding: 99px 160px 91px;
+    margin: 0 auto; }
+  .step2__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .step2__block {
+    width: 57%;
+    margin-bottom: 21px; }
+  .step2__caption br {
+    display: none; }
+  .step2__description {
+    margin-right: 140px; }
+  .step2__countries {
+    width: 100%;
+    padding-top: 62px;
+    padding-bottom: 43px; }
+    .step2__countries::before {
+      right: 225px; }
+  .step2__country-name-block {
+    width: calc(100% - 270px); }
+  .step2__country-flag-block {
+    width: 270px; }
+    .step2__country-flag-block::before {
+      left: 37px; }
+  .step2__country-flag {
+    margin: 12px 85px; }
+  .step2__country--select .step2__country-name {
+    width: calc(100% - 270px); }
+  .step2__country--select .step2__country-select::before {
+    left: 82px; }
+  .step2__country--add .step2__country-add::before {
+    left: 82px; }
+  .step2__country--select .step2__country-select {
+    right: 279px; }
+  .step2__country--add {
+    width: calc(100% - 270px); }
+  .step2__nav-button {
+    width: 100%; }
+  .step2__prev {
+    position: relative; }
+    .step2__prev::after {
+      content: "";
+      width: 1px;
+      height: 100px;
+      display: block;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#d6d9e6), to(rgba(255, 255, 255, 0)));
+      background-image: linear-gradient(to bottom, #d6d9e6, rgba(255, 255, 255, 0));
+      position: absolute;
+      left: -48px;
+      top: -29px; } }
 
 .footer {
   padding: 0 25px;

@@ -56,6 +56,7 @@
   border-radius: 5px;
   width: 41px;
   border: none;
+  background-color: inherit;
 }
 
 .step1__number-input {
@@ -207,7 +208,7 @@
     width: 1320px;
     border-radius: 60px;
     padding: 99px 160px 105px;
-    margin: 0 auto;
+    margin: 0 auto 43px;
   }
 
   .step1__container {

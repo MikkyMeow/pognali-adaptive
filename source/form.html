@@ -202,44 +202,53 @@
             </div>
           </fieldset>
           <fieldset class="step2" id="step2">
-            <h3 class="step2__caption">Шаг 2. <br>Маршрут</h3>
-            <p class="step2__description">
-              Укажите страны которые вы хотели бы посетить. Это может быть одна или сразу несколько.
-            </p>
-            <ul class="step2__countries">
-              <li class="step2__country">
-                <div class="step2__country-name-block">
-                  <input class="step2__country-name" value="Босния и Герцеговина">
+            <div class="step2__container">
+              <div class="step2__block">
+                <h3 class="step2__caption">Шаг 2. <br>Маршрут</h3>
+                <p class="step2__description">
+                  Укажите страны которые вы хотели бы посетить. Это может быть одна или сразу несколько.
+                </p>
+              </div>
+              <ul class="step-list">
+                  <li class="step-list__item">Даты</li>
+                  <li class="step-list__item step-list__item--active">Маршрут</li>
+                  <li class="step-list__item">Развлечения</li>
+                </ul>
+              <ul class="step2__countries">
+                <li class="step2__country">
+                  <div class="step2__country-name-block">
+                    <input class="step2__country-name" value="Босния и Герцеговина">
+                    <button class="step2__country-select"></button>
+                  </div>
+                  <div class="step2__country-flag-block">
+                    <img class="step2__country-flag" src="img/flag-bosnia.svg">
+                  </div>
+                  <button class="step2__country-delete"></button>
+                </li>
+                <li class="step2__country">
+                  <div class="step2__country-name-block">
+                    <input class="step2__country-name" value="Чехословакия">
+                    <button class="step2__country-select"></button>
+                  </div>
+                  <div class="step2__country-flag-block">
+                    <img class="step2__country-flag" src="img/flag-czech.svg">
+                  </div>
+                  <button class="step2__country-delete"></button>
+                </li>
+                <li class="step2__country step2__country--select">
+                  <p class="step2__country-name">Выберите страну</p>
                   <button class="step2__country-select"></button>
-                </div>
-                <div class="step2__country-flag-block">
-                  <img class="step2__country-flag" src="img/flag-bosnia.svg">
-                </div>
-                <button class="step2__country-delete"></button>
-              </li>
-              <li class="step2__country">
-                <div class="step2__country-name-block">
-                  <input class="step2__country-name" value="Чехословакия">
-                  <button class="step2__country-select"></button>
-                </div>
-                <div class="step2__country-flag-block">
-                  <img class="step2__country-flag" src="img/flag-czech.svg">
-                </div>
-                <button class="step2__country-delete"></button>
-              </li>
-              <li class="step2__country step2__country--select">
-                <p class="step2__country-name">Выберите страну</p>
-                <button class="step2__country-select"></button>
-                <button class="step2__country-delete"></button>
-              </li>
-              <li class="step2__country step2__country--add">
-                <p class="step2__country-name">Добавить страну</p>
-                <button class="step2__country-add"></button>
-              </li>
-            </ul>
-            <div class="step2__nav-button">
-              <a class="step2__next" href="step3">Следующий шаг</a>
-              <a class="step2__prev" href="step1">На шаг назад</a>
+                  <button class="step2__country-delete"></button>
+                </li>
+                <li class="step2__country step2__country--add">
+                  <p class="step2__country-name">Добавить страну</p>
+                  <button class="step2__country-add"></button>
+                </li>
+              </ul>
+              <div class="step2__nav-button">
+                <a class="step2__next" href="step3">Следующий шаг</a>
+                <a class="step2__prev" href="step1">На шаг назад</a>
+              </div>
             </div>
           </fieldset>
           <fieldset class="step3" id="step3">
