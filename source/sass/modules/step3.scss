@@ -1,0 +1,120 @@
+.step3 {
+  background-color: $white;
+  border-radius: 10px;
+  padding: 24px 25px 9px;
+  margin-bottom: 10px;
+}
+
+.step3__caption {
+  font-size: 20px;
+  line-height: 20px;
+  color: $purple;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.step3__description {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+
+.step3__country {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.step3__country-flag {
+  width: 35px;
+  height: 24px;
+}
+
+.step3__country-name {
+  width: calc(100% - 46px);
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $purple;
+  position: relative;
+  margin-left: 11px;
+  margin-bottom: 16px;
+  padding-top: 5px;
+
+  &::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: $purple;
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: -14px;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: $purple;
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: -23px;
+  }
+}
+
+.step3__textarea-block {
+  width: 100%;
+  min-height: 220px;
+  border: 1px solid #cbced9;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 22px;
+
+  &::before {
+    content: "";
+    top: -26px;
+    left: -14px;
+    width: 2px;
+    height: calc(100% + 63px);
+    display: block;
+    background-color: #141b3b;
+    position: absolute;
+  }
+}
+
+.step3__country:last-child .step3__textarea-block::before {
+  display: none;
+}
+
+.step3__country-description {
+  resize: none;
+}
+
+.step3__send {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $purple;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: $yellow;
+  padding: 20px auto;
+  border-radius: 30px;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  margin-bottom: 13px;
+}
+
+.step3__prev {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $purple;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+}

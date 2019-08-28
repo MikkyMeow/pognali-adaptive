@@ -2795,7 +2795,7 @@ html {
 .add-plan {
   background-color: #d4d9eb;
   position: relative;
-  padding: 0 25px; }
+  padding: 0 25px 64px; }
   .add-plan::before {
     content: "";
     width: 100%;
@@ -3624,6 +3624,113 @@ html {
       position: absolute;
       left: -48px;
       top: -29px; } }
+
+.step3 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 24px 25px 9px;
+  margin-bottom: 10px; }
+
+.step3__caption {
+  font-size: 20px;
+  line-height: 20px;
+  color: #1d2e5b;
+  font-weight: 700;
+  margin-bottom: 15px; }
+
+.step3__description {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 18px; }
+
+.step3__country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.step3__country-flag {
+  width: 35px;
+  height: 24px; }
+
+.step3__country-name {
+  width: calc(100% - 46px);
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #1d2e5b;
+  position: relative;
+  margin-left: 11px;
+  margin-bottom: 16px;
+  padding-top: 5px; }
+  .step3__country-name::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #1d2e5b;
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: -14px;
+    border-radius: 50%; }
+  .step3__country-name::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: #1d2e5b;
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: -23px; }
+
+.step3__textarea-block {
+  width: 100%;
+  min-height: 220px;
+  border: 1px solid #cbced9;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 22px; }
+  .step3__textarea-block::before {
+    content: "";
+    top: -26px;
+    left: -14px;
+    width: 2px;
+    height: calc(100% + 63px);
+    display: block;
+    background-color: #141b3b;
+    position: absolute; }
+
+.step3__country:last-child .step3__textarea-block::before {
+  display: none; }
+
+.step3__country-description {
+  resize: none; }
+
+.step3__send {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #ffd74b;
+  padding: 20px auto;
+  border-radius: 30px;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  margin-bottom: 13px; }
+
+.step3__prev {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  font-weight: 700;
+  text-align: center;
+  display: block; }
 
 .footer {
   padding: 0 25px;
