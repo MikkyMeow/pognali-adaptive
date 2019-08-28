@@ -249,3 +249,79 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+
+  .step3 {
+    width: 1320px;
+    border-radius: 60px;
+    padding: 99px 160px 91px;
+    margin: 0 auto 45px;
+  }
+
+  .step3__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .step3__description {
+    border: none;
+  }
+
+  .step3__top-container {
+    border-bottom: 1px solid #d6d9e6;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+
+  .step3__caption {
+
+    & br {
+      display: none;
+    }
+  }
+
+  .step3__description {
+    margin-right: 280px;
+    margin-bottom: 21px;
+  }
+
+  .step3__countries {
+    width: 731px;
+  }
+
+  .step3__country-flag {
+    left: 155px;
+    top: 4px;
+  }
+
+  .step3__textarea-block {
+
+    &::before {
+      right: -46px;
+    }
+
+    &::after {
+      right: -52px;
+      top: -59px;
+    }
+  }
+
+  .step3__country-description {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 24px;
+  }
+
+  .step3__nav-button {
+    margin-top: 14px;
+    width: 100%;
+  }
+
+  .step3__prev {
+    position: static;
+    margin-right: 3px;
+  }
+}
