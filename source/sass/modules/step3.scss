@@ -126,3 +126,126 @@
   text-align: center;
   display: block;
 }
+
+@media (min-width: $tablet) {
+  .step3 {
+    border-radius: 30px;
+    padding: 48px 74px 38px 43px;
+  }
+
+  .step3__caption {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 34px;
+  }
+
+  .step3__description {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 33px;
+    margin-bottom: 27px;
+    border-bottom: 1px solid #d6d9e6;
+  }
+
+  .step3__country-name {
+    width: calc(100% - 72px);
+    font-size: 30px;
+    line-height: 18px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 43px;
+    padding-top: 15px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .step3__country-flag {
+    width: 72px;
+    height: 48px;
+    position: relative;
+
+  }
+
+  .step3__textarea-block {
+    min-height: 142px;
+    margin-bottom: 43px;
+
+    &::before {
+      left: auto;
+      top: -46px;
+      right: -29px;
+      width: 3px;
+      height: calc(100% + 108px);
+    }
+
+    &::after {
+      content: "";
+      width: 15px;
+      height: 15px;
+      display: block;
+      border-radius: 50%;
+      background-color: $purple;
+      position: absolute;
+      right: -35px;
+      top: -60px;
+    }
+  }
+
+  .step3__country-description {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 16px 17px;
+  }
+
+
+  .step3__nav-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .step3__send {
+    width: 286px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    padding: 30px 34px 27px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 0 7px 10px;
+      border-color: transparent transparent transparent $purple;
+    }
+  }
+
+  .step3__prev {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    padding-bottom: 11px;
+    position: relative;
+    left: 31px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 10px 7px 0;
+      border-color: transparent $purple transparent transparent;
+      margin-right: 22px;
+    }
+  }
+}
