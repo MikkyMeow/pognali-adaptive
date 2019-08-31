@@ -2,223 +2,119 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   <title>Погнали!</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <section class="nav">
-    <h2 class="visually-hidden">Навигация</h2>
-    <div class="nav__panel">
-      <img class="logo" src="#" alt="Логотип Погнали?">
-      <button class="nav__button">Открыть меню</button>
-    </div>
-    <div class="nav__content">
-      <ul class="nav__items">
-        <li class="nav__item">О сервисе</li>
-        <li class="nav__item">Направления</li>
-        <li class="nav__item">Попутчики</li>
-      </ul>
-      <a href="#" class="nav__login">
-        Авторизация
-      </a>
-      <a href="#" class="contact nav__contact">
-        8 800 555-86-28
-      </a>
-      <a href="#" class="contact nav__contact">
-        mail@htmlacademy.ru
-      </a>
-      <div class="nav__socials">
-        <span class="nav__social">
-          <a href="#" class="nav__social-link">
-            Facebook
-          </a>
-        </span>
-        <span class="nav__social">
-          <a href="#" class="nav__social-link">
-          VK
-          </a>
-        </span>
-        <span class="nav__social">
-          <a href="#" class="nav__social-link">
-          Instagram
-          </a>
-        </span>
+<body class="page page--catalog">
+  <header class="header header--open">
+    <div class="header__container">
+      <a class="header__logo" href="index.html"><span class="visually-hidden">Погнали?</span></a>
+      <button class="header__button header__button--hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="header__nav">
+        <a class="header__nav-item" href="index.html">О сервисе</a>
+        <a class="header__nav-item" href="form.html">Направления</a>
+        <a class="header__nav-item">Попутчики</a>
+      </nav>
+      <a href="#" class="header__login">Авторизация</a>
+      <div class="header__contacts">
+        <a href="#" class="header__contact header__contact--phone">8 800 555-86-28</a>
+        <a href="#" class="header__contact header__contact--mail">mail@htmlacademy.ru</a>
+      </div>
+      <div class="header__socials">
+        <a href="#" class="header__social-link header__social-link--facebook"><span class="visually-hidden">Facebook</span></a>
+        <a href="#" class="header__social-link header__social-link--vk"><span class="visually-hidden">VK</span></a>
+        <a href="#" class="header__social-link header__social-link--instagram"><span class="visually-hidden">Instagram</span></a>
       </div>
     </div>
-  </section>
-  <header class="header">
-    <h1 class="header__caption">
-      Попутчики
-    </h1>
   </header>
-  <section class="person">
-    <h2 class="visually-hidden">
-      Каталог попутчиков
-    </h2>
-    <ul class="person__items">
-      <li class="person__item">
-        <img class="person__photo" src="#" alt="Таня Фирсова">
-        <p class="person__name">
-          Таня Фирсова
-        </p>
-        <p class="person__like">
-          1,5 М
-        </p>
-        <p class="person__hashtag">
-          #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-        </p>
-        <h4 class="person__caption">
-          хочет посетить:
-        </h4>
-        <ul class="person__visit">
-          <li class="visit__item">Шри Ланка</li>
-          <li class="visit__item">Тайланд</li>
-          <li class="visit__item">Сейшелы</li>
+  <main class="main">
+    <section class="select">
+      <h1 class="catalog-header">Попутчики</h1>
+      <div class="select__container">
+        <h2 class="select__caption">Фильтрация по странам</h2>
+        <button class="select__button select__button--hidden"><span class="visually-hidden">Открыть выбор стран</span></button>
+        <ul class="select__continent-list">
+          <li class="select__continent-item select__continent-item--active">Европа</li>
+          <li class="select__continent-item">Азия</li>
+          <li class="select__continent-item">Америка</li>
+          <li class="select__continent-item">Острова</li>
         </ul>
-        <h4 class="person__caption">
-          транспорт:
-        </h4>
-        <ul class="person__transport">
-          <li class="transport__item"></li>
-          <li class="transport__item"></li>
-          <li class="transport__item"></li>
-          <li class="transport__item"></li>
-        </ul>
-        <h4 class="person__caption">
-          левел:
-        </h4>
-        <p class="person__lvl">99</p>
-        <a href="#" class="person__call">
-          Позвать!
-        </a>
-      </li>
-      <li class="person__item">
-        <img class="person__photo" src="#" alt="Таня Фирсова">
-        <p class="person__name">
-          Петя Демин
-        </p>
-        <p class="person__like">
-          150
-        </p>
-        <p class="person__hashtag">
-          #бургер #бар #футбол #концерт #крафт
-        </p>
-        <h4 class="person__caption">
-          хочет посетить:
-        </h4>
-        <ul class="person__visit">
-          <li class="visit__item">Бельгия</li>
-          <li class="visit__item">Чехия</li>
-        </ul>
-        <h4 class="person__caption">
-          транспорт:
-        </h4>
-        <ul class="person__transport">
-          <li class="transport__item"></li>
-          <li class="transport__item"></li>
-          <li class="transport__item"></li>
-          <li class="transport__item"></li>
-        </ul>
-        <h4 class="person__caption">
-          левел:
-        </h4>
-        <p class="person__lvl">80</p>
-        <a href="#" class="person__call">
-          Позвать!
-        </a>
-      </li>
-      <li class="person__item">
-        <img class="person__photo" src="#" alt="Таня Фирсова">
-        <p class="person__name">
-          Марк Смолов
-        </p>
-        <p class="person__like">
-          1700
-        </p>
-        <p class="person__hashtag">
-          #рэп #тату #хайпбист #кроссовки #суприм
-        </p>
-        <h4 class="person__caption">
-          хочет посетить:
-        </h4>
-        <ul class="person__visit">
-          <li class="visit__item">США</li>
-          <li class="visit__item">Австралия</li>
-          <li class="visit__item">Доминикана</li>
-        </ul>
-        <h4 class="person__caption">
-          транспорт:
-        </h4>
-        <ul class="person__transport">
-          <li class="transport__item"></li>
-          <li class="transport__item"></li>
-          <li class="transport__item"></li>
-          <li class="transport__item"></li>
-        </ul>
-        <h4 class="person__caption">
-          левел:
-        </h4>
-        <p class="person__lvl">25</p>
-        <a href="#" class="person__call">
-          Позвать!
-        </a>
-      </li>
-      <li class="person__item">
-        <img class="person__photo" src="#" alt="Таня Фирсова">
-        <p class="person__name">
-          Лариса Роговая
-        </p>
-        <p class="person__like">
-          23
-        </p>
-        <p class="person__hashtag">
-          #образование #карьера #учеба #линкедин
-        </p>
-        <h4 class="person__caption">
-          хочет посетить:
-        </h4>
-        <ul class="person__visit">
-          <li class="visit__item">Великобритания</li>
-          <li class="visit__item">Германия</li>
-        </ul>
-        <h4 class="person__caption">
-          транспорт:
-        </h4>
-        <ul class="person__transport">
-          <li class="transport__item"></li>
-          <li class="transport__item"></li>
-          <li class="transport__item"></li>
-          <li class="transport__item"></li>
-        </ul>
-        <h4 class="person__caption">
-          левел:
-        </h4>
-        <p class="person__lvl">50</p>
-        <a href="#" class="person__call">
-          Позвать!
-        </a>
-      </li>
-    </ul>
-    <a href="#" class="person__add">
-      Показать еще
-    </a>
-    <a href="#" class="person__prev">
-      Предыдущая страница
-    </a>
-    <a href="#" class="person__next">
-      Следующая страница
-    </a>
-  </section>
+        <table class="select__letter-block">
+          <tr>
+            <td class="select__letter select__letter--active">А</td>
+            <td class="select__letter">Б</td>
+            <td class="select__letter">В</td>
+            <td class="select__letter">Г</td>
+            <td class="select__letter">Д</td>
+          </tr>
+          <tr>
+            <td class="select__letter">Е</td>
+            <td class="select__letter">Ё</td>
+            <td class="select__letter">Ж</td>
+            <td class="select__letter">З</td>
+            <td class="select__letter">И</td>
+          </tr>
+          <tr>
+            <td class="select__letter">Й</td>
+            <td class="select__letter">К</td>
+            <td class="select__letter">Л</td>
+            <td class="select__letter">М</td>
+            <td class="select__letter">Н</td>
+          </tr>
+          <tr>
+            <td class="select__letter">О</td>
+            <td class="select__letter">П</td>
+            <td class="select__letter">Р</td>
+            <td class="select__letter">С</td>
+            <td class="select__letter">Т</td>
+          </tr>
+          <tr>
+            <td class="select__letter">У</td>
+            <td class="select__letter">Ф</td>
+            <td class="select__letter">Х</td>
+            <td class="select__letter">Ц</td>
+            <td class="select__letter">Ч</td>
+          </tr>
+          <tr>
+            <td class="select__letter">Ш</td>
+            <td class="select__letter">Щ</td>
+            <td class="select__letter">Э</td>
+            <td class="select__letter">Ю</td>
+            <td class="select__letter">Я</td>
+          </tr>
+        </table>
+          <ul class="select__countries-list">
+            <li class="select__country">Афганистан</li>
+            <li class="select__country">Албания</li>
+            <li class="select__country">Алгерия</li>
+            <li class="select__country">Андорра</li>
+            <li class="select__country">Аргентина</li>
+            <li class="select__country">Армения</li>
+            <li class="select__country">Австралия</li>
+            <li class="select__country">Австрия</li>
+            <li class="select__country">Азербайджан</li>
+          </ul>
+          <button class="select__minimize">Свернуть</button>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
-    <div class="logo"></div>
-    <ul class="footer__socials">
-      <li class="footer__social">Facebook</li>
-      <li class="footer__social">VK</li>
-      <li class="footer__social">Instagram</li>
-    </ul>
-    <div class="footer__developed">
-      <p class="section-description">Разработано</p>
-      <a href="" class="footer__academy"></a>
+    <div class="footer__container">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png" />
+        <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png" />
+        <img class="footer__logo" src="img/logo-mobile-blue@1x.png" alt="Логотип Погнали?" />
+      </picture>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link footer__social-link--facebook">Facebook</a>
+        <a href="#" class="footer__social-link footer__social-link--vk">VK</a>
+        <a href="#" class="footer__social-link footer__social-link--instagram">Instagram</a>
+      </div>
+      <div class="footer__developed">
+        <p class="footer__developed-descr">Разработано</p>
+        <a class="footer__academy" href="#"><img src="img/htmlacademy.svg" alt="Логотип Акадаемии HTMl"/></a>
+      </div>
     </div>
   </footer>
   <script src="js/app.js"></script>
