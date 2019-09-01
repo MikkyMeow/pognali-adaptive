@@ -4105,7 +4105,7 @@ html {
     font-size: 60px;
     line-height: 24px;
     font-weight: 700;
-    height: 60px;
+    height: 70px;
     background-color: inherit;
     border: none;
     opacity: .3; }
@@ -4113,7 +4113,7 @@ html {
     opacity: 1;
     color: #1d2e5b; }
   .select__countries-list {
-    width: 32.2580645161%;
+    width: 28.658065%;
     -ms-flex-item-align: start;
         align-self: flex-start; }
   .select__country {
