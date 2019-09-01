@@ -436,9 +436,11 @@ html {
           align-items: center;
   padding: 24px 0; }
 
-.page--form .header__container,
-.page--catalog .header__container {
+.page--form .header__container {
   padding-top: 16px; }
+
+.page--catalog .header__container {
+  padding-top: 40px; }
 
 .header--open .header__container {
   padding-bottom: 38px; }
@@ -3895,7 +3897,7 @@ html {
     position: static;
     margin-right: 3px; } }
 
-.catalog-header {
+.catalog__header {
   font-size: 36px;
   line-height: 40px;
   color: #ffffff;
@@ -3903,7 +3905,7 @@ html {
   width: 100%;
   position: relative;
   z-index: 1; }
-  .catalog-header::after {
+  .catalog__header::after {
     content: "";
     display: block;
     width: 173px;
@@ -3913,6 +3915,49 @@ html {
     bottom: -11px;
     left: 0;
     border-radius: 5px; }
+
+.catalog__prev-link {
+  display: none; }
+
+@media (min-width: 768px) {
+  .catalog__header-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .catalog__header {
+    font-size: 60px;
+    line-height: 70px; }
+    .catalog__header::after {
+      width: 287px;
+      height: 8px;
+      bottom: -67px;
+      left: 2px;
+      border-radius: 8px; }
+  .catalog__prev-link {
+    display: block;
+    position: relative;
+    width: 249px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .catalog__prev-link::after {
+      content: "";
+      display: inline-block;
+      width: 32px;
+      height: 19px;
+      background-image: url("../img/return.svg");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      position: relative;
+      margin-left: 29px; } }
 
 .select {
   background-color: #e2e5f2;
@@ -3951,7 +3996,11 @@ html {
   width: 17px;
   height: 3px;
   background-image: url("../img/dots.svg");
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  font-size: 0;
+  border: none;
+  background-color: inherit;
+  background-repeat: no-repeat; }
 
 .select__continent-list {
   width: 100%;
@@ -4008,6 +4057,84 @@ html {
   background-color: #d6daed;
   padding: 0 20px;
   border-radius: 40px; }
+
+@media (min-width: 768px) {
+  .select {
+    padding: 88px 74px 0;
+    border-radius: 0 0 60px 60px; }
+  .select__container {
+    padding-top: 122px;
+    padding-bottom: 90px; }
+  .select__caption {
+    display: none; }
+  .select__continent-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: auto;
+    width: 390px; }
+  .select__continent-item {
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 27px; }
+  .select__button {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    color: #1d2e5b;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 225px;
+    height: 30px;
+    background-size: 29px 5px;
+    position: relative;
+    bottom: 3px;
+    background-position: right 10px;
+    font-family: "BloggerSans", "Arial", sans-serif;
+    margin-left: auto; }
+  .select__letter-block {
+    width: 59.7419354839%;
+    margin: 0 auto 20px 0; }
+  .select__letter {
+    font-size: 60px;
+    line-height: 24px;
+    font-weight: 700;
+    height: 60px;
+    background-color: inherit;
+    border: none;
+    opacity: .3; }
+  .select__letter--active {
+    opacity: 1;
+    color: #1d2e5b; }
+  .select__countries-list {
+    width: 32.2580645161%;
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+  .select__country {
+    font-size: 20px;
+    line-height: 30px; }
+  .select__cross {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-image: url("../img/filter-close.svg");
+    position: relative;
+    top: 2px;
+    margin-right: 20px; }
+  .select__minimize {
+    font-family: "BloggerSans", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    padding: 35px 0;
+    border-radius: 20px;
+    border: none; } }
 
 .footer {
   padding: 0 25px;

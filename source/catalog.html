@@ -30,10 +30,13 @@
   </header>
   <main class="main">
     <section class="select">
-      <h1 class="catalog-header">Попутчики</h1>
+      <div class="catalog__header-block">
+        <h1 class="catalog__header">Попутчики</h1>
+        <a class="catalog__prev-link">На главную</a>
+      </div>
       <div class="select__container">
         <h2 class="select__caption">Фильтрация по странам</h2>
-        <button class="select__button select__button--hidden"><span class="visually-hidden">Открыть выбор стран</span></button>
+        <button class="select__button select__button--hidden">Показать все</button>
         <ul class="select__continent-list">
           <li class="select__continent-item select__continent-item--active">Европа</li>
           <li class="select__continent-item">Азия</li>
@@ -95,7 +98,7 @@
             <li class="select__country">Австрия</li>
             <li class="select__country">Азербайджан</li>
           </ul>
-          <button class="select__minimize">Свернуть</button>
+          <button class="select__minimize"><span class="select__cross"></span>Свернуть</button>
       </div>
     </section>
   </main>

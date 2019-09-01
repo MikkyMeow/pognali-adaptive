@@ -31,9 +31,12 @@
   padding: 24px 0;
 }
 
-.page--form .header__container,
-.page--catalog .header__container {
+.page--form .header__container {
   padding-top: 16px;
+}
+
+.page--catalog .header__container {
+  padding-top: 40px;
 }
 
 .header--open .header__container {
