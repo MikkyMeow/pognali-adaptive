@@ -715,6 +715,8 @@ html {
     height: 250px;
     bottom: -250px;
     border-radius: 0 0 60px 60px; }
+  .page--catalog .header__container {
+    padding-top: 50px; }
   .header--open .header__logo,
   .header__logo {
     width: 200px;
@@ -3959,6 +3961,12 @@ html {
       position: relative;
       margin-left: 29px; } }
 
+@media (min-width: 1440px) {
+  .catalog__prev-link {
+    width: 203px; }
+    .catalog__prev-link::after {
+      margin-left: 25px; } }
+
 .select {
   background-color: #e2e5f2;
   padding: 29px 25px 0;
@@ -4135,6 +4143,35 @@ html {
     padding: 35px 0;
     border-radius: 20px;
     border: none; } }
+
+@media (min-width: 1440px) {
+  .select {
+    padding: 116px 126px 0; }
+  .select__container {
+    min-height: 2796px; }
+  .select__caption {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    width: 278px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+    position: relative; }
+    .select__caption::before {
+      position: absolute;
+      left: -46px;
+      width: 23px;
+      height: 16px;
+      top: 2px;
+      background-repeat: no-repeat; }
+  .select__continent-list {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; } }
 
 .footer {
   padding: 0 25px;

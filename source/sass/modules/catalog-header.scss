@@ -67,3 +67,13 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .catalog__prev-link {
+    width: 203px;
+
+    &::after {
+      margin-left: 25px;
+    }
+  }
+}

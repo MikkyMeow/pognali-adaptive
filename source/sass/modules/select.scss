@@ -204,3 +204,37 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop) {
+  .select {
+    padding: 116px 126px 0;
+  }
+
+  .select__container {
+    min-height: 2796px;
+  }
+
+  .select__caption {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    width: 278px;
+    align-self: flex-start;
+    order: -2;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: -46px;
+      width: 23px;
+      height: 16px;
+      top: 2px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .select__continent-list {
+    order: -1;
+  }
+}
